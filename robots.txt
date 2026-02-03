@@ -1,0 +1,11 @@
+# Pombo & Horowitz Abogados
+# https://pombohorowitz.es
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pombohorowitz.es/sitemap.xml
+
+# Crawl-delay for politeness
+Crawl-delay: 1

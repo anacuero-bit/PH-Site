@@ -1,0 +1,177 @@
+{
+  "meta": {
+    "updated": "2026-02-03T12:00:00Z",
+    "version": "1.0.0"
+  },
+  "countdown": {
+    "deadline": "2026-06-30T23:59:59+02:00",
+    "title": "Fin del Plazo de Regularización",
+    "description": "Última fecha para presentar solicitudes"
+  },
+  "stats": {
+    "cases_resolved": 12847,
+    "years_experience": 38,
+    "success_rate": 97,
+    "clients_regularization": 312
+  },
+  "articles": [
+    {
+      "id": "guia-completa-regularizacion-2026",
+      "slug": "guia-completa-regularizacion-2026",
+      "title": "Guía Completa: Regularización Extraordinaria 2026",
+      "excerpt": "Todo lo que necesita saber sobre el nuevo Real Decreto: requisitos, plazos, documentación y proceso completo paso a paso.",
+      "content": "<p>El 27 de enero de 2026, el Gobierno de España aprobó el Real Decreto de Regularización Extraordinaria, abriendo una oportunidad histórica para aproximadamente 500.000 personas en situación irregular.</p><h3>¿Quién puede solicitar la regularización?</h3><p>Pueden acogerse a este proceso extraordinario quienes cumplan los siguientes requisitos:</p><ul><li><strong>Presencia continuada:</strong> Haber entrado en España antes del 31 de diciembre de 2025</li><li><strong>Residencia mínima:</strong> Acreditar al menos 5 meses de estancia en territorio español</li><li><strong>Sin antecedentes:</strong> Carecer de antecedentes penales en España y en su país de origen</li></ul><h3>Plazos importantes</h3><p>Las solicitudes se podrán presentar desde el <strong>1 de abril de 2026</strong> hasta el <strong>30 de junio de 2026</strong>. Es crucial preparar toda la documentación con antelación.</p><h3>Documentos necesarios</h3><p>La documentación básica incluye:</p><ul><li>Pasaporte válido o documento de identidad</li><li>Certificado de empadronamiento histórico</li><li>Certificado de antecedentes penales del país de origen (apostillado)</li><li>Pruebas de estancia continuada (facturas, recibos, contratos)</li></ul><h3>¿Qué autoriza esta regularización?</h3><p>Una vez aprobada, la regularización otorga:</p><ul><li>Permiso de residencia por un año</li><li>Autorización de trabajo inmediata</li><li>Para menores de edad: permiso de 5 años</li></ul><p>Desde Pombo & Horowitz Abogados le ayudamos a preparar su solicitud con todas las garantías. Contacte con nosotros para una evaluación gratuita de su caso.</p>",
+      "category": "regularizacion",
+      "date": "2026-01-27",
+      "author": "Dra. Elena Pombo",
+      "readTime": "8 min",
+      "featured": true,
+      "image": null
+    },
+    {
+      "id": "documentos-prueba-estancia",
+      "slug": "documentos-prueba-estancia",
+      "title": "¿Qué Documentos Sirven para Demostrar tu Estancia en España?",
+      "excerpt": "Lista completa de documentos válidos para acreditar tu presencia continuada en territorio español desde antes del 31 de diciembre de 2025.",
+      "content": "<p>Uno de los requisitos fundamentales de la regularización extraordinaria es demostrar que has estado viviendo en España. Aquí te explicamos qué documentos son válidos y cómo conseguirlos.</p><h3>Documentos con mayor valor probatorio</h3><ul><li><strong>Empadronamiento histórico:</strong> El documento más importante. Solicítalo en tu ayuntamiento.</li><li><strong>Contratos de alquiler:</strong> Aunque estés de subarrendatario, intenta conseguir algún documento.</li><li><strong>Contratos de trabajo:</strong> Incluso si fueron en economía sumergida, pueden servir otros comprobantes.</li></ul><h3>Documentos complementarios</h3><ul><li>Facturas de servicios (luz, agua, gas, internet)</li><li>Extractos bancarios con movimientos en España</li><li>Recibos de envíos de dinero (Western Union, Ria, etc.)</li><li>Tarjeta sanitaria o citas médicas</li><li>Matrículas en cursos o academias</li><li>Carnet de biblioteca</li></ul><h3>Consejos importantes</h3><p>Empieza a recopilar documentos ahora. No esperes a abril para buscar pruebas. Si no tienes empadronamiento, acude a tu ayuntamiento lo antes posible.</p>",
+      "category": "documentacion",
+      "date": "2026-01-30",
+      "author": "Lic. David Horowitz",
+      "readTime": "5 min",
+      "featured": false,
+      "image": null
+    },
+    {
+      "id": "antecedentes-penales-apostilla",
+      "slug": "antecedentes-penales-apostilla",
+      "title": "Cómo Obtener el Certificado de Antecedentes Penales Apostillado",
+      "excerpt": "Guía paso a paso para solicitar y apostillar tu certificado de antecedentes penales desde España.",
+      "content": "<p>El certificado de antecedentes penales de tu país de origen es uno de los documentos imprescindibles. Te explicamos cómo conseguirlo sin necesidad de viajar.</p><h3>Países latinoamericanos más comunes</h3><h4>Colombia</h4><p>Puedes solicitarlo online en la página de la Policía Nacional de Colombia. Es gratuito y lo apostillas en el Ministerio de Relaciones Exteriores.</p><h4>Perú</h4><p>A través de la página del Poder Judicial. Requiere firma digital. La apostilla se gestiona en el Ministerio de Relaciones Exteriores.</p><h4>Honduras</h4><p>Se solicita en la Dirección Nacional de Investigación Criminal (DNIC). Puede tramitarse a través del consulado.</p><h3>¿Qué es la Apostilla de La Haya?</h3><p>Es un sello que certifica la autenticidad del documento para que sea válido internacionalmente. Sin apostilla, el certificado no tiene validez en España.</p><h3>Alternativa: Trámite consular</h3><p>Muchos países permiten solicitar el certificado a través de sus consulados en España. Consulta con el consulado de tu país.</p>",
+      "category": "documentacion",
+      "date": "2026-02-01",
+      "author": "Dra. Elena Pombo",
+      "readTime": "6 min",
+      "featured": false,
+      "image": null
+    },
+    {
+      "id": "hijos-menores-regularizacion",
+      "slug": "hijos-menores-regularizacion",
+      "title": "Regularización de Hijos Menores: Permiso de 5 Años",
+      "excerpt": "Los menores de edad obtienen un permiso especial de 5 años. Te explicamos los requisitos y el proceso.",
+      "content": "<p>Una de las mejores noticias del Real Decreto es el trato especial para los menores de edad. Mientras los adultos obtienen un permiso de 1 año, los niños y adolescentes reciben directamente un permiso de 5 años.</p><h3>Requisitos para menores</h3><ul><li>Ser menor de 18 años en el momento de la solicitud</li><li>Estar incluido en la solicitud de un progenitor o tutor legal</li><li>Pasaporte o documento de identidad válido</li><li>Libro de familia o acta de nacimiento</li></ul><h3>Ventajas del permiso de 5 años</h3><ul><li>Mayor estabilidad para su educación</li><li>Acceso completo al sistema sanitario</li><li>Posibilidad de reagrupación familiar en el futuro</li><li>Vía directa a la nacionalidad española</li></ul><h3>¿Y si mi hijo nació en España?</h3><p>Los niños nacidos en España de padres extranjeros en situación irregular pueden beneficiarse igualmente. Con la regularización de los padres, el menor obtiene automáticamente su permiso.</p>",
+      "category": "regularizacion",
+      "date": "2026-02-02",
+      "author": "Lic. David Horowitz",
+      "readTime": "4 min",
+      "featured": true,
+      "image": null
+    },
+    {
+      "id": "errores-comunes-evitar",
+      "slug": "errores-comunes-evitar",
+      "title": "5 Errores que Pueden Arruinar tu Solicitud de Regularización",
+      "excerpt": "Evita estos errores frecuentes que causan el rechazo de solicitudes. Preparación es la clave del éxito.",
+      "content": "<p>Después de analizar miles de casos de extranjería, estos son los errores más comunes que debes evitar a toda costa.</p><h3>1. Esperar hasta el último momento</h3><p>Conseguir todos los documentos lleva tiempo. Los certificados de antecedentes pueden tardar semanas. No dejes todo para junio.</p><h3>2. Documentos sin traducir o sin apostillar</h3><p>Los documentos extranjeros deben estar apostillados y, en muchos casos, traducidos por traductor jurado. Esto tiene un coste y un tiempo.</p><h3>3. No demostrar estancia continuada</h3><p>No basta con tener el empadronamiento. Necesitas pruebas de que has estado viviendo aquí de forma continua. Recopila todo tipo de documentos.</p><h3>4. Ocultar antecedentes penales</h3><p>Si tienes antecedentes menores (no graves), es mejor declararlo y explicarlo que intentar ocultarlo. El sistema cruza datos.</p><h3>5. No buscar asesoramiento legal</h3><p>Un abogado especializado puede detectar problemas en tu solicitud antes de presentarla. Una inversión pequeña puede evitar un rechazo.</p>",
+      "category": "consejos",
+      "date": "2026-02-03",
+      "author": "Dra. Elena Pombo",
+      "readTime": "5 min",
+      "featured": false,
+      "image": null
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-1",
+      "question": "¿Cuándo puedo presentar mi solicitud de regularización?",
+      "answer": "Las solicitudes se pueden presentar desde el 1 de abril de 2026 hasta el 30 de junio de 2026. Es un plazo de 3 meses.",
+      "category": "plazos"
+    },
+    {
+      "id": "faq-2",
+      "question": "¿Qué pasa si entré a España después del 31 de diciembre de 2025?",
+      "answer": "Lamentablemente, no podrás acogerte a esta regularización extraordinaria. El requisito de entrada antes de esa fecha es obligatorio e inalterable.",
+      "category": "requisitos"
+    },
+    {
+      "id": "faq-3",
+      "question": "¿Necesito tener trabajo para solicitar la regularización?",
+      "answer": "No es obligatorio tener contrato de trabajo para solicitar la regularización. Sin embargo, una vez obtengas el permiso, tendrás autorización para trabajar legalmente.",
+      "category": "requisitos"
+    },
+    {
+      "id": "faq-4",
+      "question": "¿Cuánto cuesta el proceso de regularización?",
+      "answer": "Las tasas oficiales del gobierno aún no se han publicado definitivamente. Nuestro servicio de asesoramiento comienza desde 99€ para la evaluación inicial de tu caso.",
+      "category": "costes"
+    },
+    {
+      "id": "faq-5",
+      "question": "¿Puedo viajar fuera de España mientras espero la resolución?",
+      "answer": "No es recomendable. Salir de España mientras tu solicitud está en trámite puede considerarse abandono del proceso. Espera a recibir tu tarjeta de residencia.",
+      "category": "proceso"
+    },
+    {
+      "id": "faq-6",
+      "question": "¿Qué antecedentes penales impiden la regularización?",
+      "answer": "Los delitos graves como narcotráfico, terrorismo, o delitos violentos impiden la regularización. Delitos menores o faltas leves pueden no ser impedimento, pero cada caso se evalúa individualmente.",
+      "category": "requisitos"
+    },
+    {
+      "id": "faq-7",
+      "question": "¿Puedo incluir a mi familia en la solicitud?",
+      "answer": "Sí, puedes incluir a tu cónyuge e hijos menores de edad en tu solicitud. Los menores obtienen un permiso especial de 5 años de duración.",
+      "category": "familia"
+    },
+    {
+      "id": "faq-8",
+      "question": "¿Cuánto tiempo tarda en resolverse la solicitud?",
+      "answer": "El gobierno ha indicado que las resoluciones se emitirán en un plazo máximo de 6 meses desde la presentación. En la práctica, casos bien documentados pueden resolverse antes.",
+      "category": "proceso"
+    },
+    {
+      "id": "faq-9",
+      "question": "¿Qué hago si no tengo pasaporte válido?",
+      "answer": "Debes renovar tu pasaporte en el consulado de tu país. Sin documento de identidad válido, no podrás completar el proceso. Inicia este trámite cuanto antes.",
+      "category": "documentacion"
+    },
+    {
+      "id": "faq-10",
+      "question": "¿Puedo trabajar mientras espero la resolución?",
+      "answer": "Técnicamente no, hasta que recibas la autorización. Sin embargo, presentar la solicitud demuestra tu intención de regularizarte, lo cual puede ser relevante en caso de inspección laboral.",
+      "category": "trabajo"
+    }
+  ],
+  "updates": [
+    {
+      "id": "update-1",
+      "date": "2026-02-03",
+      "type": "info",
+      "title": "Preparación de documentos",
+      "message": "Recomendamos empezar a recopilar documentación ahora. El empadronamiento histórico puede tardar hasta 2 semanas en algunos ayuntamientos."
+    },
+    {
+      "id": "update-2",
+      "date": "2026-01-27",
+      "type": "urgente",
+      "title": "Real Decreto aprobado",
+      "message": "El Consejo de Ministros ha aprobado el Real Decreto de Regularización Extraordinaria. Plazo de solicitudes: 1 de abril - 30 de junio de 2026."
+    }
+  ],
+  "whatsapp_broadcasts": [
+    {
+      "id": "wa-1",
+      "date": "2026-02-03",
+      "message": "📢 ¡Atención! Quedan menos de 5 meses para el cierre de la regularización. ¿Ya tienes tu empadronamiento histórico? Solicítalo HOY en tu ayuntamiento. No esperes. ➡️ Más info: pombohorowitz.es/regularizacion"
+    }
+  ],
+  "tiktok_hooks": [
+    {
+      "id": "tt-1",
+      "date": "2026-02-03",
+      "hook": "El documento que NADIE te dice que necesitas para la regularización 2026...",
+      "script_outline": "Reveal: Empadronamiento HISTÓRICO (no solo actual). Explicar diferencia. CTA: guarda este video."
+    }
+  ]
+}
