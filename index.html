@@ -3,148 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pombo & Horowitz Abogados | Regularización 2026 | Madrid</title>
-    <meta name="description" content="Especialistas en regularización extraordinaria 2026. Despacho de abogados en Madrid con más de 35 años de experiencia en extranjería e inmigración.">
-    <meta name="keywords" content="regularización 2026, abogados extranjería Madrid, regularización extraordinaria España, papeles España, inmigración España">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Pombo & Horowitz Abogados | Regularización 2026">
-    <meta property="og:description" content="Especialistas en regularización extraordinaria. ¿Llevas más de 5 meses en España? Puedes obtener tus papeles. Consulta gratuita.">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="es_ES">
-    
-    <!-- Canonical -->
-    <link rel="canonical" href="https://pombohorowitz.es/">
+    <title>Pombo & Horowitz Abogados | Derecho de Extranjería en Madrid desde 1988</title>
+    <meta name="description" content="Despacho de abogados especializado en extranjería, nacionalidad española e inmigración. Más de 35 años de experiencia en Madrid.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --color-navy: #0F1C2E;
-            --color-navy-light: #1A2D47;
-            --color-burgundy: #722F37;
-            --color-burgundy-dark: #5A252C;
-            --color-gold: #B8860B;
-            --color-gold-light: #D4A843;
-            --color-cream: #FAF8F5;
-            --color-cream-dark: #F0EDE8;
-            --color-text: #2C2C2C;
-            --color-text-light: #5A5A5A;
-            --color-text-muted: #8A8A8A;
-            --color-border: #E5E2DD;
-            --color-white: #FFFFFF;
-            --color-success: #2E7D32;
-            --color-warning: #F57C00;
-            --color-urgent: #C62828;
-            
-            --font-serif: 'Cormorant Garamond', Georgia, serif;
-            --font-sans: 'Source Sans 3', 'Helvetica Neue', sans-serif;
-            
-            --section-padding: 100px;
-            --container-width: 1200px;
+            --navy: #0F1C2E;
+            --navy-light: #1A2D47;
+            --burgundy: #722F37;
+            --burgundy-dark: #5A252C;
+            --gold: #B8860B;
+            --gold-light: #D4A843;
+            --cream: #FAF8F5;
+            --text: #2C2C2C;
+            --text-light: #5A5A5A;
+            --border: #E5E2DD;
+            --white: #FFFFFF;
+            --campaign-orange: #E85D04;
+            --campaign-orange-dark: #D35400;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        html { scroll-behavior: smooth; }
+        
         body {
-            font-family: var(--font-sans);
-            background: var(--color-white);
-            color: var(--color-text);
+            font-family: 'Source Sans 3', sans-serif;
+            color: var(--text);
             line-height: 1.7;
-            font-weight: 400;
-            -webkit-font-smoothing: antialiased;
+            background: var(--white);
         }
 
         .container {
-            max-width: var(--container-width);
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 24px;
         }
 
-        h1, h2, h3, h4, h5, h6 {
-            font-family: var(--font-serif);
+        h1, h2, h3, h4 {
+            font-family: 'Cormorant Garamond', serif;
             font-weight: 600;
-            line-height: 1.25;
-            color: var(--color-navy);
+            color: var(--navy);
+            line-height: 1.3;
         }
 
-        h1 { font-size: clamp(2.25rem, 5vw, 3.5rem); }
-        h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
-        h3 { font-size: clamp(1.35rem, 3vw, 1.75rem); }
-        h4 { font-size: 1.25rem; }
-
-        .small-caps {
-            font-family: var(--font-sans);
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 2.5px;
-            text-transform: uppercase;
-            color: var(--color-gold);
+        /* Campaign Banner */
+        .campaign-banner {
+            background: linear-gradient(135deg, var(--campaign-orange) 0%, var(--campaign-orange-dark) 100%);
+            color: white;
+            padding: 12px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
         }
 
-        /* ==================== HEADER ==================== */
-        .header {
-            position: fixed;
+        .campaign-banner::before {
+            content: '';
+            position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            z-index: 1000;
-            background: var(--color-white);
-            border-bottom: 1px solid var(--color-border);
-            transition: all 0.3s ease;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
         }
 
-        .header.scrolled {
-            box-shadow: 0 2px 20px rgba(15, 28, 46, 0.08);
-        }
-
-        .header-top {
-            background: var(--color-navy);
-            color: var(--color-white);
-            padding: 8px 0;
-            font-size: 0.85rem;
-        }
-
-        .header-top-inner {
+        .campaign-banner-content {
+            position: relative;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .header-contact {
-            display: flex;
+            justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
         }
 
-        .header-contact a {
-            color: rgba(255,255,255,0.85);
+        .campaign-badge {
+            background: rgba(255,255,255,0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .campaign-text {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .campaign-text strong {
+            font-weight: 700;
+        }
+
+        .campaign-cta {
+            background: white;
+            color: var(--campaign-orange);
+            padding: 8px 20px;
+            border-radius: 25px;
             text-decoration: none;
-            transition: color 0.2s;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
         }
 
-        .header-contact a:hover {
-            color: var(--color-gold-light);
+        .campaign-cta:hover {
+            background: var(--navy);
+            color: white;
+            transform: scale(1.05);
         }
 
-        .header-main {
-            padding: 15px 0;
+        /* Header */
+        .header {
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
-        .header-main-inner {
+        .header-inner {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -152,284 +138,116 @@
 
         .logo {
             text-decoration: none;
-            display: flex;
-            flex-direction: column;
         }
 
         .logo-name {
-            font-family: var(--font-serif);
-            font-size: 1.5rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.75rem;
             font-weight: 600;
-            color: var(--color-navy);
-            letter-spacing: 1px;
+            color: var(--navy);
+            display: block;
         }
 
         .logo-tagline {
             font-size: 0.7rem;
-            color: var(--color-text-muted);
+            color: var(--text-light);
             letter-spacing: 2px;
             text-transform: uppercase;
         }
 
         .nav {
             display: flex;
-            gap: 30px;
+            gap: 35px;
         }
 
         .nav a {
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: var(--color-text);
+            color: var(--text);
             text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
             transition: color 0.2s;
         }
 
         .nav a:hover {
-            color: var(--color-burgundy);
+            color: var(--burgundy);
         }
 
-        .nav-cta {
-            background: var(--color-burgundy);
-            color: white !important;
-            padding: 10px 20px;
-            border-radius: 4px;
+        .header-contact {
+            text-align: right;
         }
 
-        .nav-cta:hover {
-            background: var(--color-burgundy-dark);
-            color: white !important;
+        .header-phone {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--navy);
         }
 
-        /* Mobile menu */
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 10px;
+        .header-email {
+            font-size: 0.85rem;
+            color: var(--text-light);
         }
 
-        .menu-toggle span {
-            display: block;
-            width: 24px;
-            height: 2px;
-            background: var(--color-navy);
-            margin: 5px 0;
-            transition: 0.3s;
-        }
-
-        /* ==================== HERO ==================== */
+        /* Hero */
         .hero {
-            padding: 180px 0 100px;
-            background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-cream-dark) 100%);
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            color: white;
+            padding: 100px 0;
             position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 50%;
-            height: 100%;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 30L30 60L0 30z' fill='%23B8860B' fill-opacity='0.03'/%3E%3C/svg%3E");
-            opacity: 0.5;
         }
 
         .hero-content {
-            position: relative;
-            z-index: 1;
             max-width: 700px;
         }
 
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: var(--color-burgundy);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            margin-bottom: 24px;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(114, 47, 55, 0.4); }
-            50% { box-shadow: 0 0 0 10px rgba(114, 47, 55, 0); }
-        }
-
-        .hero h1 {
-            margin-bottom: 24px;
-        }
-
-        .hero-subtitle {
-            font-size: 1.25rem;
-            color: var(--color-text-light);
-            margin-bottom: 32px;
-            line-height: 1.8;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 16px;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 14px 28px;
-            font-family: var(--font-sans);
-            font-size: 0.95rem;
+        .hero-label {
+            font-size: 0.75rem;
             font-weight: 600;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: all 0.2s;
-            cursor: pointer;
-            border: none;
-        }
-
-        .btn-primary {
-            background: var(--color-burgundy);
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background: var(--color-burgundy-dark);
-            transform: translateY(-2px);
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: var(--color-navy);
-            border: 2px solid var(--color-navy);
-        }
-
-        .btn-outline:hover {
-            background: var(--color-navy);
-            color: white;
-        }
-
-        .btn-whatsapp {
-            background: #25D366;
-            color: white;
-        }
-
-        .btn-whatsapp:hover {
-            background: #1DA851;
-        }
-
-        /* ==================== COUNTDOWN ==================== */
-        .countdown-section {
-            background: var(--color-navy);
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        .countdown-label {
-            color: var(--color-gold-light);
-            font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             text-transform: uppercase;
+            color: var(--gold-light);
             margin-bottom: 20px;
         }
 
-        .countdown {
+        .hero h1 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 35px;
+            line-height: 1.8;
+        }
+
+        .hero-stats {
             display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
+            gap: 50px;
+            margin-top: 50px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.2);
         }
 
-        .countdown-item {
-            text-align: center;
-        }
-
-        .countdown-value {
-            font-family: var(--font-serif);
-            font-size: clamp(2.5rem, 6vw, 4rem);
+        .stat-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
             font-weight: 700;
-            color: white;
-            line-height: 1;
+            color: var(--gold-light);
         }
 
-        .countdown-unit {
-            color: rgba(255,255,255,0.6);
+        .stat-label {
             font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 8px;
+            opacity: 0.8;
         }
 
-        .countdown-deadline {
-            color: rgba(255,255,255,0.8);
-            margin-top: 24px;
-            font-size: 1.1rem;
-        }
-
-        .countdown-deadline strong {
-            color: var(--color-gold-light);
-        }
-
-        /* ==================== UPDATES BANNER ==================== */
-        .updates-banner {
-            background: var(--color-cream);
-            border-bottom: 1px solid var(--color-border);
-            padding: 16px 0;
-        }
-
-        .updates-banner-inner {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            overflow: hidden;
-        }
-
-        .update-badge {
-            flex-shrink: 0;
-            background: var(--color-urgent);
-            color: white;
-            padding: 4px 12px;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-
-        .update-badge.info {
-            background: var(--color-gold);
-        }
-
-        .updates-content {
-            display: flex;
-            gap: 40px;
-            animation: scroll 30s linear infinite;
-        }
-
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-
-        .update-item {
-            white-space: nowrap;
-            font-size: 0.9rem;
-        }
-
-        .update-date {
-            color: var(--color-text-muted);
-            margin-right: 10px;
-        }
-
-        /* ==================== SECTION STYLES ==================== */
+        /* Section Styles */
         .section {
-            padding: var(--section-padding) 0;
+            padding: 100px 0;
+        }
+
+        .section-light {
+            background: var(--cream);
         }
 
         .section-header {
@@ -438,405 +256,314 @@
             margin: 0 auto 60px;
         }
 
+        .section-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
         .section-header h2 {
-            margin: 16px 0;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
         }
 
         .section-header p {
-            color: var(--color-text-light);
+            color: var(--text-light);
             font-size: 1.1rem;
         }
 
-        /* ==================== ELIGIBILITY CHECK ==================== */
-        .eligibility {
-            background: var(--color-cream);
-        }
-
-        .eligibility-card {
-            background: white;
-            border-radius: 12px;
-            padding: 50px;
-            max-width: 800px;
-            margin: 0 auto;
-            box-shadow: 0 4px 30px rgba(0,0,0,0.06);
-        }
-
-        .eligibility-question {
-            font-family: var(--font-serif);
-            font-size: 1.5rem;
-            color: var(--color-navy);
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .eligibility-options {
+        /* Services Grid */
+        .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 16px;
-            margin-bottom: 30px;
-        }
-
-        .eligibility-option {
-            padding: 20px;
-            border: 2px solid var(--color-border);
-            border-radius: 8px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-
-        .eligibility-option:hover {
-            border-color: var(--color-burgundy);
-        }
-
-        .eligibility-option.selected {
-            border-color: var(--color-burgundy);
-            background: rgba(114, 47, 55, 0.05);
-        }
-
-        .eligibility-option svg {
-            width: 40px;
-            height: 40px;
-            margin-bottom: 12px;
-            color: var(--color-gold);
-        }
-
-        .eligibility-result {
-            text-align: center;
-            padding: 30px;
-            border-radius: 8px;
-            display: none;
-        }
-
-        .eligibility-result.show {
-            display: block;
-        }
-
-        .eligibility-result.success {
-            background: #E8F5E9;
-            border: 1px solid #A5D6A7;
-        }
-
-        .eligibility-result.warning {
-            background: #FFF3E0;
-            border: 1px solid #FFCC80;
-        }
-
-        .eligibility-result h4 {
-            margin-bottom: 12px;
-        }
-
-        /* ==================== ARTICLES/BLOG ==================== */
-        .articles {
-            background: white;
-        }
-
-        .articles-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
         }
 
-        .article-card {
-            background: var(--color-cream);
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .article-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-        }
-
-        .article-card-image {
-            height: 180px;
-            background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
-            position: relative;
-            display: flex;
-            align-items: flex-end;
-            padding: 20px;
-        }
-
-        .article-category {
-            position: absolute;
-            top: 16px;
-            left: 16px;
-            background: var(--color-gold);
-            color: white;
-            padding: 4px 12px;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-
-        .article-card-content {
-            padding: 24px;
-        }
-
-        .article-meta {
-            display: flex;
-            gap: 16px;
-            font-size: 0.85rem;
-            color: var(--color-text-muted);
-            margin-bottom: 12px;
-        }
-
-        .article-card h4 {
-            margin-bottom: 12px;
-            line-height: 1.4;
-        }
-
-        .article-card h4 a {
-            color: var(--color-navy);
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .article-card h4 a:hover {
-            color: var(--color-burgundy);
-        }
-
-        .article-excerpt {
-            color: var(--color-text-light);
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        .article-read-more {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            margin-top: 16px;
-            color: var(--color-burgundy);
-            font-weight: 600;
-            font-size: 0.9rem;
-            text-decoration: none;
-        }
-
-        .article-read-more:hover {
-            gap: 10px;
-        }
-
-        .articles-more {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        /* ==================== FAQ ==================== */
-        .faq {
-            background: var(--color-cream);
-        }
-
-        .faq-grid {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            background: white;
-            border-radius: 8px;
-            margin-bottom: 12px;
-            overflow: hidden;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        }
-
-        .faq-question {
-            width: 100%;
-            padding: 20px 24px;
-            background: white;
-            border: none;
-            text-align: left;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-family: var(--font-sans);
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--color-navy);
-            transition: background 0.2s;
-        }
-
-        .faq-question:hover {
-            background: var(--color-cream);
-        }
-
-        .faq-question svg {
-            width: 20px;
-            height: 20px;
-            flex-shrink: 0;
-            transition: transform 0.3s;
-        }
-
-        .faq-item.active .faq-question svg {
-            transform: rotate(180deg);
-        }
-
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-        }
-
-        .faq-item.active .faq-answer {
-            max-height: 500px;
-        }
-
-        .faq-answer-inner {
-            padding: 0 24px 24px;
-            color: var(--color-text-light);
-            line-height: 1.7;
-        }
-
-        /* ==================== SERVICES ==================== */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-        }
-
         .service-card {
-            background: var(--color-cream);
-            padding: 32px;
+            background: white;
+            padding: 40px 30px;
             border-radius: 8px;
-            text-align: center;
-            transition: transform 0.3s;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
         }
 
         .service-card:hover {
+            box-shadow: 0 15px 40px rgba(15,28,46,0.1);
             transform: translateY(-5px);
         }
 
         .service-icon {
-            width: 60px;
-            height: 60px;
-            margin: 0 auto 20px;
-            background: var(--color-gold);
-            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            background: var(--cream);
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
         }
 
-        .service-icon svg {
-            width: 28px;
-            height: 28px;
-            color: white;
-        }
-
-        .service-card h4 {
-            margin-bottom: 12px;
+        .service-card h3 {
+            font-size: 1.35rem;
+            margin-bottom: 15px;
         }
 
         .service-card p {
-            color: var(--color-text-light);
+            color: var(--text-light);
             font-size: 0.95rem;
         }
 
-        /* ==================== CTA ==================== */
-        .cta {
-            background: var(--color-burgundy);
-            padding: 80px 0;
+        /* Team */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .team-member {
             text-align: center;
         }
 
-        .cta h2 {
-            color: white;
-            margin-bottom: 16px;
-        }
-
-        .cta p {
-            color: rgba(255,255,255,0.85);
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto 32px;
-        }
-
-        .cta-buttons {
+        .team-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--burgundy) 100%);
+            margin: 0 auto 25px;
             display: flex;
-            gap: 16px;
+            align-items: center;
             justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn-white {
-            background: white;
-            color: var(--color-burgundy);
-        }
-
-        .btn-white:hover {
-            background: var(--color-cream);
-        }
-
-        .btn-outline-white {
-            background: transparent;
+            font-size: 3rem;
             color: white;
-            border: 2px solid white;
+            font-family: 'Cormorant Garamond', serif;
         }
 
-        .btn-outline-white:hover {
-            background: white;
-            color: var(--color-burgundy);
+        .team-name {
+            font-size: 1.35rem;
+            margin-bottom: 5px;
         }
 
-        /* ==================== FOOTER ==================== */
+        .team-role {
+            color: var(--burgundy);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .team-bio {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* About / History */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+        }
+
+        .about-text p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--gold);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 30px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -34px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--gold);
+        }
+
+        .timeline-year {
+            font-weight: 700;
+            color: var(--burgundy);
+            font-size: 0.9rem;
+        }
+
+        .timeline-text {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Contact */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .contact-icon {
+            width: 45px;
+            height: 45px;
+            background: var(--cream);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .contact-label {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-value {
+            font-weight: 600;
+            color: var(--navy);
+        }
+
+        .contact-form {
+            background: var(--cream);
+            padding: 40px;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--navy);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--burgundy);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 35px;
+            background: var(--burgundy);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--burgundy-dark);
+        }
+
+        .btn-full {
+            width: 100%;
+        }
+
+        /* Footer */
         .footer {
-            background: var(--color-navy);
-            color: rgba(255,255,255,0.7);
-            padding: 80px 0 30px;
+            background: var(--navy);
+            color: white;
+            padding: 60px 0 30px;
         }
 
         .footer-grid {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
             gap: 50px;
             margin-bottom: 50px;
         }
 
-        .footer-brand p {
-            margin-top: 16px;
-            font-size: 0.95rem;
-            line-height: 1.7;
-        }
-
         .footer h4 {
             color: white;
-            font-size: 1rem;
+            font-size: 1.1rem;
             margin-bottom: 20px;
         }
 
-        .footer ul {
+        .footer p {
+            opacity: 0.7;
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+        .footer-links {
             list-style: none;
         }
 
-        .footer ul li {
+        .footer-links li {
             margin-bottom: 10px;
         }
 
-        .footer ul a {
+        .footer-links a {
             color: rgba(255,255,255,0.7);
             text-decoration: none;
+            font-size: 0.9rem;
             transition: color 0.2s;
         }
 
-        .footer ul a:hover {
-            color: var(--color-gold-light);
-        }
-
-        .footer-contact-item {
-            display: flex;
-            gap: 12px;
-            margin-bottom: 16px;
-            align-items: flex-start;
-        }
-
-        .footer-contact-item svg {
-            width: 18px;
-            height: 18px;
-            flex-shrink: 0;
-            color: var(--color-gold-light);
+        .footer-links a:hover {
+            color: var(--gold-light);
         }
 
         .footer-bottom {
@@ -844,288 +571,54 @@
             padding-top: 30px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 16px;
             font-size: 0.85rem;
+            opacity: 0.6;
         }
 
-        .footer-legal {
-            display: flex;
-            gap: 24px;
-        }
-
-        .footer-legal a {
-            color: rgba(255,255,255,0.5);
-            text-decoration: none;
-        }
-
-        .footer-legal a:hover {
-            color: white;
-        }
-
-        /* ==================== ARTICLE MODAL ==================== */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0,0,0,0.8);
-            z-index: 2000;
-            overflow-y: auto;
-            padding: 40px 20px;
-        }
-
-        .modal.active {
-            display: block;
-        }
-
-        .modal-content {
-            background: white;
-            max-width: 800px;
-            margin: 0 auto;
-            border-radius: 12px;
-            overflow: hidden;
-            animation: modalIn 0.3s ease;
-        }
-
-        @keyframes modalIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .modal-header {
-            background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
-            padding: 40px;
-            position: relative;
-        }
-
-        .modal-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: rgba(255,255,255,0.1);
-            border: none;
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.2s;
-        }
-
-        .modal-close:hover {
-            background: rgba(255,255,255,0.2);
-        }
-
-        .modal-category {
-            background: var(--color-gold);
-            color: white;
-            padding: 4px 12px;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            display: inline-block;
-            margin-bottom: 16px;
-        }
-
-        .modal-title {
-            color: white;
-            font-size: 2rem;
-            margin-bottom: 16px;
-        }
-
-        .modal-meta {
-            color: rgba(255,255,255,0.7);
-            font-size: 0.9rem;
-            display: flex;
-            gap: 20px;
-        }
-
-        .modal-body {
-            padding: 40px;
-        }
-
-        .modal-body h3 {
-            margin: 32px 0 16px;
-            color: var(--color-navy);
-        }
-
-        .modal-body p {
-            margin-bottom: 16px;
-            line-height: 1.8;
-            color: var(--color-text);
-        }
-
-        .modal-body ul {
-            margin: 16px 0;
-            padding-left: 24px;
-        }
-
-        .modal-body li {
-            margin-bottom: 10px;
-            line-height: 1.7;
-        }
-
-        .modal-cta {
-            background: var(--color-cream);
-            padding: 30px 40px;
-            text-align: center;
-        }
-
-        .modal-cta p {
-            margin-bottom: 16px;
-            color: var(--color-text-light);
-        }
-
-        /* ==================== LOADING STATE ==================== */
-        .loading {
-            text-align: center;
-            padding: 40px;
-            color: var(--color-text-muted);
-        }
-
-        .loading-spinner {
-            width: 40px;
-            height: 40px;
-            border: 3px solid var(--color-border);
-            border-top-color: var(--color-burgundy);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 16px;
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
-        /* ==================== RESPONSIVE ==================== */
-        @media (max-width: 992px) {
-            .footer-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
+        /* Mobile */
         @media (max-width: 768px) {
-            :root {
-                --section-padding: 60px;
-            }
-
-            .header-top {
-                display: none;
-            }
-
-            .nav {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: white;
-                flex-direction: column;
-                padding: 20px;
-                gap: 0;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            }
-
-            .nav.active {
-                display: flex;
-            }
-
-            .nav a {
-                padding: 15px 0;
-                border-bottom: 1px solid var(--color-border);
-            }
-
-            .nav-cta {
-                margin-top: 15px;
-                text-align: center;
-            }
-
-            .menu-toggle {
-                display: block;
-            }
-
-            .hero {
-                padding: 140px 0 60px;
-            }
-
-            .countdown {
-                gap: 20px;
-            }
-
-            .eligibility-card {
-                padding: 30px 20px;
-            }
-
-            .articles-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .modal-header {
-                padding: 30px 20px;
-            }
-
-            .modal-title {
-                font-size: 1.5rem;
-            }
-
-            .modal-body {
-                padding: 30px 20px;
-            }
+            .nav { display: none; }
+            .header-contact { display: none; }
+            .hero h1 { font-size: 2rem; }
+            .hero-stats { flex-direction: column; gap: 20px; }
+            .services-grid { grid-template-columns: 1fr; }
+            .team-grid { grid-template-columns: 1fr; }
+            .about-content { grid-template-columns: 1fr; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .campaign-banner-content { flex-direction: column; gap: 10px; }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header" id="header">
-        <div class="header-top">
-            <div class="container">
-                <div class="header-top-inner">
-                    <div class="header-contact">
-                        <a href="tel:+34915551234">📞 91 555 12 34</a>
-                        <a href="/cdn-cgi/l/email-protection#264f4840496656494b44494e495449514f525c084355">✉️ <span class="__cf_email__" data-cfemail="c3aaada5ac83b3acaea1acabacb1acb4aab7b9eda6b0">[email&#160;protected]</span></a>
-                    </div>
-                    <span>Más de 12.000 casos resueltos desde 1987</span>
-                </div>
-            </div>
+    <!-- Campaign Banner -->
+    <div class="campaign-banner">
+        <div class="campaign-banner-content">
+            <span class="campaign-badge">🔥 Campaña Especial</span>
+            <span class="campaign-text"><strong>Regularización 2026:</strong> Consulta si puedes obtener tus papeles antes del 30 de junio</span>
+            <a href="https://tuspapeles2026.es" class="campaign-cta" target="_blank">
+                Ir a tuspapeles2026.es →
+            </a>
         </div>
-        <div class="header-main">
-            <div class="container">
-                <div class="header-main-inner">
-                    <a href="/" class="logo">
-                        <span class="logo-name">Pombo & Horowitz</span>
-                        <span class="logo-tagline">Abogados · Desde 1987</span>
-                    </a>
-                    <button class="menu-toggle" onclick="toggleMenu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <nav class="nav" id="nav">
-                        <a href="#regularizacion">Regularización 2026</a>
-                        <a href="#servicios">Servicios</a>
-                        <a href="#articulos">Guías</a>
-                        <a href="#faq">FAQ</a>
-                        <a href="#contacto" class="nav-cta">Consulta Gratuita</a>
-                    </nav>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo">
+                    <span class="logo-name">Pombo & Horowitz</span>
+                    <span class="logo-tagline">Abogados · Desde 1988</span>
+                </a>
+                <nav class="nav">
+                    <a href="#servicios">Servicios</a>
+                    <a href="#equipo">Equipo</a>
+                    <a href="#historia">Historia</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+                <div class="header-contact">
+                    <div class="header-phone">+34 91 555 0123</div>
+                    <div class="header-email">info@pombohorowitz.es</div>
                 </div>
             </div>
         </div>
@@ -1135,213 +628,209 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">
-                    <span>⚡</span> Plazo abierto: abril - junio 2026
-                </div>
-                <h1>Regularización Extraordinaria 2026</h1>
-                <p class="hero-subtitle">
-                    ¿Llevas más de 5 meses viviendo en España sin papeles? 
-                    El Gobierno ha aprobado una regularización histórica. 
-                    <strong>Podemos ayudarte a conseguir tu permiso de residencia y trabajo.</strong>
-                </p>
-                <div class="hero-buttons">
-                    <a href="#eligibility" class="btn btn-primary">
-                        ¿Puedo regularizarme?
-                    </a>
-                    <a href="https://wa.me/34600000000?text=Hola,%20quiero%20información%20sobre%20la%20regularización%202026" class="btn btn-whatsapp" target="_blank">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        WhatsApp
-                    </a>
-                </div>
+                <div class="hero-label">Especialistas en Derecho de Extranjería</div>
+                <h1>Su situación migratoria merece la atención de expertos</h1>
+                <p>Desde 1988, Pombo & Horowitz Abogados ha ayudado a miles de familias a regularizar su situación en España. Conocemos el sistema, las leyes y los procedimientos como nadie.</p>
+                <a href="#contacto" class="btn">Solicitar Consulta</a>
             </div>
-        </div>
-    </section>
-
-    <!-- Countdown -->
-    <section class="countdown-section">
-        <div class="container">
-            <div class="countdown-label">Tiempo restante para presentar solicitudes</div>
-            <div class="countdown">
-                <div class="countdown-item">
-                    <div class="countdown-value" id="days">--</div>
-                    <div class="countdown-unit">Días</div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">12,800+</div>
+                    <div class="stat-label">Casos resueltos</div>
                 </div>
-                <div class="countdown-item">
-                    <div class="countdown-value" id="hours">--</div>
-                    <div class="countdown-unit">Horas</div>
+                <div class="stat">
+                    <div class="stat-number">35+</div>
+                    <div class="stat-label">Años de experiencia</div>
                 </div>
-                <div class="countdown-item">
-                    <div class="countdown-value" id="minutes">--</div>
-                    <div class="countdown-unit">Minutos</div>
-                </div>
-                <div class="countdown-item">
-                    <div class="countdown-value" id="seconds">--</div>
-                    <div class="countdown-unit">Segundos</div>
-                </div>
-            </div>
-            <p class="countdown-deadline">Fecha límite: <strong>30 de junio de 2026</strong></p>
-        </div>
-    </section>
-
-    <!-- Updates Banner -->
-    <div class="updates-banner" id="updates-banner">
-        <div class="container">
-            <div class="updates-banner-inner">
-                <span class="update-badge">Última hora</span>
-                <div class="updates-content" id="updates-content">
-                    <!-- Dynamic updates loaded here -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Eligibility Check -->
-    <section class="section eligibility" id="eligibility">
-        <div class="container">
-            <div class="section-header">
-                <span class="small-caps">Comprueba tu situación</span>
-                <h2>¿Puedo Regularizarme?</h2>
-                <p>Responde estas preguntas para saber si cumples los requisitos básicos.</p>
-            </div>
-            <div class="eligibility-card">
-                <div id="eligibility-step-1" class="eligibility-step">
-                    <p class="eligibility-question">¿Cuándo entraste a España?</p>
-                    <div class="eligibility-options">
-                        <div class="eligibility-option" onclick="selectOption(this, 'before')">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                            <div>Antes del 31 de diciembre de 2025</div>
-                        </div>
-                        <div class="eligibility-option" onclick="selectOption(this, 'after')">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
-                            <div>Después del 31 de diciembre de 2025</div>
-                        </div>
-                    </div>
-                </div>
-                <div id="eligibility-step-2" class="eligibility-step" style="display: none;">
-                    <p class="eligibility-question">¿Llevas al menos 5 meses viviendo en España?</p>
-                    <div class="eligibility-options">
-                        <div class="eligibility-option" onclick="selectResidence(this, 'yes')">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                            <div>Sí, más de 5 meses</div>
-                        </div>
-                        <div class="eligibility-option" onclick="selectResidence(this, 'no')">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
-                            <div>No, menos de 5 meses</div>
-                        </div>
-                    </div>
-                </div>
-                <div id="eligibility-result-success" class="eligibility-result success">
-                    <h4 style="color: #2E7D32;">✅ ¡Cumples los requisitos básicos!</h4>
-                    <p>Según tus respuestas, podrías acogerte a la regularización extraordinaria 2026. El siguiente paso es verificar tu documentación y preparar la solicitud.</p>
-                    <a href="#contacto" class="btn btn-primary" style="margin-top: 16px;">Solicitar Consulta Gratuita</a>
-                </div>
-                <div id="eligibility-result-fail-entry" class="eligibility-result warning">
-                    <h4 style="color: #E65100;">❌ No cumples el requisito de entrada</h4>
-                    <p>La regularización requiere haber entrado a España antes del 31 de diciembre de 2025. Lamentablemente, no podrías acogerte a este proceso específico. Podemos orientarte sobre otras opciones.</p>
-                    <a href="#contacto" class="btn btn-outline" style="margin-top: 16px;">Consultar Alternativas</a>
-                </div>
-                <div id="eligibility-result-fail-residence" class="eligibility-result warning">
-                    <h4 style="color: #E65100;">⚠️ Aún no cumples el requisito de estancia</h4>
-                    <p>Necesitas acreditar al menos 5 meses de estancia continuada en España. Si llegaste recientemente, espera a cumplir este requisito antes de abril de 2026.</p>
-                    <a href="#articulos" class="btn btn-outline" style="margin-top: 16px;">Leer Requisitos Completos</a>
+                <div class="stat">
+                    <div class="stat-number">97%</div>
+                    <div class="stat-label">Tasa de éxito</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services -->
-    <section class="section" id="servicios">
+    <section id="servicios" class="section">
         <div class="container">
             <div class="section-header">
-                <span class="small-caps">Nuestros servicios</span>
-                <h2>Cómo Te Ayudamos</h2>
-                <p>Acompañamiento legal completo en tu proceso de regularización.</p>
+                <div class="section-label">Nuestros Servicios</div>
+                <h2>Áreas de Práctica</h2>
+                <p>Ofrecemos asesoramiento integral en todas las áreas del derecho migratorio español.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-                    </div>
-                    <h4>Evaluación de Caso</h4>
-                    <p>Analizamos tu situación y documentación para determinar tu elegibilidad y las mejores opciones.</p>
+                    <div class="service-icon">📋</div>
+                    <h3>Permisos de Residencia</h3>
+                    <p>Tramitación de autorizaciones de residencia temporal y de larga duración. Arraigo social, laboral y familiar.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-                    </div>
-                    <h4>Preparación Documental</h4>
-                    <p>Te guiamos en la obtención y preparación de todos los documentos necesarios.</p>
+                    <div class="service-icon">🏛️</div>
+                    <h3>Nacionalidad Española</h3>
+                    <p>Solicitud y seguimiento de expedientes de nacionalidad por residencia, origen y carta de naturaleza.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    </div>
-                    <h4>Presentación de Solicitud</h4>
-                    <p>Redactamos y presentamos tu solicitud cumpliendo todos los requisitos legales.</p>
+                    <div class="service-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Reagrupación Familiar</h3>
+                    <p>Reunificación de cónyuges, hijos y ascendientes. Asesoramiento completo del proceso.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    </div>
-                    <h4>Seguimiento Completo</h4>
-                    <p>Monitorizamos tu expediente y gestionamos cualquier requerimiento adicional.</p>
+                    <div class="service-icon">💼</div>
+                    <h3>Visados de Trabajo</h3>
+                    <p>Autorizaciones de trabajo por cuenta ajena y propia. Visados de emprendedor e inversor.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>Visados de Estudiante</h3>
+                    <p>Permisos de estancia por estudios y su modificación a residencia y trabajo.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚖️</div>
+                    <h3>Recursos y Litigios</h3>
+                    <p>Defensa ante denegaciones, órdenes de expulsión y recursos contencioso-administrativos.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Articles -->
-    <section class="section articles" id="articulos">
+    <!-- Team -->
+    <section id="equipo" class="section section-light">
         <div class="container">
             <div class="section-header">
-                <span class="small-caps">Guías y Recursos</span>
-                <h2>Todo Sobre la Regularización</h2>
-                <p>Información actualizada para preparar tu solicitud con éxito.</p>
+                <div class="section-label">Nuestro Equipo</div>
+                <h2>Profesionales a su Servicio</h2>
+                <p>Un equipo multidisciplinar con amplia experiencia en derecho de extranjería.</p>
             </div>
-            <div class="articles-grid" id="articles-grid">
-                <div class="loading">
-                    <div class="loading-spinner"></div>
-                    <p>Cargando artículos...</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-photo">EP</div>
+                    <h3 class="team-name">Dra. Elena Pombo</h3>
+                    <div class="team-role">Socia Fundadora</div>
+                    <p class="team-bio">Doctora en Derecho por la UCM. Especialista en nacionalidad española y derechos fundamentales de extranjeros. Más de 30 años de ejercicio.</p>
                 </div>
-            </div>
-            <div class="articles-more">
-                <a href="blog.html" class="btn btn-outline">Ver Todas las Publicaciones →</a>
+                <div class="team-member">
+                    <div class="team-photo">DH</div>
+                    <h3 class="team-name">Lic. David Horowitz</h3>
+                    <div class="team-role">Socio Fundador</div>
+                    <p class="team-bio">Licenciado en Derecho por la UAM. Experto en procedimientos de extranjería y litigación ante la Audiencia Nacional. Miembro del ICAM.</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-photo">CM</div>
+                    <h3 class="team-name">Lic. Carmen Martínez</h3>
+                    <div class="team-role">Asociada Senior</div>
+                    <p class="team-bio">Especialista en arraigos y regularizaciones extraordinarias. 15 años de experiencia en derecho migratorio. Habla español, inglés y francés.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="section faq" id="faq">
+    <!-- About / History -->
+    <section id="historia" class="section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-label">Nuestra Historia</div>
+                    <h2>Más de tres décadas defendiendo tus derechos</h2>
+                    <p>Pombo & Horowitz nació en 1988, en un momento en que España comenzaba a recibir flujos migratorios significativos. Desde entonces, hemos sido testigos y partícipes de todas las reformas legislativas en materia de extranjería.</p>
+                    <p>Nuestra experiencia incluye las regularizaciones extraordinarias de 1991, 1996, 2000, 2001 y 2005. Hoy, con la nueva regularización de 2026, ponemos todo nuestro conocimiento al servicio de quienes buscan regularizar su situación.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">1988</div>
+                        <div class="timeline-text">Fundación del despacho en Madrid por Elena Pombo y David Horowitz.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">1996</div>
+                        <div class="timeline-text">Participación activa en el proceso de regularización extraordinaria.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2005</div>
+                        <div class="timeline-text">Más de 3,000 casos gestionados en la última gran regularización.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2015</div>
+                        <div class="timeline-text">Expansión del equipo y apertura de oficina en Barcelona.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2026</div>
+                        <div class="timeline-text">Lanzamiento de tuspapeles2026.es para la nueva regularización extraordinaria.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contacto" class="section section-light">
         <div class="container">
             <div class="section-header">
-                <span class="small-caps">Preguntas frecuentes</span>
-                <h2>Resolvemos tus Dudas</h2>
-                <p>Las respuestas a las preguntas más comunes sobre la regularización 2026.</p>
+                <div class="section-label">Contacto</div>
+                <h2>Hablemos de su Caso</h2>
+                <p>Primera consulta sin compromiso. Evaluamos su situación y le indicamos las opciones disponibles.</p>
             </div>
-            <div class="faq-grid" id="faq-grid">
-                <div class="loading">
-                    <div class="loading-spinner"></div>
-                    <p>Cargando preguntas...</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <div class="contact-label">Dirección</div>
+                            <div class="contact-value">Calle Serrano 45, 3º Izq.<br>28001 Madrid</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <div class="contact-label">Teléfono</div>
+                            <div class="contact-value">+34 91 555 0123</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <div class="contact-label">Email</div>
+                            <div class="contact-value">info@pombohorowitz.es</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <div class="contact-label">Horario</div>
+                            <div class="contact-value">Lun - Vie: 9:00 - 19:00</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta" id="contacto">
-        <div class="container">
-            <h2>Consulta Gratuita</h2>
-            <p>
-                Evaluamos tu caso sin compromiso y te explicamos tus opciones. 
-                No esperes al último momento.
-            </p>
-            <div class="cta-buttons">
-                <a href="tel:+34915551234" class="btn btn-white">📞 Llamar: 91 555 12 34</a>
-                <a href="https://wa.me/34600000000" class="btn btn-whatsapp" target="_blank">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                    WhatsApp
-                </a>
-                <a href="/cdn-cgi/l/email-protection#5a33343c351a2a35373835323528352d332e20743f29" class="btn btn-outline-white">✉️ Email</a>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label>Nombre completo</label>
+                            <input type="text" placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label>Teléfono</label>
+                            <input type="tel" placeholder="+34 600 000 000">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Tipo de consulta</label>
+                            <select>
+                                <option>Regularización 2026</option>
+                                <option>Permiso de residencia</option>
+                                <option>Nacionalidad española</option>
+                                <option>Reagrupación familiar</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Mensaje</label>
+                            <textarea rows="4" placeholder="Cuéntenos brevemente su situación..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-full">Enviar Consulta</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -1350,311 +839,41 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="/" class="logo">
-                        <span class="logo-name" style="color: white;">Pombo & Horowitz</span>
-                        <span class="logo-tagline" style="color: rgba(255,255,255,0.5);">Abogados · Desde 1987</span>
-                    </a>
-                    <p>
-                        Despacho especializado en derecho de extranjería, inmigración y nacionalidad. 
-                        Más de tres décadas ayudando a construir vidas en España.
-                    </p>
+                <div>
+                    <h4>Pombo & Horowitz Abogados</h4>
+                    <p>Despacho especializado en derecho de extranjería con más de 35 años de experiencia. Miembros del Ilustre Colegio de Abogados de Madrid.</p>
                 </div>
-                <div class="footer-column">
+                <div>
                     <h4>Servicios</h4>
-                    <ul>
-                        <li><a href="#regularizacion">Regularización 2026</a></li>
-                        <li><a href="#">Permisos de Residencia</a></li>
-                        <li><a href="#">Visados de Trabajo</a></li>
-                        <li><a href="#">Nacionalidad Española</a></li>
+                    <ul class="footer-links">
+                        <li><a href="#">Permisos de residencia</a></li>
+                        <li><a href="#">Nacionalidad española</a></li>
+                        <li><a href="#">Reagrupación familiar</a></li>
+                        <li><a href="#">Visados de trabajo</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Recursos</h4>
-                    <ul>
-                        <li><a href="#articulos">Guías</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                <div>
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Cookies</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Contacto</h4>
-                    <div class="footer-contact-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                        <span>Calle Serrano 55, 4º<br>28006 Madrid</span>
-                    </div>
-                    <div class="footer-contact-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        <span>+34 91 555 12 34</span>
-                    </div>
-                    <div class="footer-contact-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                        <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7910171f16390916141b1611160b160e100d03571c0a">[email&#160;protected]</a></span>
-                    </div>
+                <div>
+                    <h4>Campaña Especial</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://tuspapeles2026.es" target="_blank">🔥 tuspapeles2026.es</a></li>
+                        <li><a href="https://tuspapeles2026.es" target="_blank">Regularización 2026</a></li>
+                        <li><a href="https://tuspapeles2026.es" target="_blank">Consulta gratuita</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <span>© 2026 Pombo & Horowitz Abogados. Todos los derechos reservados.</span>
-                <div class="footer-legal">
-                    <a href="#">Aviso Legal</a>
-                    <a href="#">Privacidad</a>
-                    <a href="#">Cookies</a>
-                </div>
+                <div>© 2026 Pombo & Horowitz Abogados. Todos los derechos reservados.</div>
+                <div>ICAM Colegiados nº 12345 y 12346</div>
             </div>
         </div>
     </footer>
-
-    <!-- Article Modal -->
-    <div class="modal" id="article-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button class="modal-close" onclick="closeModal()">&times;</button>
-                <span class="modal-category" id="modal-category"></span>
-                <h2 class="modal-title" id="modal-title"></h2>
-                <div class="modal-meta">
-                    <span id="modal-date"></span>
-                    <span id="modal-author"></span>
-                    <span id="modal-read-time"></span>
-                </div>
-            </div>
-            <div class="modal-body" id="modal-body"></div>
-            <div class="modal-cta">
-                <p>¿Tienes dudas sobre tu caso particular?</p>
-                <a href="#contacto" class="btn btn-primary" onclick="closeModal()">Consulta Gratuita</a>
-            </div>
-        </div>
-    </div>
-
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-        // Content data - loaded from content.json
-        let contentData = null;
-
-        // Load content from JSON
-        async function loadContent() {
-            try {
-                const response = await fetch('content.json');
-                contentData = await response.json();
-                renderArticles();
-                renderFAQs();
-                renderUpdates();
-                updateCountdownFromData();
-            } catch (error) {
-                console.error('Error loading content:', error);
-                // Fallback: show error message
-                document.getElementById('articles-grid').innerHTML = '<p>Error cargando artículos. Por favor, recarga la página.</p>';
-                document.getElementById('faq-grid').innerHTML = '<p>Error cargando preguntas. Por favor, recarga la página.</p>';
-            }
-        }
-
-        // Render articles
-        function renderArticles() {
-            const grid = document.getElementById('articles-grid');
-            if (!contentData || !contentData.articles) return;
-
-            // Show only first 3 articles on homepage
-            const articles = contentData.articles.slice(0, 3);
-            
-            grid.innerHTML = articles.map(article => `
-                <article class="article-card">
-                    <div class="article-card-image">
-                        <span class="article-category">${formatCategory(article.category)}</span>
-                    </div>
-                    <div class="article-card-content">
-                        <div class="article-meta">
-                            <span>${formatDate(article.date)}</span>
-                            <span>${article.readTime}</span>
-                        </div>
-                        <h4><a href="#" onclick="openArticle('${article.id}'); return false;">${article.title}</a></h4>
-                        <p class="article-excerpt">${article.excerpt}</p>
-                        <a href="#" class="article-read-more" onclick="openArticle('${article.id}'); return false;">
-                            Leer más →
-                        </a>
-                    </div>
-                </article>
-            `).join('');
-        }
-
-        // Render FAQs
-        function renderFAQs() {
-            const grid = document.getElementById('faq-grid');
-            if (!contentData || !contentData.faqs) return;
-
-            // Show first 6 FAQs on homepage
-            const faqs = contentData.faqs.slice(0, 6);
-
-            grid.innerHTML = faqs.map((faq, index) => `
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>${faq.question}</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">${faq.answer}</div>
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        // Render updates banner
-        function renderUpdates() {
-            const container = document.getElementById('updates-content');
-            if (!contentData || !contentData.updates) return;
-
-            const updates = contentData.updates;
-            // Duplicate for seamless scroll
-            const html = updates.map(u => `
-                <div class="update-item">
-                    <span class="update-date">${formatDate(u.date)}</span>
-                    <strong>${u.title}:</strong> ${u.message}
-                </div>
-            `).join('');
-
-            container.innerHTML = html + html; // Duplicate for infinite scroll
-        }
-
-        // Update countdown from data
-        function updateCountdownFromData() {
-            if (contentData && contentData.countdown) {
-                // Countdown is already set to June 30, 2026
-            }
-        }
-
-        // Format date
-        function formatDate(dateStr) {
-            const date = new Date(dateStr);
-            const options = { day: 'numeric', month: 'long', year: 'numeric' };
-            return date.toLocaleDateString('es-ES', options);
-        }
-
-        // Format category
-        function formatCategory(cat) {
-            const categories = {
-                'regularizacion': 'Regularización',
-                'documentacion': 'Documentación',
-                'consejos': 'Consejos',
-                'noticias': 'Noticias'
-            };
-            return categories[cat] || cat;
-        }
-
-        // Toggle FAQ
-        function toggleFAQ(button) {
-            const item = button.parentElement;
-            const isActive = item.classList.contains('active');
-            
-            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
-            
-            if (!isActive) {
-                item.classList.add('active');
-            }
-        }
-
-        // Open article modal
-        function openArticle(id) {
-            const article = contentData.articles.find(a => a.id === id);
-            if (!article) return;
-
-            document.getElementById('modal-category').textContent = formatCategory(article.category);
-            document.getElementById('modal-title').textContent = article.title;
-            document.getElementById('modal-date').textContent = formatDate(article.date);
-            document.getElementById('modal-author').textContent = article.author;
-            document.getElementById('modal-read-time').textContent = article.readTime;
-            document.getElementById('modal-body').innerHTML = article.content;
-
-            document.getElementById('article-modal').classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-
-        // Close modal
-        function closeModal() {
-            document.getElementById('article-modal').classList.remove('active');
-            document.body.style.overflow = '';
-        }
-
-        // Close modal on outside click
-        document.getElementById('article-modal').addEventListener('click', function(e) {
-            if (e.target === this) closeModal();
-        });
-
-        // Close modal on escape
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') closeModal();
-        });
-
-        // Countdown timer
-        function updateCountdown() {
-            const deadline = new Date('2026-06-30T23:59:59+02:00').getTime();
-            const now = new Date().getTime();
-            const distance = deadline - now;
-
-            if (distance > 0) {
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                document.getElementById('days').textContent = days;
-                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-            }
-        }
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
-
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('header');
-            if (window.scrollY > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Mobile menu toggle
-        function toggleMenu() {
-            document.getElementById('nav').classList.toggle('active');
-        }
-
-        // Eligibility checker
-        function selectOption(el, value) {
-            document.querySelectorAll('#eligibility-step-1 .eligibility-option').forEach(o => o.classList.remove('selected'));
-            el.classList.add('selected');
-
-            if (value === 'after') {
-                document.getElementById('eligibility-step-1').style.display = 'none';
-                document.getElementById('eligibility-result-fail-entry').classList.add('show');
-            } else {
-                document.getElementById('eligibility-step-1').style.display = 'none';
-                document.getElementById('eligibility-step-2').style.display = 'block';
-            }
-        }
-
-        function selectResidence(el, value) {
-            document.querySelectorAll('#eligibility-step-2 .eligibility-option').forEach(o => o.classList.remove('selected'));
-            el.classList.add('selected');
-
-            document.getElementById('eligibility-step-2').style.display = 'none';
-            
-            if (value === 'yes') {
-                document.getElementById('eligibility-result-success').classList.add('show');
-            } else {
-                document.getElementById('eligibility-result-fail-residence').classList.add('show');
-            }
-        }
-
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href === '#') return;
-                
-                e.preventDefault();
-                const target = document.querySelector(href);
-                if (target) {
-                    const headerHeight = document.querySelector('.header').offsetHeight;
-                    const targetPosition = target.offsetTop - headerHeight - 20;
-                    window.scrollTo({
-                        top:
+</body>
+</html>
