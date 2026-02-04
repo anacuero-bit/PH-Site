@@ -4,56 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pombo & Horowitz Abogados | Derecho de Extranjería en Madrid desde 1988</title>
-    <meta name="description" content="Despacho de abogados especializado en extranjería, nacionalidad española e inmigración. Más de 35 años de experiencia en Madrid.">
+    <meta name="description" content="Despacho de abogados especializado en extranjería y nacionalidad española. Más de 35 años de experiencia. Regularización 2026.">
     
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --navy: #0F1C2E;
-            --navy-light: #1A2D47;
-            --burgundy: #722F37;
-            --burgundy-dark: #5A252C;
-            --gold: #B8860B;
-            --gold-light: #D4A843;
-            --cream: #FAF8F5;
-            --text: #2C2C2C;
-            --text-light: #5A5A5A;
-            --border: #E5E2DD;
-            --white: #FFFFFF;
-            --campaign-orange: #E85D04;
-            --campaign-orange-dark: #D35400;
+            --primary: #1a365d;
+            --primary-light: #2c5282;
+            --accent: #c53030;
+            --accent-light: #e53e3e;
+            --gold: #d69e2e;
+            --gold-light: #ecc94b;
+            --text: #1a202c;
+            --text-light: #4a5568;
+            --bg: #ffffff;
+            --bg-alt: #f7fafc;
+            --border: #e2e8f0;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        html { scroll-behavior: smooth; }
-        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Source Sans 3', sans-serif;
+            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
             color: var(--text);
-            line-height: 1.7;
-            background: var(--white);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
+            line-height: 1.6;
+            background: var(--bg);
         }
 
         h1, h2, h3, h4 {
-            font-family: 'Cormorant Garamond', serif;
+            font-family: 'Playfair Display', Georgia, serif;
             font-weight: 600;
-            color: var(--navy);
-            line-height: 1.3;
+            line-height: 1.2;
         }
 
-        /* Campaign Banner */
+        /* ============================================
+           CAMPAIGN BANNER
+           ============================================ */
         .campaign-banner {
-            background: linear-gradient(135deg, var(--campaign-orange) 0%, var(--campaign-orange-dark) 100%);
+            background: linear-gradient(135deg, var(--accent) 0%, #9b2c2c 100%);
             color: white;
             padding: 12px 20px;
             text-align: center;
@@ -68,16 +64,17 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
             opacity: 0.5;
         }
 
         .campaign-banner-content {
             position: relative;
+            z-index: 1;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
             flex-wrap: wrap;
         }
 
@@ -85,231 +82,418 @@
             background: rgba(255,255,255,0.2);
             padding: 4px 12px;
             border-radius: 20px;
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
         }
 
         .campaign-text {
-            font-size: 1rem;
-            font-weight: 500;
+            font-size: 0.95rem;
         }
 
         .campaign-text strong {
             font-weight: 700;
         }
 
-        .campaign-cta {
-            background: white;
-            color: var(--campaign-orange);
-            padding: 8px 20px;
-            border-radius: 25px;
+        .campaign-link {
+            color: white;
+            background: rgba(255,255,255,0.2);
+            padding: 6px 16px;
+            border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
-            transition: all 0.3s;
-            display: inline-flex;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .campaign-link:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateX(3px);
+        }
+
+        /* ============================================
+           NEWS TICKER
+           ============================================ */
+        .news-ticker {
+            background: var(--primary);
+            color: white;
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+            height: 44px;
+            display: flex;
+            align-items: center;
+        }
+
+        .ticker-label {
+            background: var(--gold);
+            color: var(--primary);
+            padding: 12px 20px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            white-space: nowrap;
+            z-index: 2;
+            display: flex;
             align-items: center;
             gap: 8px;
+            height: 100%;
         }
 
-        .campaign-cta:hover {
-            background: var(--navy);
-            color: white;
-            transform: scale(1.05);
+        .ticker-label::after {
+            content: '';
+            position: absolute;
+            left: 100%;
+            top: 0;
+            border-left: 12px solid var(--gold);
+            border-top: 22px solid transparent;
+            border-bottom: 22px solid transparent;
         }
 
-        /* Header */
-        .header {
-            background: var(--white);
-            border-bottom: 1px solid var(--border);
-            padding: 20px 0;
+        .ticker-label-wrapper {
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .ticker-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        .ticker-content {
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .ticker-track {
+            display: flex;
+            animation: scroll 30s linear infinite;
+            white-space: nowrap;
+        }
+
+        .ticker-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .ticker-item {
+            display: inline-flex;
+            align-items: center;
+            padding: 0 40px;
+            font-size: 0.9rem;
+            gap: 12px;
+        }
+
+        .ticker-item-date {
+            background: rgba(255,255,255,0.15);
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .ticker-item-title {
+            font-weight: 600;
+            color: var(--gold-light);
+        }
+
+        .ticker-item-message {
+            color: rgba(255,255,255,0.9);
+        }
+
+        .ticker-item-separator {
+            color: var(--gold);
+            font-size: 1.2rem;
+        }
+
+        .ticker-item.urgente .ticker-item-title {
+            color: var(--accent-light);
+        }
+
+        .ticker-item.urgente .ticker-item-date {
+            background: var(--accent);
+        }
+
+        /* Fallback when no updates */
+        .ticker-empty {
+            padding: 0 20px;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.8);
+        }
+
+        /* ============================================
+           HEADER
+           ============================================ */
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             position: sticky;
             top: 0;
             z-index: 100;
         }
 
-        .header-inner {
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
         }
 
         .logo {
+            display: flex;
+            flex-direction: column;
             text-decoration: none;
+            color: var(--primary);
         }
 
-        .logo-name {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.75rem;
-            font-weight: 600;
-            color: var(--navy);
-            display: block;
+        .logo-main {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
         }
 
-        .logo-tagline {
-            font-size: 0.7rem;
+        .logo-sub {
+            font-size: 0.75rem;
             color: var(--text-light);
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             text-transform: uppercase;
         }
 
-        .nav {
+        nav {
             display: flex;
-            gap: 35px;
+            align-items: center;
+            gap: 30px;
         }
 
-        .nav a {
+        nav a {
             color: var(--text);
             text-decoration: none;
-            font-size: 0.95rem;
             font-weight: 500;
-            transition: color 0.2s;
+            font-size: 0.95rem;
+            transition: color 0.3s;
         }
 
-        .nav a:hover {
-            color: var(--burgundy);
+        nav a:hover {
+            color: var(--primary);
         }
 
         .header-contact {
-            text-align: right;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            font-size: 0.85rem;
         }
 
         .header-phone {
+            font-weight: 700;
+            color: var(--primary);
             font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--navy);
         }
 
         .header-email {
-            font-size: 0.85rem;
             color: var(--text-light);
         }
 
-        /* Hero */
+        /* Mobile menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+
+        @media (max-width: 900px) {
+            nav { display: none; }
+            .header-contact { display: none; }
+            .mobile-menu-btn { display: block; }
+        }
+
+        /* ============================================
+           HERO
+           ============================================ */
         .hero {
-            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
             color: white;
-            padding: 100px 0;
+            padding: 80px 20px;
             position: relative;
+            overflow: hidden;
         }
 
-        .hero-content {
-            max-width: 700px;
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
         }
 
-        .hero-label {
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: var(--gold-light);
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
             margin-bottom: 20px;
+            backdrop-filter: blur(10px);
         }
 
         .hero h1 {
-            color: white;
-            font-size: 3rem;
-            margin-bottom: 25px;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            max-width: 700px;
+            margin-bottom: 20px;
         }
 
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
+            max-width: 600px;
             opacity: 0.9;
-            margin-bottom: 35px;
-            line-height: 1.8;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--primary);
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .hero-btn:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
 
         .hero-stats {
             display: flex;
             gap: 50px;
             margin-top: 50px;
-            padding-top: 40px;
-            border-top: 1px solid rgba(255,255,255,0.2);
+            flex-wrap: wrap;
         }
 
-        .stat-number {
-            font-family: 'Cormorant Garamond', serif;
+        .hero-stat {
+            text-align: left;
+        }
+
+        .hero-stat-number {
+            font-family: 'Playfair Display', serif;
             font-size: 2.5rem;
             font-weight: 700;
-            color: var(--gold-light);
+            color: var(--gold);
         }
 
-        .stat-label {
-            font-size: 0.85rem;
+        .hero-stat-label {
+            font-size: 0.9rem;
             opacity: 0.8;
         }
 
-        /* Section Styles */
-        .section {
-            padding: 100px 0;
+        /* ============================================
+           SECTIONS
+           ============================================ */
+        section {
+            padding: 80px 20px;
         }
 
-        .section-light {
-            background: var(--cream);
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .section-header {
             text-align: center;
-            max-width: 700px;
-            margin: 0 auto 60px;
+            margin-bottom: 50px;
         }
 
-        .section-label {
-            font-size: 0.75rem;
+        .section-badge {
+            display: inline-block;
+            color: var(--primary);
+            font-size: 0.85rem;
             font-weight: 600;
-            letter-spacing: 3px;
             text-transform: uppercase;
-            color: var(--gold);
+            letter-spacing: 2px;
             margin-bottom: 15px;
         }
 
         .section-header h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            color: var(--primary);
         }
 
-        .section-header p {
-            color: var(--text-light);
-            font-size: 1.1rem;
-        }
-
-        /* Services Grid */
+        /* Services */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
         }
 
         .service-card {
             background: white;
-            padding: 40px 30px;
-            border-radius: 8px;
             border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 35px;
             transition: all 0.3s;
         }
 
         .service-card:hover {
-            box-shadow: 0 15px 40px rgba(15,28,46,0.1);
+            border-color: var(--primary);
+            box-shadow: 0 15px 40px rgba(26,54,93,0.1);
             transform: translateY(-5px);
         }
 
         .service-icon {
-            width: 50px;
-            height: 50px;
-            background: var(--cream);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            margin-bottom: 25px;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
         }
 
         .service-card h3 {
-            font-size: 1.35rem;
-            margin-bottom: 15px;
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 12px;
         }
 
         .service-card p {
@@ -318,40 +502,67 @@
         }
 
         /* Team */
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
+        #equipo {
+            background: var(--bg-alt);
         }
 
-        .team-member {
-            text-align: center;
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .team-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
         }
 
         .team-photo {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--navy) 0%, var(--burgundy) 100%);
-            margin: 0 auto 25px;
+            height: 120px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 3rem;
-            color: white;
-            font-family: 'Cormorant Garamond', serif;
         }
 
-        .team-name {
-            font-size: 1.35rem;
+        .team-initials {
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        .team-info {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .team-info h3 {
+            font-size: 1.2rem;
+            color: var(--primary);
             margin-bottom: 5px;
         }
 
         .team-role {
-            color: var(--burgundy);
-            font-size: 0.9rem;
+            color: var(--gold);
             font-weight: 600;
-            margin-bottom: 10px;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
         }
 
         .team-bio {
@@ -359,23 +570,25 @@
             font-size: 0.9rem;
         }
 
-        /* About / History */
-        .about-content {
+        /* History */
+        .history-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 80px;
-            align-items: center;
+            gap: 60px;
+            align-items: start;
         }
 
-        .about-text h2 {
-            font-size: 2.5rem;
-            margin-bottom: 25px;
+        @media (max-width: 768px) {
+            .history-content {
+                grid-template-columns: 1fr;
+            }
         }
 
-        .about-text p {
+        .history-text p {
             color: var(--text-light);
-            margin-bottom: 20px;
             font-size: 1.05rem;
+            margin-bottom: 20px;
+            line-height: 1.8;
         }
 
         .timeline {
@@ -389,8 +602,9 @@
             left: 0;
             top: 0;
             bottom: 0;
-            width: 2px;
-            background: var(--gold);
+            width: 3px;
+            background: linear-gradient(to bottom, var(--primary), var(--gold));
+            border-radius: 3px;
         }
 
         .timeline-item {
@@ -403,16 +617,20 @@
             position: absolute;
             left: -34px;
             top: 5px;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
+            width: 12px;
+            height: 12px;
             background: var(--gold);
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px var(--primary);
         }
 
         .timeline-year {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
             font-weight: 700;
-            color: var(--burgundy);
-            font-size: 0.9rem;
+            color: var(--primary);
+            margin-bottom: 8px;
         }
 
         .timeline-text {
@@ -421,51 +639,68 @@
         }
 
         /* Contact */
+        #contacto {
+            background: var(--primary);
+            color: white;
+        }
+
+        #contacto .section-badge {
+            color: var(--gold);
+        }
+
+        #contacto .section-header h2 {
+            color: white;
+        }
+
         .contact-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1.5fr;
             gap: 60px;
         }
 
-        .contact-info h3 {
-            font-size: 1.5rem;
+        @media (max-width: 900px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact-info-item {
+            display: flex;
+            gap: 15px;
             margin-bottom: 25px;
         }
 
-        .contact-item {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-
         .contact-icon {
-            width: 45px;
-            height: 45px;
-            background: var(--cream);
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.1);
             border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             flex-shrink: 0;
         }
 
-        .contact-label {
-            font-size: 0.8rem;
-            color: var(--text-light);
+        .contact-info-item h4 {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
+            opacity: 0.7;
+            margin-bottom: 5px;
         }
 
-        .contact-value {
-            font-weight: 600;
-            color: var(--navy);
+        .contact-info-item p {
+            font-size: 1.05rem;
         }
 
         .contact-form {
-            background: var(--cream);
+            background: rgba(255,255,255,0.05);
             padding: 40px;
-            border-radius: 8px;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
         }
 
         .form-group {
@@ -474,96 +709,142 @@
 
         .form-group label {
             display: block;
-            font-size: 0.85rem;
-            font-weight: 600;
+            font-size: 0.9rem;
             margin-bottom: 8px;
-            color: var(--navy);
+            font-weight: 500;
         }
 
         .form-group input,
-        .form-group textarea,
-        .form-group select {
+        .form-group select,
+        .form-group textarea {
             width: 100%;
-            padding: 12px 15px;
-            border: 1px solid var(--border);
-            border-radius: 6px;
+            padding: 14px 18px;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            background: rgba(255,255,255,0.05);
+            color: white;
             font-size: 1rem;
             font-family: inherit;
-            transition: border-color 0.2s;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: var(--burgundy);
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 14px 35px;
-            background: var(--burgundy);
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 6px;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
             transition: all 0.3s;
         }
 
-        .btn:hover {
-            background: var(--burgundy-dark);
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255,255,255,0.5);
         }
 
-        .btn-full {
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            background: rgba(255,255,255,0.1);
+        }
+
+        .form-group select option {
+            background: var(--primary);
+            color: white;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .form-submit {
+            background: var(--gold);
+            color: var(--primary);
+            border: none;
+            padding: 16px 40px;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
             width: 100%;
         }
 
+        .form-submit:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+        }
+
         /* Footer */
-        .footer {
-            background: var(--navy);
+        footer {
+            background: #0f1f36;
             color: white;
-            padding: 60px 0 30px;
+            padding: 60px 20px 30px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .footer-grid {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 50px;
-            margin-bottom: 50px;
+            gap: 40px;
+            margin-bottom: 40px;
         }
 
-        .footer h4 {
-            color: white;
-            font-size: 1.1rem;
-            margin-bottom: 20px;
+        @media (max-width: 900px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
         }
 
-        .footer p {
-            opacity: 0.7;
+        @media (max-width: 600px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .footer-brand h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .footer-brand p {
+            color: rgba(255,255,255,0.7);
             font-size: 0.9rem;
-            line-height: 1.8;
+            line-height: 1.7;
         }
 
-        .footer-links {
+        .footer-section h4 {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            color: var(--gold);
+        }
+
+        .footer-section ul {
             list-style: none;
         }
 
-        .footer-links li {
-            margin-bottom: 10px;
+        .footer-section li {
+            margin-bottom: 12px;
         }
 
-        .footer-links a {
+        .footer-section a {
             color: rgba(255,255,255,0.7);
             text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.2s;
+            font-size: 0.95rem;
+            transition: color 0.3s;
         }
 
-        .footer-links a:hover {
-            color: var(--gold-light);
+        .footer-section a:hover {
+            color: white;
         }
 
         .footer-bottom {
@@ -571,93 +852,97 @@
             padding-top: 30px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
             font-size: 0.85rem;
-            opacity: 0.6;
-        }
-
-        /* Mobile */
-        @media (max-width: 768px) {
-            .nav { display: none; }
-            .header-contact { display: none; }
-            .hero h1 { font-size: 2rem; }
-            .hero-stats { flex-direction: column; gap: 20px; }
-            .services-grid { grid-template-columns: 1fr; }
-            .team-grid { grid-template-columns: 1fr; }
-            .about-content { grid-template-columns: 1fr; }
-            .contact-grid { grid-template-columns: 1fr; }
-            .footer-grid { grid-template-columns: 1fr; }
-            .campaign-banner-content { flex-direction: column; gap: 10px; }
+            color: rgba(255,255,255,0.5);
         }
     </style>
 </head>
 <body>
+
     <!-- Campaign Banner -->
     <div class="campaign-banner">
         <div class="campaign-banner-content">
             <span class="campaign-badge">🔥 Campaña Especial</span>
             <span class="campaign-text"><strong>Regularización 2026:</strong> Consulta si puedes obtener tus papeles antes del 30 de junio</span>
-            <a href="https://tuspapeles2026.es" class="campaign-cta" target="_blank">
-                Ir a tuspapeles2026.es →
-            </a>
+            <a href="https://tuspapeles2026.es" class="campaign-link">Ir a tuspapeles2026.es →</a>
+        </div>
+    </div>
+
+    <!-- NEWS TICKER -->
+    <div class="news-ticker" id="newsTicker">
+        <div class="ticker-label-wrapper">
+            <div class="ticker-label">
+                <span class="ticker-dot"></span>
+                Noticias
+            </div>
+        </div>
+        <div class="ticker-content">
+            <div class="ticker-track" id="tickerTrack">
+                <span class="ticker-empty">Cargando noticias...</span>
+            </div>
         </div>
     </div>
 
     <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-inner">
-                <a href="#" class="logo">
-                    <span class="logo-name">Pombo & Horowitz</span>
-                    <span class="logo-tagline">Abogados · Desde 1988</span>
-                </a>
-                <nav class="nav">
-                    <a href="#servicios">Servicios</a>
-                    <a href="#equipo">Equipo</a>
-                    <a href="#historia">Historia</a>
-                    <a href="#contacto">Contacto</a>
-                </nav>
-                <div class="header-contact">
-                    <div class="header-phone">+34 91 555 0123</div>
-                    <div class="header-email">info@pombohorowitz.es</div>
-                </div>
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-main">Pombo & Horowitz</span>
+                <span class="logo-sub">Abogados · Desde 1988</span>
+            </a>
+            
+            <nav>
+                <a href="#servicios">Servicios</a>
+                <a href="#equipo">Equipo</a>
+                <a href="#historia">Historia</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            
+            <div class="header-contact">
+                <span class="header-phone">+34 91 555 0123</span>
+                <span class="header-email">info@pombohorowitz.es</span>
             </div>
+            
+            <button class="mobile-menu-btn">☰</button>
         </div>
     </header>
 
     <!-- Hero -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-label">Especialistas en Derecho de Extranjería</div>
-                <h1>Su situación migratoria merece la atención de expertos</h1>
-                <p>Desde 1988, Pombo & Horowitz Abogados ha ayudado a miles de familias a regularizar su situación en España. Conocemos el sistema, las leyes y los procedimientos como nadie.</p>
-                <a href="#contacto" class="btn">Solicitar Consulta</a>
-            </div>
+        <div class="hero-container">
+            <span class="hero-badge">Especialistas en Derecho de Extranjería</span>
+            <h1>Su situación migratoria merece la atención de expertos</h1>
+            <p>Desde 1988, Pombo & Horowitz Abogados ha ayudado a miles de familias a regularizar su situación en España. Conocemos el sistema, las leyes y los procedimientos como nadie.</p>
+            <a href="#contacto" class="hero-btn">Solicitar Consulta</a>
+            
             <div class="hero-stats">
-                <div class="stat">
-                    <div class="stat-number">12,800+</div>
-                    <div class="stat-label">Casos resueltos</div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">12,800+</div>
+                    <div class="hero-stat-label">Casos resueltos</div>
                 </div>
-                <div class="stat">
-                    <div class="stat-number">35+</div>
-                    <div class="stat-label">Años de experiencia</div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">35+</div>
+                    <div class="hero-stat-label">Años de experiencia</div>
                 </div>
-                <div class="stat">
-                    <div class="stat-number">97%</div>
-                    <div class="stat-label">Tasa de éxito</div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">97%</div>
+                    <div class="hero-stat-label">Tasa de éxito</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services -->
-    <section id="servicios" class="section">
-        <div class="container">
+    <section id="servicios">
+        <div class="section-container">
             <div class="section-header">
-                <div class="section-label">Nuestros Servicios</div>
+                <span class="section-badge">Nuestros Servicios</span>
                 <h2>Áreas de Práctica</h2>
-                <p>Ofrecemos asesoramiento integral en todas las áreas del derecho migratorio español.</p>
             </div>
+            
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">📋</div>
@@ -694,46 +979,62 @@
     </section>
 
     <!-- Team -->
-    <section id="equipo" class="section section-light">
-        <div class="container">
+    <section id="equipo">
+        <div class="section-container">
             <div class="section-header">
-                <div class="section-label">Nuestro Equipo</div>
+                <span class="section-badge">Nuestro Equipo</span>
                 <h2>Profesionales a su Servicio</h2>
-                <p>Un equipo multidisciplinar con amplia experiencia en derecho de extranjería.</p>
             </div>
+            
             <div class="team-grid">
-                <div class="team-member">
-                    <div class="team-photo">EP</div>
-                    <h3 class="team-name">Dra. Elena Pombo</h3>
-                    <div class="team-role">Socia Fundadora</div>
-                    <p class="team-bio">Doctora en Derecho por la UCM. Especialista en nacionalidad española y derechos fundamentales de extranjeros. Más de 30 años de ejercicio.</p>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="team-initials">EP</div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Dra. Elena Pombo</h3>
+                        <div class="team-role">Socia Fundadora</div>
+                        <p class="team-bio">Doctora en Derecho por la UCM. Especialista en nacionalidad española y derechos fundamentales de extranjeros.</p>
+                    </div>
                 </div>
-                <div class="team-member">
-                    <div class="team-photo">DH</div>
-                    <h3 class="team-name">Lic. David Horowitz</h3>
-                    <div class="team-role">Socio Fundador</div>
-                    <p class="team-bio">Licenciado en Derecho por la UAM. Experto en procedimientos de extranjería y litigación ante la Audiencia Nacional. Miembro del ICAM.</p>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="team-initials">DH</div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Lic. David Horowitz</h3>
+                        <div class="team-role">Socio Fundador</div>
+                        <p class="team-bio">Licenciado en Derecho por la UAM. Experto en procedimientos de extranjería y litigación ante la Audiencia Nacional.</p>
+                    </div>
                 </div>
-                <div class="team-member">
-                    <div class="team-photo">CM</div>
-                    <h3 class="team-name">Lic. Carmen Martínez</h3>
-                    <div class="team-role">Asociada Senior</div>
-                    <p class="team-bio">Especialista en arraigos y regularizaciones extraordinarias. 15 años de experiencia en derecho migratorio. Habla español, inglés y francés.</p>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <div class="team-initials">CM</div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Lic. Carmen Martínez</h3>
+                        <div class="team-role">Asociada Senior</div>
+                        <p class="team-bio">Especialista en arraigos y regularizaciones extraordinarias. 15 años de experiencia en derecho migratorio.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About / History -->
-    <section id="historia" class="section">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="section-label">Nuestra Historia</div>
-                    <h2>Más de tres décadas defendiendo tus derechos</h2>
+    <!-- History -->
+    <section id="historia">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Nuestra Historia</span>
+                <h2>Más de tres décadas defendiendo tus derechos</h2>
+            </div>
+            
+            <div class="history-content">
+                <div class="history-text">
                     <p>Pombo & Horowitz nació en 1988, en un momento en que España comenzaba a recibir flujos migratorios significativos. Desde entonces, hemos sido testigos y partícipes de todas las reformas legislativas en materia de extranjería.</p>
                     <p>Nuestra experiencia incluye las regularizaciones extraordinarias de 1991, 1996, 2000, 2001 y 2005. Hoy, con la nueva regularización de 2026, ponemos todo nuestro conocimiento al servicio de quienes buscan regularizar su situación.</p>
                 </div>
+                
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-year">1988</div>
@@ -761,58 +1062,60 @@
     </section>
 
     <!-- Contact -->
-    <section id="contacto" class="section section-light">
-        <div class="container">
+    <section id="contacto">
+        <div class="section-container">
             <div class="section-header">
-                <div class="section-label">Contacto</div>
+                <span class="section-badge">Contacto</span>
                 <h2>Hablemos de su Caso</h2>
-                <p>Primera consulta sin compromiso. Evaluamos su situación y le indicamos las opciones disponibles.</p>
             </div>
+            
             <div class="contact-grid">
                 <div class="contact-info">
-                    <h3>Información de Contacto</h3>
-                    <div class="contact-item">
+                    <div class="contact-info-item">
                         <div class="contact-icon">📍</div>
                         <div>
-                            <div class="contact-label">Dirección</div>
-                            <div class="contact-value">Calle Serrano 45, 3º Izq.<br>28001 Madrid</div>
+                            <h4>Dirección</h4>
+                            <p>Calle Serrano 45, 3º Izq.<br>28001 Madrid</p>
                         </div>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-info-item">
                         <div class="contact-icon">📞</div>
                         <div>
-                            <div class="contact-label">Teléfono</div>
-                            <div class="contact-value">+34 91 555 0123</div>
+                            <h4>Teléfono</h4>
+                            <p>+34 91 555 0123</p>
                         </div>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-info-item">
                         <div class="contact-icon">✉️</div>
                         <div>
-                            <div class="contact-label">Email</div>
-                            <div class="contact-value">info@pombohorowitz.es</div>
+                            <h4>Email</h4>
+                            <p>info@pombohorowitz.es</p>
                         </div>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-info-item">
                         <div class="contact-icon">🕐</div>
                         <div>
-                            <div class="contact-label">Horario</div>
-                            <div class="contact-value">Lun - Vie: 9:00 - 19:00</div>
+                            <h4>Horario</h4>
+                            <p>Lun - Vie: 9:00 - 19:00</p>
                         </div>
                     </div>
                 </div>
+                
                 <div class="contact-form">
                     <form>
-                        <div class="form-group">
-                            <label>Nombre completo</label>
-                            <input type="text" placeholder="Tu nombre">
-                        </div>
-                        <div class="form-group">
-                            <label>Teléfono</label>
-                            <input type="tel" placeholder="+34 600 000 000">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nombre completo</label>
+                                <input type="text" placeholder="Su nombre">
+                            </div>
+                            <div class="form-group">
+                                <label>Teléfono</label>
+                                <input type="tel" placeholder="+34 600 000 000">
+                            </div>
                         </div>
                         <div class="form-group">
                             <label>Email</label>
-                            <input type="email" placeholder="tu@email.com">
+                            <input type="email" placeholder="su@email.com">
                         </div>
                         <div class="form-group">
                             <label>Tipo de consulta</label>
@@ -826,9 +1129,9 @@
                         </div>
                         <div class="form-group">
                             <label>Mensaje</label>
-                            <textarea rows="4" placeholder="Cuéntenos brevemente su situación..."></textarea>
+                            <textarea rows="4" placeholder="Describa brevemente su situación..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-full">Enviar Consulta</button>
+                        <button type="submit" class="form-submit">Enviar Consulta</button>
                     </form>
                 </div>
             </div>
@@ -836,44 +1139,99 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
+    <footer>
+        <div class="footer-container">
             <div class="footer-grid">
-                <div>
-                    <h4>Pombo & Horowitz Abogados</h4>
+                <div class="footer-brand">
+                    <h3>Pombo & Horowitz Abogados</h3>
                     <p>Despacho especializado en derecho de extranjería con más de 35 años de experiencia. Miembros del Ilustre Colegio de Abogados de Madrid.</p>
                 </div>
-                <div>
+                <div class="footer-section">
                     <h4>Servicios</h4>
-                    <ul class="footer-links">
+                    <ul>
                         <li><a href="#">Permisos de residencia</a></li>
                         <li><a href="#">Nacionalidad española</a></li>
                         <li><a href="#">Reagrupación familiar</a></li>
                         <li><a href="#">Visados de trabajo</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="footer-section">
                     <h4>Legal</h4>
-                    <ul class="footer-links">
+                    <ul>
                         <li><a href="#">Aviso legal</a></li>
                         <li><a href="#">Política de privacidad</a></li>
                         <li><a href="#">Cookies</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="footer-section">
                     <h4>Campaña Especial</h4>
-                    <ul class="footer-links">
-                        <li><a href="https://tuspapeles2026.es" target="_blank">🔥 tuspapeles2026.es</a></li>
-                        <li><a href="https://tuspapeles2026.es" target="_blank">Regularización 2026</a></li>
-                        <li><a href="https://tuspapeles2026.es" target="_blank">Consulta gratuita</a></li>
+                    <ul>
+                        <li><a href="https://tuspapeles2026.es">🔥 tuspapeles2026.es</a></li>
+                        <li><a href="https://tuspapeles2026.es">Regularización 2026</a></li>
+                        <li><a href="https://tuspapeles2026.es">Consulta gratuita</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <div>© 2026 Pombo & Horowitz Abogados. Todos los derechos reservados.</div>
-                <div>ICAM Colegiados nº 12345 y 12346</div>
+                <span>© 2026 Pombo & Horowitz Abogados. Todos los derechos reservados.</span>
+                <span>ICAM Colegiados nº 12345 y 12346</span>
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for News Ticker -->
+    <script>
+        // Load updates from content.json and populate ticker
+        async function loadTicker() {
+            const tickerTrack = document.getElementById('tickerTrack');
+            
+            try {
+                const response = await fetch('content.json');
+                const data = await response.json();
+                
+                if (data.updates && data.updates.length > 0) {
+                    // Build ticker items
+                    let tickerHTML = '';
+                    
+                    data.updates.forEach(update => {
+                        const typeClass = update.type === 'urgente' ? 'urgente' : '';
+                        tickerHTML += `
+                            <div class="ticker-item ${typeClass}">
+                                <span class="ticker-item-date">${formatDate(update.date)}</span>
+                                <span class="ticker-item-title">${update.title}</span>
+                                <span class="ticker-item-message">${update.message}</span>
+                                <span class="ticker-item-separator">•</span>
+                            </div>
+                        `;
+                    });
+                    
+                    // Duplicate for seamless scroll
+                    tickerTrack.innerHTML = tickerHTML + tickerHTML;
+                    
+                    // Adjust animation speed based on content length
+                    const itemCount = data.updates.length;
+                    const duration = Math.max(20, itemCount * 8);
+                    tickerTrack.style.animationDuration = `${duration}s`;
+                    
+                } else {
+                    tickerTrack.innerHTML = '<span class="ticker-empty">No hay noticias recientes</span>';
+                }
+                
+            } catch (error) {
+                console.error('Error loading ticker:', error);
+                tickerTrack.innerHTML = '<span class="ticker-empty">Pombo & Horowitz Abogados — Especialistas en Derecho de Extranjería desde 1988</span>';
+            }
+        }
+        
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            const options = { day: 'numeric', month: 'short' };
+            return date.toLocaleDateString('es-ES', options);
+        }
+        
+        // Load on page ready
+        document.addEventListener('DOMContentLoaded', loadTicker);
+    </script>
+
 </body>
 </html>
