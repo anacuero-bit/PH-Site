@@ -24,6 +24,12 @@
 </head>
 <body>
 
+    <!-- Alert Banner -->
+    <div class="alert-banner" id="alertBanner">
+        &#128276; <strong>REGULARIZACIÓN 2026:</strong> Hemos creado <a href="https://tuspapeles2026.es" target="_blank" rel="noopener">tuspapeles2026.es</a> para atenderte mejor &rarr; <a href="https://tuspapeles2026.es" target="_blank" rel="noopener">Verifica si calificas</a>
+        <button class="alert-banner-close" onclick="dismissBanner()" aria-label="Cerrar">&times;</button>
+    </div>
+
     <!-- Header -->
     <header class="site-header">
         <div class="header-inner">
@@ -33,14 +39,13 @@
             </a>
             <nav class="main-nav">
                 <a href="servicios.html">Servicios</a>
-                <a href="regularizacion-2026.html">Regularización 2026</a>
                 <a href="sobre-nosotros.html" class="active">Sobre Nosotros</a>
                 <a href="blog.html">Blog</a>
                 <a href="contacto.html">Contacto</a>
             </nav>
             <div class="header-cta">
                 <span class="header-phone">+34 91 555 0123</span>
-                <a href="contacto.html" class="btn btn-gold btn-sm">Consulta gratuita</a>
+                <a href="contacto.html" class="btn btn-navy btn-sm">Contactar</a>
             </div>
             <button class="mobile-toggle" onclick="toggleMobileNav()" aria-label="Abrir menú">&#9776;</button>
         </div>
@@ -49,11 +54,10 @@
     <!-- Mobile Nav -->
     <nav class="mobile-nav" id="mobileNav">
         <a href="servicios.html">Servicios</a>
-        <a href="regularizacion-2026.html">Regularización 2026</a>
         <a href="sobre-nosotros.html">Sobre Nosotros</a>
         <a href="blog.html">Blog</a>
         <a href="contacto.html">Contacto</a>
-        <a href="contacto.html" class="btn btn-gold">Consulta gratuita</a>
+        <a href="contacto.html" class="btn btn-navy">Contactar</a>
     </nav>
 
     <!-- Page Hero -->
@@ -206,7 +210,7 @@
     <section class="cta-banner">
         <div class="container">
             <h2>¿Listo para hablar con nosotros?</h2>
-            <p>Primera consulta gratuita y sin compromiso. Evaluamos tu caso y te orientamos.</p>
+            <p>Evaluamos tu caso y te orientamos. Contacta con nosotros hoy.</p>
             <a href="contacto.html" class="btn btn-navy btn-lg">Contactar ahora</a>
         </div>
     </section>
@@ -222,10 +226,10 @@
                 <div class="footer-section">
                     <h4>Servicios</h4>
                     <ul>
-                        <li><a href="regularizacion-2026.html">Regularización 2026</a></li>
                         <li><a href="servicios.html">Arraigo</a></li>
                         <li><a href="servicios.html">Nacionalidad</a></li>
                         <li><a href="servicios.html">Reagrupación familiar</a></li>
+                        <li><a href="servicios.html">Visados y permisos</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -234,6 +238,7 @@
                         <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="https://tuspapeles2026.es" target="_blank" rel="noopener">tuspapeles2026.es</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -254,16 +259,26 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Float -->
-    <a href="https://wa.me/34915550123" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
-        &#128172;
-    </a>
+    <a href="https://t.me/PHE_abogados" target="_blank" rel="noopener" class="telegram-float" aria-label="Telegram">&#9992;</a>
 
     <script>
     // Mobile nav toggle
     function toggleMobileNav() {
         document.getElementById('mobileNav').classList.toggle('open');
     }
+
+    function dismissBanner() {
+        document.getElementById('alertBanner').classList.add('hidden');
+        try { localStorage.setItem('phe_banner_dismissed', Date.now()); } catch(e) {}
+    }
+    (function() {
+        try {
+            var dismissed = localStorage.getItem('phe_banner_dismissed');
+            if (dismissed && (Date.now() - parseInt(dismissed)) < 86400000) {
+                document.getElementById('alertBanner').classList.add('hidden');
+            }
+        } catch(e) {}
+    })();
     </script>
 </body>
 </html>

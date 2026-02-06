@@ -3,26 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pombo, Horowitz & Espinosa | Abogados de Inmigración — 25 Años de Experiencia</title>
-    <meta name="description" content="Abogados de inmigración con 25 años de experiencia. +10,000 casos resueltos. Regularización 2026, arraigo, nacionalidad y reagrupación familiar. Colegio de Abogados de Madrid.">
-    <meta name="keywords" content="abogados inmigración Madrid, regularización 2026, extranjería España, arraigo social, nacionalidad española">
+    <title>Pombo, Horowitz & Espinosa | Abogados de Inmigración en Madrid</title>
+    <meta name="description" content="Abogados especializados en extranjería e inmigración en Madrid. Arraigo, nacionalidad, reagrupación familiar, visados y recursos. Colegio de Abogados de Madrid.">
     <link rel="canonical" href="https://pombohorowitz.com/">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Pombo, Horowitz & Espinosa — Abogados de Inmigración">
-    <meta property="og:description" content="25 años defendiendo tu derecho a quedarte en España. +10,000 casos resueltos.">
+    <meta property="og:description" content="Especialistas en derecho de extranjería en Madrid. Arraigo, nacionalidad, reagrupación y visados.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pombohorowitz.com/">
     <meta property="og:locale" content="es_ES">
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Schema: Organization -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -30,22 +25,22 @@
       "name": "Pombo, Horowitz & Espinosa",
       "alternateName": "PHE Abogados",
       "url": "https://pombohorowitz.com",
-      "description": "Abogados de inmigración con 25 años de experiencia en Madrid, Barcelona y Valencia.",
+      "description": "Abogados especializados en extranjería e inmigración en Madrid, Barcelona y Valencia.",
       "foundingDate": "2001",
       "areaServed": "ES",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Calle de Serrano 45, 3o Izq.",
-        "addressLocality": "Madrid",
-        "postalCode": "28001",
-        "addressCountry": "ES"
-      },
+      "address": { "@type": "PostalAddress", "streetAddress": "Calle de Serrano 45, 3o Izq.", "addressLocality": "Madrid", "postalCode": "28001", "addressCountry": "ES" },
       "telephone": "+34-91-555-0123",
       "email": "info@pombohorowitz.com"
     }
     </script>
 </head>
 <body>
+
+    <!-- Alert Banner -->
+    <div class="alert-banner" id="alertBanner">
+        &#128276; <strong>REGULARIZACIÓN 2026:</strong> Hemos creado <a href="https://tuspapeles2026.es" target="_blank" rel="noopener">tuspapeles2026.es</a> para atenderte mejor &rarr; <a href="https://tuspapeles2026.es" target="_blank" rel="noopener">Verifica si calificas</a>
+        <button class="alert-banner-close" onclick="dismissBanner()" aria-label="Cerrar">&times;</button>
+    </div>
 
     <!-- Header -->
     <header class="site-header">
@@ -56,45 +51,45 @@
             </a>
             <nav class="main-nav">
                 <a href="servicios.html">Servicios</a>
-                <a href="regularizacion-2026.html">Regularización 2026</a>
                 <a href="sobre-nosotros.html">Sobre Nosotros</a>
                 <a href="blog.html">Blog</a>
                 <a href="contacto.html">Contacto</a>
             </nav>
             <div class="header-cta">
                 <span class="header-phone">+34 91 555 0123</span>
-                <a href="contacto.html" class="btn btn-gold btn-sm">Consulta gratuita</a>
+                <a href="contacto.html" class="btn btn-navy btn-sm">Contactar</a>
             </div>
             <button class="mobile-toggle" onclick="toggleMobileNav()" aria-label="Abrir menú">&#9776;</button>
         </div>
     </header>
 
-    <!-- Mobile Nav -->
     <nav class="mobile-nav" id="mobileNav">
         <a href="servicios.html">Servicios</a>
-        <a href="regularizacion-2026.html">Regularización 2026</a>
         <a href="sobre-nosotros.html">Sobre Nosotros</a>
         <a href="blog.html">Blog</a>
         <a href="contacto.html">Contacto</a>
-        <a href="contacto.html" class="btn btn-gold">Consulta gratuita</a>
+        <a href="contacto.html" class="btn btn-navy">Contactar</a>
     </nav>
 
     <!-- Hero -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <span class="hero-badge">Colegio de Abogados de Madrid &middot; Desde 2001</span>
-                <h1>25 años defendiendo tu derecho a quedarte en España</h1>
-                <p>Pombo, Horowitz & Espinosa — Abogados de Inmigración. Miles de familias regularizadas. Somos el equipo que necesitas para la Regularización Extraordinaria 2026.</p>
+                <span class="hero-badge">Colegio de Abogados de Madrid</span>
+                <h1>Tu futuro en España empieza con el abogado correcto.</h1>
+                <div class="hero-services">
+                    <span>Arraigo</span>
+                    <span>Nacionalidad</span>
+                    <span>Reagrupación</span>
+                    <span>Visados</span>
+                    <span>Recursos</span>
+                </div>
+                <p>Especialistas en derecho de extranjería en Madrid. Sin atajos. Sin sorpresas.</p>
                 <div class="hero-buttons">
-                    <a href="contacto.html" class="btn btn-gold btn-lg">Consulta gratuita</a>
-                    <a href="regularizacion-2026.html" class="btn btn-outline btn-lg">Regularización 2026 &rarr;</a>
+                    <a href="servicios.html" class="btn btn-gold btn-lg">Ver servicios</a>
+                    <a href="contacto.html" class="btn btn-outline btn-lg">Contactar</a>
                 </div>
                 <div class="hero-stats">
-                    <div class="hero-stat">
-                        <div class="hero-stat-number">25+</div>
-                        <div class="hero-stat-label">Años de experiencia</div>
-                    </div>
                     <div class="hero-stat">
                         <div class="hero-stat-number">10,000+</div>
                         <div class="hero-stat-label">Casos resueltos</div>
@@ -102,6 +97,10 @@
                     <div class="hero-stat">
                         <div class="hero-stat-number">97%</div>
                         <div class="hero-stat-label">Tasa de éxito</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">3</div>
+                        <div class="hero-stat-label">Oficinas en España</div>
                     </div>
                 </div>
             </div>
@@ -114,52 +113,36 @@
             <div class="trust-items">
                 <div class="trust-item">
                     <span class="trust-icon">&#9878;</span>
-                    <span>Colegio de Abogados de Madrid</span>
+                    <span>Abogados colegiados</span>
                 </div>
                 <div class="trust-item">
                     <span class="trust-icon">&#9733;</span>
-                    <span>25 años de experiencia</span>
+                    <span>Desde 2001</span>
                 </div>
                 <div class="trust-item">
                     <span class="trust-icon">&#10003;</span>
-                    <span>+10,000 casos resueltos</span>
+                    <span>+10,000 casos</span>
                 </div>
                 <div class="trust-item">
                     <span class="trust-icon">&#127760;</span>
-                    <span>Equipo multilingüe</span>
+                    <span>Español, inglés, árabe, francés</span>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Services Grid -->
+    <!-- Services Grid (NO regularization) -->
     <section class="section" id="servicios">
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">Nuestros Servicios</span>
                 <h2>Áreas de Práctica</h2>
             </div>
-
-            <!-- Featured: Regularización -->
             <div class="services-grid">
-                <div class="service-card featured">
-                    <div>
-                        <div class="icon">&#9888;</div>
-                        <h3>Regularización Extraordinaria 2026</h3>
-                        <p>El proceso más importante en 20 años. Nuestro equipo incluye abogados que trabajaron en la regularización de 2005. Hemos lanzado tuspapeles2026.es para atender a miles de personas de forma eficiente.</p>
-                        <p style="margin-top:12px">Todo por menos de 300 euros. Verificación gratuita en 2 minutos.</p>
-                    </div>
-                    <div style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:16px">
-                        <div class="countdown" id="homeCountdown" style="justify-content:flex-start"></div>
-                        <a href="https://tuspapeles2026.es" target="_blank" rel="noopener" class="btn btn-gold btn-lg">Ir a tuspapeles2026.es &rarr;</a>
-                        <a href="regularizacion-2026.html" class="btn btn-outline">Más información</a>
-                    </div>
-                </div>
-
                 <div class="service-card">
                     <div class="icon">&#128203;</div>
                     <h3>Arraigo Social, Laboral y Familiar</h3>
-                    <p>Tramitación completa de autorizaciones de residencia por arraigo. Te acompañamos en todo el proceso.</p>
+                    <p>Tramitación completa de autorizaciones de residencia por arraigo. Te acompañamos en todo el proceso, desde la preparación documental hasta la resolución.</p>
                     <a href="servicios.html" class="card-link">Saber más &rarr;</a>
                 </div>
                 <div class="service-card">
@@ -171,7 +154,13 @@
                 <div class="service-card">
                     <div class="icon">&#128106;</div>
                     <h3>Reagrupación Familiar</h3>
-                    <p>Reunificación de cónyuges, hijos y ascendientes. Asesoramiento completo del proceso.</p>
+                    <p>Reunificación de cónyuges, hijos y ascendientes. Asesoramiento completo del proceso de reagrupación.</p>
+                    <a href="servicios.html" class="card-link">Saber más &rarr;</a>
+                </div>
+                <div class="service-card">
+                    <div class="icon">&#9992;</div>
+                    <h3>Visados y Permisos</h3>
+                    <p>Visados de trabajo, estudio, emprendedor e inversor. Permisos de residencia y trabajo por cuenta ajena y propia.</p>
                     <a href="servicios.html" class="card-link">Saber más &rarr;</a>
                 </div>
                 <div class="service-card">
@@ -183,15 +172,31 @@
                 <div class="service-card">
                     <div class="icon">&#127970;</div>
                     <h3>Empresas y Autónomos</h3>
-                    <p>Autorizaciones de trabajo por cuenta ajena y propia. Visados de emprendedor e inversor.</p>
+                    <p>Soluciones de inmigración corporativa. Autorizaciones de trabajo, compliance y gestión de plantillas internacionales.</p>
                     <a href="servicios.html" class="card-link">Saber más &rarr;</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Por qué creamos tuspapeles2026 -->
+    <section class="tp2026-section">
+        <div class="container">
+            <div class="tp2026-content">
+                <span class="section-badge">tuspapeles2026.es</span>
+                <h2>Por qué creamos tuspapeles2026</h2>
+                <p>Cuando se anunció la regularización extraordinaria, nuestras oficinas se vieron desbordadas. Miles de llamadas. Cientos de emails al día. Sabíamos que no podíamos atender a todos de forma tradicional.</p>
+                <p>Por eso creamos <span class="highlight">tuspapeles2026.es</span>: tecnología + experiencia legal. Proceso 100% online. Menos de &euro;300. Revisión por nuestros abogados.</p>
+                <p>Es nuestra forma de ayudar a la mayor cantidad de personas posible.</p>
+                <div class="mt-24">
+                    <a href="https://tuspapeles2026.es" target="_blank" rel="noopener" class="btn btn-navy btn-lg">Ir a tuspapeles2026.es &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Why Choose Us -->
-    <section class="section section-alt">
+    <section class="section">
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">¿Por qué elegirnos?</span>
@@ -200,13 +205,13 @@
             <div class="values-grid">
                 <div class="value-card">
                     <div class="value-icon">&#128197;</div>
-                    <h3>25 años de experiencia</h3>
+                    <h3>Experiencia contrastada</h3>
                     <p>Desde 2001, hemos sido testigos y partícipes de todas las reformas legislativas en materia de extranjería.</p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon">&#9989;</div>
-                    <h3>Más de 10,000 casos exitosos</h3>
-                    <p>Miles de familias regularizadas. Nuestra experiencia incluye la regularización extraordinaria de 2005.</p>
+                    <h3>Miles de casos resueltos</h3>
+                    <p>Más de 10,000 expedientes gestionados con éxito. Conocemos cada detalle de cada procedimiento.</p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon">&#127760;</div>
@@ -223,16 +228,14 @@
     </section>
 
     <!-- Blog Preview -->
-    <section class="section" id="blog-preview">
+    <section class="section section-alt" id="blog-preview">
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">Blog</span>
                 <h2>Últimos Artículos</h2>
-                <p>Información actualizada sobre regularización, extranjería e inmigración en España.</p>
+                <p>Información actualizada sobre extranjería e inmigración en España.</p>
             </div>
-            <div class="blog-grid" id="blogPreviewGrid">
-                <!-- Loaded via JS -->
-            </div>
+            <div class="blog-grid" id="blogPreviewGrid"></div>
             <div class="text-center mt-32">
                 <a href="blog.html" class="btn btn-outline-navy">Ver todos los artículos &rarr;</a>
             </div>
@@ -243,10 +246,10 @@
     <section class="cta-banner">
         <div class="container">
             <h2>¿Tienes preguntas? Hablemos.</h2>
-            <p>Primera consulta gratuita y sin compromiso. Evaluamos tu caso y te decimos tus opciones.</p>
+            <p>Llámanos, escríbenos un email o contáctanos por Telegram.</p>
             <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-                <a href="contacto.html" class="btn btn-navy btn-lg">Enviar consulta</a>
-                <a href="https://wa.me/34915550123" target="_blank" rel="noopener" class="btn btn-outline-navy btn-lg">WhatsApp &rarr;</a>
+                <a href="contacto.html" class="btn btn-navy btn-lg">Ver datos de contacto</a>
+                <a href="https://t.me/PHE_abogados" target="_blank" rel="noopener" class="btn btn-telegram btn-lg">Telegram &rarr;</a>
             </div>
         </div>
     </section>
@@ -258,9 +261,7 @@
                 <span class="section-badge">Preguntas Frecuentes</span>
                 <h2>Resolvemos tus Dudas</h2>
             </div>
-            <div class="faq-list" id="faqList">
-                <!-- Loaded via JS -->
-            </div>
+            <div class="faq-list" id="faqList"></div>
         </div>
     </section>
 
@@ -270,15 +271,15 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <span class="logo-name">Pombo, Horowitz & Espinosa</span>
-                    <p style="margin-top:12px">Abogados de inmigración con 25 años de experiencia. Miembros del Ilustre Colegio de Abogados de Madrid.</p>
+                    <p style="margin-top:12px">Abogados especializados en extranjería e inmigración. Miembros del Ilustre Colegio de Abogados de Madrid. Desde 2001.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Servicios</h4>
                     <ul>
-                        <li><a href="regularizacion-2026.html">Regularización 2026</a></li>
                         <li><a href="servicios.html">Arraigo</a></li>
                         <li><a href="servicios.html">Nacionalidad</a></li>
                         <li><a href="servicios.html">Reagrupación familiar</a></li>
+                        <li><a href="servicios.html">Visados y permisos</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -287,6 +288,7 @@
                         <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="https://tuspapeles2026.es" target="_blank" rel="noopener">tuspapeles2026.es</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -307,48 +309,29 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Float -->
-    <a href="https://wa.me/34915550123" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
-        &#128172;
-    </a>
+    <!-- Telegram Float -->
+    <a href="https://t.me/PHE_abogados" target="_blank" rel="noopener" class="telegram-float" aria-label="Telegram">&#9992;</a>
 
     <script>
-    // Mobile nav toggle
     function toggleMobileNav() {
         document.getElementById('mobileNav').classList.toggle('open');
     }
 
-    // Countdown to June 30, 2026
-    function updateCountdown() {
-        const deadline = new Date('2026-06-30T23:59:59+02:00');
-        const now = new Date();
-        const diff = deadline - now;
-        if (diff <= 0) return;
-
-        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-
-        const el = document.getElementById('homeCountdown');
-        if (el) {
-            el.innerHTML = `
-                <div class="countdown-item">
-                    <div class="countdown-number">${days}</div>
-                    <div class="countdown-label">Días</div>
-                </div>
-                <div class="countdown-item">
-                    <div class="countdown-number">${hours}</div>
-                    <div class="countdown-label">Horas</div>
-                </div>
-                <div class="countdown-item">
-                    <div class="countdown-number">${minutes}</div>
-                    <div class="countdown-label">Minutos</div>
-                </div>
-            `;
-        }
+    function dismissBanner() {
+        document.getElementById('alertBanner').classList.add('hidden');
+        try { localStorage.setItem('phe_banner_dismissed', Date.now()); } catch(e) {}
     }
 
-    // Load blog preview (3 latest)
+    // Auto-hide banner if dismissed within 24h
+    (function() {
+        try {
+            var dismissed = localStorage.getItem('phe_banner_dismissed');
+            if (dismissed && (Date.now() - parseInt(dismissed)) < 86400000) {
+                document.getElementById('alertBanner').classList.add('hidden');
+            }
+        } catch(e) {}
+    })();
+
     async function loadBlogPreview() {
         try {
             const res = await fetch('content.json');
@@ -356,7 +339,6 @@
             const articles = (data.articles || []).slice(0, 3);
             const grid = document.getElementById('blogPreviewGrid');
             if (!grid || !articles.length) return;
-
             grid.innerHTML = articles.map(a => `
                 <div class="blog-card">
                     <div class="blog-card-image">
@@ -373,12 +355,9 @@
                     </div>
                 </div>
             `).join('');
-        } catch (e) {
-            console.error('Blog preview error:', e);
-        }
+        } catch(e) { console.error(e); }
     }
 
-    // Load FAQs
     async function loadFAQs() {
         try {
             const res = await fetch('content.json');
@@ -386,7 +365,6 @@
             const faqs = (data.faqs || []).slice(0, 6);
             const list = document.getElementById('faqList');
             if (!list || !faqs.length) return;
-
             list.innerHTML = faqs.map(f => `
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFaq(this)">
@@ -398,22 +376,17 @@
                     </div>
                 </div>
             `).join('');
-        } catch (e) {
-            console.error('FAQ error:', e);
-        }
+        } catch(e) { console.error(e); }
     }
 
     function toggleFaq(btn) {
         const item = btn.closest('.faq-item');
         const answer = item.querySelector('.faq-answer');
         const isOpen = item.classList.contains('open');
-
-        // Close all
         document.querySelectorAll('.faq-item').forEach(i => {
             i.classList.remove('open');
             i.querySelector('.faq-answer').style.maxHeight = '0';
         });
-
         if (!isOpen) {
             item.classList.add('open');
             answer.style.maxHeight = answer.scrollHeight + 'px';
@@ -423,18 +396,11 @@
     function formatDate(d) {
         return new Date(d).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
     }
-
     function formatCat(c) {
-        const cats = { regularizacion: 'Regularización', documentacion: 'Documentación', consejos: 'Consejos', noticias: 'Noticias' };
-        return cats[c] || c;
+        return { regularizacion:'Regularización', documentacion:'Documentación', consejos:'Consejos', noticias:'Noticias' }[c] || c;
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-        updateCountdown();
-        setInterval(updateCountdown, 60000);
-        loadBlogPreview();
-        loadFAQs();
-    });
+    document.addEventListener('DOMContentLoaded', () => { loadBlogPreview(); loadFAQs(); });
     </script>
 </body>
 </html>
