@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios | Pombo, Horowitz & Espinosa — Abogados de Inmigración</title>
-    <meta name="description" content="Servicios legales especializados en inmigración y extranjería: regularización 2026, arraigo, nacionalidad, reagrupación familiar, recursos y visados.">
+    <meta name="description" content="Servicios legales especializados en inmigración y extranjería: arraigo, nacionalidad, reagrupación familiar, visados, recursos y empresas.">
     <link rel="canonical" href="https://pombohorowitz.com/servicios">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Servicios — Pombo, Horowitz & Espinosa">
-    <meta property="og:description" content="Soluciones legales especializadas en inmigración y extranjería. Regularización 2026, arraigo, nacionalidad y más.">
+    <meta property="og:description" content="Soluciones legales especializadas en inmigración y extranjería. Arraigo, nacionalidad, reagrupación familiar, visados y más.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pombohorowitz.com/servicios">
     <meta property="og:locale" content="es_ES">
@@ -22,6 +22,47 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
+        /* --- Alert banner --- */
+        .alert-banner {
+            background: var(--gold);
+            color: var(--navy);
+            text-align: center;
+            padding: 14px 48px 14px 20px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            position: relative;
+            z-index: 1100;
+        }
+
+        .alert-banner a {
+            color: var(--navy);
+            text-decoration: underline;
+            font-weight: 700;
+        }
+
+        .alert-banner a:hover {
+            opacity: 0.8;
+        }
+
+        .alert-banner .dismiss-btn {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            font-size: 1.3rem;
+            color: var(--navy);
+            cursor: pointer;
+            padding: 4px 8px;
+            line-height: 1;
+            opacity: 0.7;
+        }
+
+        .alert-banner .dismiss-btn:hover {
+            opacity: 1;
+        }
+
         /* --- Services page-specific styles --- */
         .service-card-detail ul {
             list-style: disc;
@@ -34,35 +75,6 @@
             color: var(--charcoal);
             line-height: 1.7;
             margin-bottom: 6px;
-        }
-
-        .service-card.featured ul li {
-            color: rgba(255,255,255,0.8);
-        }
-
-        .featured-price {
-            display: inline-block;
-            background: var(--gold);
-            color: var(--navy);
-            font-weight: 700;
-            font-size: 0.95rem;
-            padding: 6px 16px;
-            border-radius: 6px;
-            margin-top: 12px;
-        }
-
-        .featured-buttons {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 16px;
-        }
-
-        .featured-deadline {
-            font-size: 0.9rem;
-            color: var(--gold);
-            font-weight: 600;
         }
 
         /* Process steps */
@@ -148,6 +160,12 @@
 </head>
 <body>
 
+    <!-- Alert Banner -->
+    <div class="alert-banner" id="alertBanner">
+        <span>Servicio de Regularizaci&oacute;n 2026 &rarr; ahora en <a href="https://tuspapeles2026.es" target="_blank" rel="noopener">tuspapeles2026.es</a></span>
+        <button class="dismiss-btn" onclick="dismissBanner()" aria-label="Cerrar">&times;</button>
+    </div>
+
     <!-- Header -->
     <header class="site-header">
         <div class="header-inner">
@@ -157,14 +175,13 @@
             </a>
             <nav class="main-nav">
                 <a href="servicios.html" class="active">Servicios</a>
-                <a href="regularizacion-2026.html">Regularización 2026</a>
                 <a href="sobre-nosotros.html">Sobre Nosotros</a>
                 <a href="blog.html">Blog</a>
                 <a href="contacto.html">Contacto</a>
             </nav>
             <div class="header-cta">
                 <span class="header-phone">+34 91 555 0123</span>
-                <a href="contacto.html" class="btn btn-gold btn-sm">Consulta gratuita</a>
+                <a href="contacto.html" class="btn btn-navy btn-sm">Contactar</a>
             </div>
             <button class="mobile-toggle" onclick="toggleMobileNav()" aria-label="Abrir menú">&#9776;</button>
         </div>
@@ -173,11 +190,10 @@
     <!-- Mobile Nav -->
     <nav class="mobile-nav" id="mobileNav">
         <a href="servicios.html">Servicios</a>
-        <a href="regularizacion-2026.html">Regularización 2026</a>
         <a href="sobre-nosotros.html">Sobre Nosotros</a>
         <a href="blog.html">Blog</a>
         <a href="contacto.html">Contacto</a>
-        <a href="contacto.html" class="btn btn-gold">Consulta gratuita</a>
+        <a href="contacto.html" class="btn btn-navy">Contactar</a>
     </nav>
 
     <!-- Page Hero Navy -->
@@ -195,27 +211,6 @@
     <section class="section" id="servicios">
         <div class="container">
             <div class="services-grid">
-
-                <!-- FEATURED: Regularización Extraordinaria 2026 -->
-                <div class="service-card featured">
-                    <div class="service-card-detail">
-                        <div class="icon">&#9888;</div>
-                        <h3>Regularización Extraordinaria 2026</h3>
-                        <p>El proceso más importante en 20 años. La Regularización Extraordinaria de 2026 abre una ventana única para que miles de personas sin papeles puedan obtener su autorización de residencia y trabajo en España. Nuestro equipo incluye abogados que participaron activamente en la regularización de 2005.</p>
-                        <ul>
-                            <li>Verificación de requisitos y elegibilidad</li>
-                            <li>Preparación completa del expediente</li>
-                            <li>Presentación telemática y seguimiento</li>
-                            <li>Plazo límite: 30 de junio de 2026</li>
-                        </ul>
-                        <span class="featured-price">Todo por menos de 300 euros</span>
-                    </div>
-                    <div class="featured-buttons">
-                        <p class="featured-deadline">Hemos lanzado tuspapeles2026.es para atender a miles de personas de forma eficiente y asequible.</p>
-                        <a href="https://tuspapeles2026.es" target="_blank" rel="noopener" class="btn btn-gold btn-lg">Ir a tuspapeles2026.es &rarr;</a>
-                        <a href="regularizacion-2026.html" class="btn btn-outline">Más información</a>
-                    </div>
-                </div>
 
                 <!-- Arraigo Social, Laboral y Familiar -->
                 <div class="service-card">
@@ -262,6 +257,22 @@
                     </div>
                 </div>
 
+                <!-- Visados y Permisos -->
+                <div class="service-card">
+                    <div class="service-card-detail">
+                        <div class="icon">&#127891;</div>
+                        <h3>Visados y Permisos</h3>
+                        <p>Tramitación de visados y permisos de residencia para estudiar, trabajar o establecerse en España. Te acompañamos en cada etapa del proceso.</p>
+                        <ul>
+                            <li><strong>Permiso de estudios:</strong> obtención y renovación de autorizaciones de estancia por estudios</li>
+                            <li><strong>Modificación a residencia y trabajo:</strong> cambio de situación de estudiante a permiso de trabajo y residencia</li>
+                            <li><strong>Visados de trabajo:</strong> tramitación de autorizaciones por cuenta ajena y propia</li>
+                            <li><strong>Permisos de larga duración:</strong> renovaciones y obtención de residencia de larga duración</li>
+                        </ul>
+                        <a href="contacto.html" class="card-link">Consultar mi caso &rarr;</a>
+                    </div>
+                </div>
+
                 <!-- Recursos y Apelaciones -->
                 <div class="service-card">
                     <div class="service-card-detail">
@@ -287,20 +298,6 @@
                             <li><strong>Permisos de trabajo:</strong> autorizaciones por cuenta ajena y propia</li>
                             <li><strong>Visado de emprendedor:</strong> para actividades empresariales de interés económico</li>
                             <li><strong>Visado de inversor:</strong> residencia mediante inversión significativa de capital</li>
-                        </ul>
-                        <a href="contacto.html" class="card-link">Consultar mi caso &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- Visados de Estudiante -->
-                <div class="service-card">
-                    <div class="service-card-detail">
-                        <div class="icon">&#127891;</div>
-                        <h3>Visados de Estudiante</h3>
-                        <p>Asesoramiento y tramitación para quienes desean estudiar en España y, posteriormente, acceder al mercado laboral.</p>
-                        <ul>
-                            <li><strong>Permiso de estudios:</strong> obtención y renovación de autorizaciones de estancia por estudios</li>
-                            <li><strong>Modificación a residencia y trabajo:</strong> cambio de situación de estudiante a permiso de trabajo y residencia</li>
                         </ul>
                         <a href="contacto.html" class="card-link">Consultar mi caso &rarr;</a>
                     </div>
@@ -347,9 +344,12 @@
     <!-- CTA Banner (Gold) -->
     <section class="cta-banner">
         <div class="container">
-            <h2>¿Necesitas asesoramiento?</h2>
-            <p>Primera consulta gratuita y sin compromiso. Evaluamos tu caso y te orientamos sobre los pasos a seguir.</p>
-            <a href="contacto.html" class="btn btn-navy btn-lg">Solicitar consulta gratuita</a>
+            <h2>¿Necesita asesoramiento?</h2>
+            <p>Evaluamos su caso y le orientamos sobre los pasos a seguir.</p>
+            <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+                <a href="contacto.html" class="btn btn-navy btn-lg">Contactar</a>
+                <a href="https://t.me/PHE_abogados" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Telegram &#9992;</a>
+            </div>
         </div>
     </section>
 
@@ -364,10 +364,10 @@
                 <div class="footer-section">
                     <h4>Servicios</h4>
                     <ul>
-                        <li><a href="regularizacion-2026.html">Regularización 2026</a></li>
                         <li><a href="servicios.html">Arraigo</a></li>
                         <li><a href="servicios.html">Nacionalidad</a></li>
-                        <li><a href="servicios.html">Reagrupación familiar</a></li>
+                        <li><a href="servicios.html">Reagrupaci&oacute;n familiar</a></li>
+                        <li><a href="servicios.html">Visados y Permisos</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -376,6 +376,7 @@
                         <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="https://tuspapeles2026.es" target="_blank" rel="noopener">tuspapeles2026.es</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -396,16 +397,31 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Float -->
-    <a href="https://wa.me/34915550123" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
-        &#128172;
-    </a>
+    <!-- Telegram Float -->
+    <a href="https://t.me/PHE_abogados" target="_blank" rel="noopener" class="telegram-float" aria-label="Telegram">&#9992;</a>
 
     <script>
     // Mobile nav toggle
     function toggleMobileNav() {
         document.getElementById('mobileNav').classList.toggle('open');
     }
+
+    // Alert banner dismiss
+    function dismissBanner() {
+        var banner = document.getElementById('alertBanner');
+        if (banner) {
+            banner.style.display = 'none';
+            try { sessionStorage.setItem('bannerDismissed', '1'); } catch(e) {}
+        }
+    }
+    (function() {
+        try {
+            if (sessionStorage.getItem('bannerDismissed') === '1') {
+                var banner = document.getElementById('alertBanner');
+                if (banner) banner.style.display = 'none';
+            }
+        } catch(e) {}
+    })();
     </script>
 </body>
 </html>

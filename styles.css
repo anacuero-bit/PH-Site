@@ -1423,32 +1423,142 @@ ul { list-style: none; }
   line-height: 1.7;
 }
 
-/* WhatsApp floating button */
-.whatsapp-float {
+/* --- Alert Banner (Sticky above header) --- */
+.alert-banner {
+  background: var(--gold);
+  color: var(--navy);
+  padding: 10px 24px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  position: relative;
+  z-index: 1001;
+}
+
+.alert-banner a {
+  color: var(--navy);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.alert-banner a:hover {
+  opacity: 0.8;
+}
+
+.alert-banner-close {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--navy);
+  opacity: 0.6;
+  padding: 4px 8px;
+}
+
+.alert-banner-close:hover {
+  opacity: 1;
+}
+
+.alert-banner.hidden {
+  display: none;
+}
+
+/* Adjust header sticky position when banner is visible */
+.has-banner .site-header {
+  top: 0;
+}
+
+/* --- Telegram floating button --- */
+.telegram-float {
   position: fixed;
   bottom: 24px;
   right: 24px;
   width: 56px;
   height: 56px;
-  background: #25D366;
+  background: #0088cc;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 1.6rem;
-  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  font-size: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0,136,204,0.4);
   z-index: 900;
   transition: all var(--transition);
 }
 
-.whatsapp-float:hover {
+.telegram-float:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 30px rgba(37,211,102,0.5);
+  box-shadow: 0 6px 30px rgba(0,136,204,0.5);
+}
+
+/* Telegram button inline */
+.btn-telegram {
+  background: #0088cc;
+  color: var(--white);
+  border-color: #0088cc;
+}
+
+.btn-telegram:hover {
+  background: #006da3;
+  border-color: #006da3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,136,204,0.3);
+}
+
+/* "Por qué creamos tp2026" section */
+.tp2026-section {
+  background: var(--gray-lighter);
+  padding: 80px 0;
+}
+
+.tp2026-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tp2026-content h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  color: var(--navy);
+  margin-bottom: 24px;
+}
+
+.tp2026-content p {
+  font-size: 1.05rem;
+  color: var(--charcoal);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.tp2026-content .highlight {
+  font-weight: 600;
+  color: var(--navy);
+}
+
+/* Hero services list */
+.hero-services {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.hero-services span {
+  padding: 4px 14px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  font-size: 0.9rem;
 }
 
 /* Print */
 @media print {
-  .site-header, .site-footer, .whatsapp-float, .cta-banner { display: none; }
+  .site-header, .site-footer, .telegram-float, .cta-banner, .alert-banner { display: none; }
   body { color: #000; }
 }
