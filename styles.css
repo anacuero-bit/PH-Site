@@ -240,6 +240,14 @@ ul { list-style: none; }
   text-decoration: none;
 }
 
+.logo-img {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+.logo-img-footer {
+  height: 24px;
+}
 .logo-name {
   font-family: var(--font-heading);
   font-size: 1.35rem;
