@@ -22,7 +22,7 @@
   --font-legal: 'JetBrains Mono', monospace;
 
   --max-width: 1200px;
-  --header-height: 72px;
+  --header-height: 80px;
   --transition: 0.3s ease;
 }
 
@@ -241,12 +241,12 @@ ul { list-style: none; }
 }
 
 .logo-img {
-  height: 42px;
+  height: 60px;
   width: auto;
   display: block;
 }
 .logo-img-footer {
-  height: 36px;
+  height: 44px;
 }
 .logo-name {
   font-family: var(--font-heading);
