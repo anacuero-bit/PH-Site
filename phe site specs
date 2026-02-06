@@ -1,0 +1,334 @@
+# Claude Code Build Spec: pombohorowitz.com
+
+## Overview
+Corporate website for **Pombo, Horowitz & Espinosa** — a Spanish immigration law firm. This is NOT the product site (that's tuspapeles2026.es). This site establishes credibility, showcases 25 years of experience, and funnels traffic to tuspapeles2026.es for the regularization service.
+
+## Tech Stack
+- **Framework:** Next.js 14 (App Router)
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
+- **Domain:** pombohorowitz.com
+- **CMS:** Markdown files in `/content/blog/` (no external CMS)
+- **Analytics:** Vercel Analytics + Meta Pixel
+- **Forms:** Formspree or native Next.js API routes → email
+
+---
+
+## Brand Guidelines
+
+### Color Palette
+```css
+:root {
+  --navy: #1E3A5F;
+  --navy-light: #2C4A6E;
+  --gold: #E8D4A8;
+  --gold-dark: #D4C494;
+  --charcoal: #4D4D4D;
+  --gray-light: #E8E8E8;
+  --white: #FFFFFF;
+  --black: #1A1A1A;
+}
+```
+
+### Typography
+- **Headings:** Playfair Display (serif) — elegant, traditional law firm feel
+- **Body:** Inter or Source Sans Pro (sans-serif) — clean, readable
+- **Accent/Legal:** JetBrains Mono (monospace) — for legal citations only
+
+### Logo
+- Text logo: "POMBO, HOROWITZ & ESPINOSA"
+- Subtitle: "Abogados de Inmigración"
+- Style: Similar to Oxford Legal example — navy background with gold text, OR light background with navy text
+
+### Tone
+- Professional, authoritative, trustworthy
+- Spanish primary, English secondary (toggle in header)
+- No slang, no emojis, formal "usted" form
+
+---
+
+## Site Structure
+
+```
+/                       → Home
+/sobre-nosotros         → About / Team
+/servicios              → Services overview
+/regularizacion-2026    → Regularization landing (→ tuspapeles2026.es CTA)
+/blog                   → Blog index
+/blog/[slug]            → Individual blog posts
+/contacto               → Contact form
+/aviso-legal            → Legal notice
+/privacidad             → Privacy policy
+```
+
+---
+
+## Page Specifications
+
+### 1. HOME (`/`)
+
+**Hero Section**
+- Background: Navy (#1E3A5F)
+- Headline: "25 años defendiendo tu derecho a quedarte en España"
+- Subheadline: "Pombo, Horowitz & Espinosa — Abogados de Inmigración"
+- CTA Button (gold): "Consulta gratuita" → scrolls to contact form
+- Secondary CTA (outline): "Regularización 2026" → /regularizacion-2026
+
+**Trust Bar**
+- Logos/badges: "Colegio de Abogados de Madrid" | "25 años de experiencia" | "+10,000 casos resueltos"
+- Style: Light gray background, subtle
+
+**Services Grid (3 columns)**
+1. Regularización Extraordinaria 2026 — "El proceso más importante en 20 años" → CTA to tuspapeles2026.es
+2. Arraigo Social, Laboral y Familiar — Brief description
+3. Nacionalidad y Ciudadanía — Brief description
+4. Reagrupación Familiar — Brief description
+5. Recursos y Apelaciones — Brief description
+6. Empresas y Autónomos — Brief description
+
+**Why Choose Us Section**
+- 25 años de experiencia
+- Más de 10,000 casos exitosos
+- Equipo multilingüe (español, inglés, árabe, francés)
+- Presencia nacional (Madrid, Barcelona, Valencia)
+
+**Blog Preview**
+- 3 latest posts, cards with image + title + excerpt
+- "Ver todos los artículos" link
+
+**Contact CTA Section**
+- Background: Gold (#E8D4A8)
+- "¿Tienes preguntas? Hablemos."
+- Embedded contact form OR "Llamar ahora" + "Enviar WhatsApp" buttons
+
+**Footer**
+- Logo
+- Quick links: Servicios | Blog | Contacto | Aviso Legal | Privacidad
+- Contact info: Phone, Email, WhatsApp
+- Social: LinkedIn, Instagram (no Facebook/Twitter)
+- "© 2026 Pombo, Horowitz & Espinosa. Todos los derechos reservados."
+
+---
+
+### 2. REGULARIZACIÓN 2026 (`/regularizacion-2026`)
+
+This page is a BRIDGE to tuspapeles2026.es. It establishes PHE's authority on the topic and funnels users to the product.
+
+**Hero**
+- Headline: "Regularización Extraordinaria 2026"
+- Subheadline: "El proceso más importante en 20 años. Estamos preparados."
+- Background: Navy with subtle pattern
+
+**What Is It Section**
+- Brief explainer (3-4 paragraphs max)
+- Key points: Who qualifies, deadline, what's needed
+- Source citations: BOE, government announcements
+
+**Why PHE Section**
+- "Hemos preparado durante 2 años para este momento"
+- "Nuestro equipo incluye a los abogados que trabajaron en la regularización de 2005"
+- "Lanzamos tuspapeles2026.es para atender a miles de personas de forma eficiente"
+
+**CTA Block (prominent)**
+- Background: Gold
+- "¿Quieres saber si calificas?"
+- Big button: "Ir a tuspapeles2026.es" → opens in new tab
+- Subtext: "Verificación gratuita en 2 minutos. Sin compromiso."
+
+**FAQ Accordion**
+- 5-6 common questions about the regularization
+- Keep answers brief, link to blog for detail
+
+**Blog Posts Related**
+- 3 posts tagged "regularizacion-2026"
+
+---
+
+### 3. BLOG (`/blog` and `/blog/[slug]`)
+
+**Index Page**
+- Grid of post cards (image, title, date, excerpt)
+- Categories filter: Regularización 2026 | Arraigo | Nacionalidad | Noticias
+- Pagination (12 posts per page)
+
+**Post Page**
+- Clean reading layout, max-width 720px
+- Author byline with photo
+- Table of contents for long posts
+- Related posts at bottom
+- CTA banner mid-article: "¿Necesitas ayuda? Consulta gratuita" (sticky on mobile)
+
+**Initial Blog Posts to Create**
+These are already written in the knowledge base — just format them:
+
+1. **"Regularización 2026: Todo lo que sabemos hasta ahora"**
+   - Comprehensive overview
+   - Target keyword: "regularización españa 2026"
+
+2. **"Qué documentos necesitas para la regularización 2026"**
+   - Document checklist
+   - Target keyword: "documentos regularización 2026"
+
+3. **"Arraigo social vs regularización 2026: ¿cuál te conviene?"**
+   - Comparison piece
+   - Target keyword: "arraigo social españa"
+
+---
+
+### 4. ABOUT (`/sobre-nosotros`)
+
+**Firm Story**
+- Founded 2001 in Madrid
+- Growth through immigration law specialization
+- 2026: Launched tuspapeles2026.es to scale
+
+**Team Section**
+- Partner photos + bios (placeholder images for now)
+- María Pombo — Founding Partner, Immigration Law
+- David Horowitz — Partner, Appeals & Litigation
+- Carlos Espinosa — Partner, Corporate Immigration
+
+**Values**
+- Accesibilidad
+- Transparencia
+- Resultados
+
+**Office Locations**
+- Madrid (HQ), Barcelona, Valencia
+- Map embed or static image
+
+---
+
+### 5. CONTACT (`/contacto`)
+
+**Contact Form**
+Fields:
+- Nombre completo (required)
+- Email (required)
+- Teléfono (required)
+- Asunto (dropdown): Regularización 2026 | Arraigo | Nacionalidad | Otro
+- Mensaje (textarea)
+- Checkbox: "Acepto la política de privacidad" (required)
+- Submit button: "Enviar mensaje"
+
+**Contact Info Sidebar**
+- Phone: +34 XXX XXX XXX
+- WhatsApp: Same number with click-to-chat
+- Email: info@pombohorowitz.com
+- Office addresses
+
+**Map**
+- Google Maps embed of Madrid office
+
+---
+
+## Components to Build
+
+1. `<Header />` — Logo, nav links, language toggle (ES/EN), mobile hamburger
+2. `<Footer />` — As described above
+3. `<CTABanner />` — Reusable gold banner with headline + button
+4. `<BlogCard />` — Image, title, date, excerpt, link
+5. `<ServiceCard />` — Icon, title, description, link
+6. `<TeamMember />` — Photo, name, title, bio
+7. `<ContactForm />` — With validation and submission handling
+8. `<FAQAccordion />` — Expandable Q&A items
+9. `<TrustBar />` — Horizontal strip of credentials/badges
+
+---
+
+## SEO Requirements
+
+**Meta Tags (per page)**
+- title, description, og:title, og:description, og:image
+- Canonical URLs
+- hreflang for ES/EN versions
+
+**Schema Markup**
+- Organization (LegalService)
+- LocalBusiness for each office
+- BlogPosting for articles
+- FAQPage for FAQ sections
+
+**Sitemap**
+- Auto-generated sitemap.xml
+- Submit to Google Search Console
+
+**Robots.txt**
+- Allow all except /api/
+
+---
+
+## Performance Requirements
+
+- Lighthouse score > 90 on all metrics
+- Images: WebP format, lazy loading, responsive srcset
+- Fonts: Subset and preload
+- No external scripts except analytics
+
+---
+
+## Deployment Checklist
+
+1. [ ] Set up Vercel project
+2. [ ] Connect pombohorowitz.com domain
+3. [ ] Configure environment variables (analytics IDs, form endpoints)
+4. [ ] Set up redirects (www → non-www)
+5. [ ] SSL certificate (automatic via Vercel)
+6. [ ] Test contact form submission
+7. [ ] Submit sitemap to Google Search Console
+8. [ ] Install Meta Pixel
+9. [ ] Test mobile responsiveness
+10. [ ] Test language toggle (if implementing EN version)
+
+---
+
+## Notes for Claude Code
+
+- Start with the homepage and regularización page — these are highest priority
+- Blog can use static MDX files, no need for a CMS
+- Contact form should email to info@pombohorowitz.com
+- Don't overthink the design — clean, professional, navy + gold palette
+- The tuspapeles2026.es CTA should be VERY prominent on the regularización page
+- Mobile-first approach
+
+---
+
+## Files to Create
+
+```
+/app
+  /layout.tsx
+  /page.tsx                    (home)
+  /sobre-nosotros/page.tsx
+  /servicios/page.tsx
+  /regularizacion-2026/page.tsx
+  /blog/page.tsx
+  /blog/[slug]/page.tsx
+  /contacto/page.tsx
+  /aviso-legal/page.tsx
+  /privacidad/page.tsx
+/components
+  /Header.tsx
+  /Footer.tsx
+  /CTABanner.tsx
+  /BlogCard.tsx
+  /ServiceCard.tsx
+  /TeamMember.tsx
+  /ContactForm.tsx
+  /FAQAccordion.tsx
+  /TrustBar.tsx
+/content
+  /blog
+    /regularizacion-2026-guia-completa.mdx
+    /documentos-regularizacion-2026.mdx
+    /arraigo-vs-regularizacion.mdx
+/lib
+  /blog.ts                     (blog utilities)
+/styles
+  /globals.css
+/public
+  /images
+    /logo.svg
+    /team/
+    /blog/
+```
