@@ -3,1235 +3,438 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pombo & Horowitz Abogados | Derecho de Extranjería en Madrid desde 1988</title>
-    <meta name="description" content="Despacho de abogados especializado en extranjería y nacionalidad española. Más de 35 años de experiencia. Regularización 2026.">
-    
+    <title>Pombo, Horowitz & Espinosa | Abogados de Inmigración — 25 Años de Experiencia</title>
+    <meta name="description" content="Abogados de inmigración con 25 años de experiencia. +10,000 casos resueltos. Regularización 2026, arraigo, nacionalidad y reagrupación familiar. Colegio de Abogados de Madrid.">
+    <meta name="keywords" content="abogados inmigración Madrid, regularización 2026, extranjería España, arraigo social, nacionalidad española">
+    <link rel="canonical" href="https://pombohorowitz.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Pombo, Horowitz & Espinosa — Abogados de Inmigración">
+    <meta property="og:description" content="25 años defendiendo tu derecho a quedarte en España. +10,000 casos resueltos.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pombohorowitz.com/">
+    <meta property="og:locale" content="es_ES">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --primary: #1a365d;
-            --primary-light: #2c5282;
-            --accent: #c53030;
-            --accent-light: #e53e3e;
-            --gold: #d69e2e;
-            --gold-light: #ecc94b;
-            --text: #1a202c;
-            --text-light: #4a5568;
-            --bg: #ffffff;
-            --bg-alt: #f7fafc;
-            --border: #e2e8f0;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
-            color: var(--text);
-            line-height: 1.6;
-            background: var(--bg);
-        }
-
-        h1, h2, h3, h4 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-weight: 600;
-            line-height: 1.2;
-        }
-
-        /* ============================================
-           CAMPAIGN BANNER
-           ============================================ */
-        .campaign-banner {
-            background: linear-gradient(135deg, var(--accent) 0%, #9b2c2c 100%);
-            color: white;
-            padding: 12px 20px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .campaign-banner::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            opacity: 0.5;
-        }
-
-        .campaign-banner-content {
-            position: relative;
-            z-index: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .campaign-badge {
-            background: rgba(255,255,255,0.2);
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
-        }
-
-        .campaign-text {
-            font-size: 0.95rem;
-        }
-
-        .campaign-text strong {
-            font-weight: 700;
-        }
-
-        .campaign-link {
-            color: white;
-            background: rgba(255,255,255,0.2);
-            padding: 6px 16px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-            white-space: nowrap;
-        }
-
-        .campaign-link:hover {
-            background: rgba(255,255,255,0.3);
-            transform: translateX(3px);
-        }
-
-        /* ============================================
-           NEWS TICKER
-           ============================================ */
-        .news-ticker {
-            background: var(--primary);
-            color: white;
-            padding: 0;
-            overflow: hidden;
-            position: relative;
-            height: 44px;
-            display: flex;
-            align-items: center;
-        }
-
-        .ticker-label {
-            background: var(--gold);
-            color: var(--primary);
-            padding: 12px 20px;
-            font-weight: 700;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            white-space: nowrap;
-            z-index: 2;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            height: 100%;
-        }
-
-        .ticker-label::after {
-            content: '';
-            position: absolute;
-            left: 100%;
-            top: 0;
-            border-left: 12px solid var(--gold);
-            border-top: 22px solid transparent;
-            border-bottom: 22px solid transparent;
-        }
-
-        .ticker-label-wrapper {
-            position: relative;
-            flex-shrink: 0;
-        }
-
-        .ticker-dot {
-            width: 8px;
-            height: 8px;
-            background: var(--accent);
-            border-radius: 50%;
-            animation: blink 1s infinite;
-        }
-
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.3; }
-        }
-
-        .ticker-content {
-            flex: 1;
-            overflow: hidden;
-            position: relative;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            margin-left: 20px;
-        }
-
-        .ticker-track {
-            display: flex;
-            animation: scroll 30s linear infinite;
-            white-space: nowrap;
-        }
-
-        .ticker-track:hover {
-            animation-play-state: paused;
-        }
-
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-
-        .ticker-item {
-            display: inline-flex;
-            align-items: center;
-            padding: 0 40px;
-            font-size: 0.9rem;
-            gap: 12px;
-        }
-
-        .ticker-item-date {
-            background: rgba(255,255,255,0.15);
-            padding: 3px 10px;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 600;
-        }
-
-        .ticker-item-title {
-            font-weight: 600;
-            color: var(--gold-light);
-        }
-
-        .ticker-item-message {
-            color: rgba(255,255,255,0.9);
-        }
-
-        .ticker-item-separator {
-            color: var(--gold);
-            font-size: 1.2rem;
-        }
-
-        .ticker-item.urgente .ticker-item-title {
-            color: var(--accent-light);
-        }
-
-        .ticker-item.urgente .ticker-item-date {
-            background: var(--accent);
-        }
-
-        /* Fallback when no updates */
-        .ticker-empty {
-            padding: 0 20px;
-            font-size: 0.9rem;
-            color: rgba(255,255,255,0.8);
-        }
-
-        /* ============================================
-           HEADER
-           ============================================ */
-        header {
-            background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 15px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo {
-            display: flex;
-            flex-direction: column;
-            text-decoration: none;
-            color: var(--primary);
-        }
-
-        .logo-main {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
-
-        .logo-sub {
-            font-size: 0.75rem;
-            color: var(--text-light);
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-        }
-
-        nav a {
-            color: var(--text);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: var(--primary);
-        }
-
-        .header-contact {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            font-size: 0.85rem;
-        }
-
-        .header-phone {
-            font-weight: 700;
-            color: var(--primary);
-            font-size: 1.1rem;
-        }
-
-        .header-email {
-            color: var(--text-light);
-        }
-
-        /* Mobile menu */
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--primary);
-        }
-
-        @media (max-width: 900px) {
-            nav { display: none; }
-            .header-contact { display: none; }
-            .mobile-menu-btn { display: block; }
-        }
-
-        /* ============================================
-           HERO
-           ============================================ */
-        .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
-            color: white;
-            padding: 80px 20px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
-        }
-
-        .hero-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-badge {
-            display: inline-block;
-            background: rgba(255,255,255,0.15);
-            padding: 8px 16px;
-            border-radius: 30px;
-            font-size: 0.85rem;
-            margin-bottom: 20px;
-            backdrop-filter: blur(10px);
-        }
-
-        .hero h1 {
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            max-width: 700px;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 1.15rem;
-            max-width: 600px;
-            opacity: 0.9;
-            margin-bottom: 30px;
-            line-height: 1.7;
-        }
-
-        .hero-btn {
-            display: inline-block;
-            background: var(--gold);
-            color: var(--primary);
-            padding: 14px 32px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1rem;
-            transition: all 0.3s;
-        }
-
-        .hero-btn:hover {
-            background: var(--gold-light);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-
-        .hero-stats {
-            display: flex;
-            gap: 50px;
-            margin-top: 50px;
-            flex-wrap: wrap;
-        }
-
-        .hero-stat {
-            text-align: left;
-        }
-
-        .hero-stat-number {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--gold);
-        }
-
-        .hero-stat-label {
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-
-        /* ============================================
-           SECTIONS
-           ============================================ */
-        section {
-            padding: 80px 20px;
-        }
-
-        .section-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .section-badge {
-            display: inline-block;
-            color: var(--primary);
-            font-size: 0.85rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
-        }
-
-        .section-header h2 {
-            font-size: clamp(1.8rem, 4vw, 2.5rem);
-            color: var(--primary);
-        }
-
-        /* Services */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-        }
-
-        .service-card {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 35px;
-            transition: all 0.3s;
-        }
-
-        .service-card:hover {
-            border-color: var(--primary);
-            box-shadow: 0 15px 40px rgba(26,54,93,0.1);
-            transform: translateY(-5px);
-        }
-
-        .service-icon {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .service-card h3 {
-            font-size: 1.3rem;
-            color: var(--primary);
-            margin-bottom: 12px;
-        }
-
-        .service-card p {
-            color: var(--text-light);
-            font-size: 0.95rem;
-        }
-
-        /* Team */
-        #equipo {
-            background: var(--bg-alt);
-        }
-
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .team-card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-            transition: all 0.3s;
-        }
-
-        .team-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-        }
-
-        .team-photo {
-            height: 120px;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .team-initials {
-            width: 80px;
-            height: 80px;
-            background: rgba(255,255,255,0.15);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            font-weight: 600;
-            color: white;
-        }
-
-        .team-info {
-            padding: 25px;
-            text-align: center;
-        }
-
-        .team-info h3 {
-            font-size: 1.2rem;
-            color: var(--primary);
-            margin-bottom: 5px;
-        }
-
-        .team-role {
-            color: var(--gold);
-            font-weight: 600;
-            font-size: 0.85rem;
-            margin-bottom: 12px;
-        }
-
-        .team-bio {
-            color: var(--text-light);
-            font-size: 0.9rem;
-        }
-
-        /* History */
-        .history-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: start;
-        }
-
-        @media (max-width: 768px) {
-            .history-content {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .history-text p {
-            color: var(--text-light);
-            font-size: 1.05rem;
-            margin-bottom: 20px;
-            line-height: 1.8;
-        }
-
-        .timeline {
-            position: relative;
-            padding-left: 30px;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background: linear-gradient(to bottom, var(--primary), var(--gold));
-            border-radius: 3px;
-        }
-
-        .timeline-item {
-            position: relative;
-            padding-bottom: 30px;
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -34px;
-            top: 5px;
-            width: 12px;
-            height: 12px;
-            background: var(--gold);
-            border-radius: 50%;
-            border: 3px solid white;
-            box-shadow: 0 0 0 3px var(--primary);
-        }
-
-        .timeline-year {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 8px;
-        }
-
-        .timeline-text {
-            color: var(--text-light);
-            font-size: 0.95rem;
-        }
-
-        /* Contact */
-        #contacto {
-            background: var(--primary);
-            color: white;
-        }
-
-        #contacto .section-badge {
-            color: var(--gold);
-        }
-
-        #contacto .section-header h2 {
-            color: white;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1.5fr;
-            gap: 60px;
-        }
-
-        @media (max-width: 900px) {
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .contact-info-item {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 25px;
-        }
-
-        .contact-icon {
-            width: 50px;
-            height: 50px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.3rem;
-            flex-shrink: 0;
-        }
-
-        .contact-info-item h4 {
-            font-family: 'Source Sans 3', sans-serif;
-            font-size: 0.85rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            opacity: 0.7;
-            margin-bottom: 5px;
-        }
-
-        .contact-info-item p {
-            font-size: 1.05rem;
-        }
-
-        .contact-form {
-            background: rgba(255,255,255,0.05);
-            padding: 40px;
-            border-radius: 16px;
-            backdrop-filter: blur(10px);
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 0.9rem;
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 14px 18px;
-            border: 1px solid rgba(255,255,255,0.2);
-            border-radius: 8px;
-            background: rgba(255,255,255,0.05);
-            color: white;
-            font-size: 1rem;
-            font-family: inherit;
-            transition: all 0.3s;
-        }
-
-        .form-group input::placeholder,
-        .form-group textarea::placeholder {
-            color: rgba(255,255,255,0.5);
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--gold);
-            background: rgba(255,255,255,0.1);
-        }
-
-        .form-group select option {
-            background: var(--primary);
-            color: white;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        @media (max-width: 600px) {
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .form-submit {
-            background: var(--gold);
-            color: var(--primary);
-            border: none;
-            padding: 16px 40px;
-            font-size: 1rem;
-            font-weight: 700;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s;
-            width: 100%;
-        }
-
-        .form-submit:hover {
-            background: var(--gold-light);
-            transform: translateY(-2px);
-        }
-
-        /* Footer */
-        footer {
-            background: #0f1f36;
-            color: white;
-            padding: 60px 20px 30px;
-        }
-
-        .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        @media (max-width: 900px) {
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .footer-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .footer-brand h3 {
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-        }
-
-        .footer-brand p {
-            color: rgba(255,255,255,0.7);
-            font-size: 0.9rem;
-            line-height: 1.7;
-        }
-
-        .footer-section h4 {
-            font-family: 'Source Sans 3', sans-serif;
-            font-size: 0.9rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 20px;
-            color: var(--gold);
-        }
-
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section li {
-            margin-bottom: 12px;
-        }
-
-        .footer-section a {
-            color: rgba(255,255,255,0.7);
-            text-decoration: none;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-
-        .footer-section a:hover {
-            color: white;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            font-size: 0.85rem;
-            color: rgba(255,255,255,0.5);
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Pombo, Horowitz & Espinosa",
+      "alternateName": "PHE Abogados",
+      "url": "https://pombohorowitz.com",
+      "description": "Abogados de inmigración con 25 años de experiencia en Madrid, Barcelona y Valencia.",
+      "foundingDate": "2001",
+      "areaServed": "ES",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle de Serrano 45, 3o Izq.",
+        "addressLocality": "Madrid",
+        "postalCode": "28001",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34-91-555-0123",
+      "email": "info@pombohorowitz.com"
+    }
+    </script>
 </head>
 <body>
 
-    <!-- Campaign Banner -->
-    <div class="campaign-banner">
-        <div class="campaign-banner-content">
-            <span class="campaign-badge">🔥 Campaña Especial</span>
-            <span class="campaign-text"><strong>Regularización 2026:</strong> Consulta si puedes obtener tus papeles antes del 30 de junio</span>
-            <a href="https://tuspapeles2026.es" class="campaign-link">Ir a tuspapeles2026.es →</a>
-        </div>
-    </div>
-
-    <!-- NEWS TICKER -->
-    <div class="news-ticker" id="newsTicker">
-        <div class="ticker-label-wrapper">
-            <div class="ticker-label">
-                <span class="ticker-dot"></span>
-                Noticias
-            </div>
-        </div>
-        <div class="ticker-content">
-            <div class="ticker-track" id="tickerTrack">
-                <span class="ticker-empty">Cargando noticias...</span>
-            </div>
-        </div>
-    </div>
-
     <!-- Header -->
-    <header>
-        <div class="header-container">
-            <a href="#" class="logo">
-                <span class="logo-main">Pombo & Horowitz</span>
-                <span class="logo-sub">Abogados · Desde 1988</span>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-name">Pombo, Horowitz & Espinosa</span>
+                <span class="logo-tagline">Abogados de Inmigración</span>
             </a>
-            
-            <nav>
-                <a href="#servicios">Servicios</a>
-                <a href="#equipo">Equipo</a>
-                <a href="#historia">Historia</a>
-                <a href="#contacto">Contacto</a>
+            <nav class="main-nav">
+                <a href="servicios.html">Servicios</a>
+                <a href="regularizacion-2026.html">Regularización 2026</a>
+                <a href="sobre-nosotros.html">Sobre Nosotros</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
             </nav>
-            
-            <div class="header-contact">
+            <div class="header-cta">
                 <span class="header-phone">+34 91 555 0123</span>
-                <span class="header-email">info@pombohorowitz.es</span>
+                <a href="contacto.html" class="btn btn-gold btn-sm">Consulta gratuita</a>
             </div>
-            
-            <button class="mobile-menu-btn">☰</button>
+            <button class="mobile-toggle" onclick="toggleMobileNav()" aria-label="Abrir menú">&#9776;</button>
         </div>
     </header>
 
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="servicios.html">Servicios</a>
+        <a href="regularizacion-2026.html">Regularización 2026</a>
+        <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="contacto.html" class="btn btn-gold">Consulta gratuita</a>
+    </nav>
+
     <!-- Hero -->
     <section class="hero">
-        <div class="hero-container">
-            <span class="hero-badge">Especialistas en Derecho de Extranjería</span>
-            <h1>Su situación migratoria merece la atención de expertos</h1>
-            <p>Desde 1988, Pombo & Horowitz Abogados ha ayudado a miles de familias a regularizar su situación en España. Conocemos el sistema, las leyes y los procedimientos como nadie.</p>
-            <a href="#contacto" class="hero-btn">Solicitar Consulta</a>
-            
-            <div class="hero-stats">
-                <div class="hero-stat">
-                    <div class="hero-stat-number">12,800+</div>
-                    <div class="hero-stat-label">Casos resueltos</div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">Colegio de Abogados de Madrid &middot; Desde 2001</span>
+                <h1>25 años defendiendo tu derecho a quedarte en España</h1>
+                <p>Pombo, Horowitz & Espinosa — Abogados de Inmigración. Miles de familias regularizadas. Somos el equipo que necesitas para la Regularización Extraordinaria 2026.</p>
+                <div class="hero-buttons">
+                    <a href="contacto.html" class="btn btn-gold btn-lg">Consulta gratuita</a>
+                    <a href="regularizacion-2026.html" class="btn btn-outline btn-lg">Regularización 2026 &rarr;</a>
                 </div>
-                <div class="hero-stat">
-                    <div class="hero-stat-number">35+</div>
-                    <div class="hero-stat-label">Años de experiencia</div>
-                </div>
-                <div class="hero-stat">
-                    <div class="hero-stat-number">97%</div>
-                    <div class="hero-stat-label">Tasa de éxito</div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">25+</div>
+                        <div class="hero-stat-label">Años de experiencia</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">10,000+</div>
+                        <div class="hero-stat-label">Casos resueltos</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">97%</div>
+                        <div class="hero-stat-label">Tasa de éxito</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services -->
-    <section id="servicios">
-        <div class="section-container">
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <span class="trust-icon">&#9878;</span>
+                    <span>Colegio de Abogados de Madrid</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">&#9733;</span>
+                    <span>25 años de experiencia</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">&#10003;</span>
+                    <span>+10,000 casos resueltos</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-icon">&#127760;</span>
+                    <span>Equipo multilingüe</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Grid -->
+    <section class="section" id="servicios">
+        <div class="container">
             <div class="section-header">
                 <span class="section-badge">Nuestros Servicios</span>
                 <h2>Áreas de Práctica</h2>
             </div>
-            
+
+            <!-- Featured: Regularización -->
             <div class="services-grid">
+                <div class="service-card featured">
+                    <div>
+                        <div class="icon">&#9888;</div>
+                        <h3>Regularización Extraordinaria 2026</h3>
+                        <p>El proceso más importante en 20 años. Nuestro equipo incluye abogados que trabajaron en la regularización de 2005. Hemos lanzado tuspapeles2026.es para atender a miles de personas de forma eficiente.</p>
+                        <p style="margin-top:12px">Todo por menos de 300 euros. Verificación gratuita en 2 minutos.</p>
+                    </div>
+                    <div style="display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:16px">
+                        <div class="countdown" id="homeCountdown" style="justify-content:flex-start"></div>
+                        <a href="https://tuspapeles2026.es" target="_blank" rel="noopener" class="btn btn-gold btn-lg">Ir a tuspapeles2026.es &rarr;</a>
+                        <a href="regularizacion-2026.html" class="btn btn-outline">Más información</a>
+                    </div>
+                </div>
+
                 <div class="service-card">
-                    <div class="service-icon">📋</div>
-                    <h3>Permisos de Residencia</h3>
-                    <p>Tramitación de autorizaciones de residencia temporal y de larga duración. Arraigo social, laboral y familiar.</p>
+                    <div class="icon">&#128203;</div>
+                    <h3>Arraigo Social, Laboral y Familiar</h3>
+                    <p>Tramitación completa de autorizaciones de residencia por arraigo. Te acompañamos en todo el proceso.</p>
+                    <a href="servicios.html" class="card-link">Saber más &rarr;</a>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🏛️</div>
-                    <h3>Nacionalidad Española</h3>
+                    <div class="icon">&#127386;</div>
+                    <h3>Nacionalidad y Ciudadanía</h3>
                     <p>Solicitud y seguimiento de expedientes de nacionalidad por residencia, origen y carta de naturaleza.</p>
+                    <a href="servicios.html" class="card-link">Saber más &rarr;</a>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">👨‍👩‍👧‍👦</div>
+                    <div class="icon">&#128106;</div>
                     <h3>Reagrupación Familiar</h3>
                     <p>Reunificación de cónyuges, hijos y ascendientes. Asesoramiento completo del proceso.</p>
+                    <a href="servicios.html" class="card-link">Saber más &rarr;</a>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">💼</div>
-                    <h3>Visados de Trabajo</h3>
-                    <p>Autorizaciones de trabajo por cuenta ajena y propia. Visados de emprendedor e inversor.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🎓</div>
-                    <h3>Visados de Estudiante</h3>
-                    <p>Permisos de estancia por estudios y su modificación a residencia y trabajo.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">⚖️</div>
-                    <h3>Recursos y Litigios</h3>
+                    <div class="icon">&#128188;</div>
+                    <h3>Recursos y Apelaciones</h3>
                     <p>Defensa ante denegaciones, órdenes de expulsión y recursos contencioso-administrativos.</p>
+                    <a href="servicios.html" class="card-link">Saber más &rarr;</a>
+                </div>
+                <div class="service-card">
+                    <div class="icon">&#127970;</div>
+                    <h3>Empresas y Autónomos</h3>
+                    <p>Autorizaciones de trabajo por cuenta ajena y propia. Visados de emprendedor e inversor.</p>
+                    <a href="servicios.html" class="card-link">Saber más &rarr;</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Team -->
-    <section id="equipo">
-        <div class="section-container">
+    <!-- Why Choose Us -->
+    <section class="section section-alt">
+        <div class="container">
             <div class="section-header">
-                <span class="section-badge">Nuestro Equipo</span>
-                <h2>Profesionales a su Servicio</h2>
+                <span class="section-badge">¿Por qué elegirnos?</span>
+                <h2>Tu caso en las mejores manos</h2>
             </div>
-            
-            <div class="team-grid">
-                <div class="team-card">
-                    <div class="team-photo">
-                        <div class="team-initials">EP</div>
-                    </div>
-                    <div class="team-info">
-                        <h3>Dra. Elena Pombo</h3>
-                        <div class="team-role">Socia Fundadora</div>
-                        <p class="team-bio">Doctora en Derecho por la UCM. Especialista en nacionalidad española y derechos fundamentales de extranjeros.</p>
-                    </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">&#128197;</div>
+                    <h3>25 años de experiencia</h3>
+                    <p>Desde 2001, hemos sido testigos y partícipes de todas las reformas legislativas en materia de extranjería.</p>
                 </div>
-                <div class="team-card">
-                    <div class="team-photo">
-                        <div class="team-initials">DH</div>
-                    </div>
-                    <div class="team-info">
-                        <h3>Lic. David Horowitz</h3>
-                        <div class="team-role">Socio Fundador</div>
-                        <p class="team-bio">Licenciado en Derecho por la UAM. Experto en procedimientos de extranjería y litigación ante la Audiencia Nacional.</p>
-                    </div>
+                <div class="value-card">
+                    <div class="value-icon">&#9989;</div>
+                    <h3>Más de 10,000 casos exitosos</h3>
+                    <p>Miles de familias regularizadas. Nuestra experiencia incluye la regularización extraordinaria de 2005.</p>
                 </div>
-                <div class="team-card">
-                    <div class="team-photo">
-                        <div class="team-initials">CM</div>
-                    </div>
-                    <div class="team-info">
-                        <h3>Lic. Carmen Martínez</h3>
-                        <div class="team-role">Asociada Senior</div>
-                        <p class="team-bio">Especialista en arraigos y regularizaciones extraordinarias. 15 años de experiencia en derecho migratorio.</p>
-                    </div>
+                <div class="value-card">
+                    <div class="value-icon">&#127760;</div>
+                    <h3>Equipo multilingüe</h3>
+                    <p>Hablamos español, inglés, árabe y francés. Tu idioma no es una barrera para nosotros.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">&#128205;</div>
+                    <h3>Presencia nacional</h3>
+                    <p>Oficinas en Madrid, Barcelona y Valencia. Cerca de ti, donde lo necesites.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- History -->
-    <section id="historia">
-        <div class="section-container">
+    <!-- Blog Preview -->
+    <section class="section" id="blog-preview">
+        <div class="container">
             <div class="section-header">
-                <span class="section-badge">Nuestra Historia</span>
-                <h2>Más de tres décadas defendiendo tus derechos</h2>
+                <span class="section-badge">Blog</span>
+                <h2>Últimos Artículos</h2>
+                <p>Información actualizada sobre regularización, extranjería e inmigración en España.</p>
             </div>
-            
-            <div class="history-content">
-                <div class="history-text">
-                    <p>Pombo & Horowitz nació en 1988, en un momento en que España comenzaba a recibir flujos migratorios significativos. Desde entonces, hemos sido testigos y partícipes de todas las reformas legislativas en materia de extranjería.</p>
-                    <p>Nuestra experiencia incluye las regularizaciones extraordinarias de 1991, 1996, 2000, 2001 y 2005. Hoy, con la nueva regularización de 2026, ponemos todo nuestro conocimiento al servicio de quienes buscan regularizar su situación.</p>
-                </div>
-                
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-year">1988</div>
-                        <div class="timeline-text">Fundación del despacho en Madrid por Elena Pombo y David Horowitz.</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">1996</div>
-                        <div class="timeline-text">Participación activa en el proceso de regularización extraordinaria.</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2005</div>
-                        <div class="timeline-text">Más de 3,000 casos gestionados en la última gran regularización.</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2015</div>
-                        <div class="timeline-text">Expansión del equipo y apertura de oficina en Barcelona.</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2026</div>
-                        <div class="timeline-text">Lanzamiento de tuspapeles2026.es para la nueva regularización extraordinaria.</div>
-                    </div>
-                </div>
+            <div class="blog-grid" id="blogPreviewGrid">
+                <!-- Loaded via JS -->
+            </div>
+            <div class="text-center mt-32">
+                <a href="blog.html" class="btn btn-outline-navy">Ver todos los artículos &rarr;</a>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contacto">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-badge">Contacto</span>
-                <h2>Hablemos de su Caso</h2>
+    <!-- Contact CTA -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>¿Tienes preguntas? Hablemos.</h2>
+            <p>Primera consulta gratuita y sin compromiso. Evaluamos tu caso y te decimos tus opciones.</p>
+            <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+                <a href="contacto.html" class="btn btn-navy btn-lg">Enviar consulta</a>
+                <a href="https://wa.me/34915550123" target="_blank" rel="noopener" class="btn btn-outline-navy btn-lg">WhatsApp &rarr;</a>
             </div>
-            
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-info-item">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <h4>Dirección</h4>
-                            <p>Calle Serrano 45, 3º Izq.<br>28001 Madrid</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-item">
-                        <div class="contact-icon">📞</div>
-                        <div>
-                            <h4>Teléfono</h4>
-                            <p>+34 91 555 0123</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-item">
-                        <div class="contact-icon">✉️</div>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@pombohorowitz.es</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-item">
-                        <div class="contact-icon">🕐</div>
-                        <div>
-                            <h4>Horario</h4>
-                            <p>Lun - Vie: 9:00 - 19:00</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label>Nombre completo</label>
-                                <input type="text" placeholder="Su nombre">
-                            </div>
-                            <div class="form-group">
-                                <label>Teléfono</label>
-                                <input type="tel" placeholder="+34 600 000 000">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" placeholder="su@email.com">
-                        </div>
-                        <div class="form-group">
-                            <label>Tipo de consulta</label>
-                            <select>
-                                <option>Regularización 2026</option>
-                                <option>Permiso de residencia</option>
-                                <option>Nacionalidad española</option>
-                                <option>Reagrupación familiar</option>
-                                <option>Otro</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Mensaje</label>
-                            <textarea rows="4" placeholder="Describa brevemente su situación..."></textarea>
-                        </div>
-                        <button type="submit" class="form-submit">Enviar Consulta</button>
-                    </form>
-                </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Preguntas Frecuentes</span>
+                <h2>Resolvemos tus Dudas</h2>
+            </div>
+            <div class="faq-list" id="faqList">
+                <!-- Loaded via JS -->
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-container">
+    <footer class="site-footer">
+        <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <h3>Pombo & Horowitz Abogados</h3>
-                    <p>Despacho especializado en derecho de extranjería con más de 35 años de experiencia. Miembros del Ilustre Colegio de Abogados de Madrid.</p>
+                    <span class="logo-name">Pombo, Horowitz & Espinosa</span>
+                    <p style="margin-top:12px">Abogados de inmigración con 25 años de experiencia. Miembros del Ilustre Colegio de Abogados de Madrid.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Servicios</h4>
                     <ul>
-                        <li><a href="#">Permisos de residencia</a></li>
-                        <li><a href="#">Nacionalidad española</a></li>
-                        <li><a href="#">Reagrupación familiar</a></li>
-                        <li><a href="#">Visados de trabajo</a></li>
+                        <li><a href="regularizacion-2026.html">Regularización 2026</a></li>
+                        <li><a href="servicios.html">Arraigo</a></li>
+                        <li><a href="servicios.html">Nacionalidad</a></li>
+                        <li><a href="servicios.html">Reagrupación familiar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Legal</h4>
                     <ul>
-                        <li><a href="#">Aviso legal</a></li>
-                        <li><a href="#">Política de privacidad</a></li>
-                        <li><a href="#">Cookies</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Campaña Especial</h4>
-                    <ul>
-                        <li><a href="https://tuspapeles2026.es">🔥 tuspapeles2026.es</a></li>
-                        <li><a href="https://tuspapeles2026.es">Regularización 2026</a></li>
-                        <li><a href="https://tuspapeles2026.es">Consulta gratuita</a></li>
+                        <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                        <li><a href="privacidad.html">Política de Privacidad</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <span>© 2026 Pombo & Horowitz Abogados. Todos los derechos reservados.</span>
-                <span>ICAM Colegiados nº 12345 y 12346</span>
+                <span>&copy; 2026 Pombo, Horowitz & Espinosa. Todos los derechos reservados.</span>
+                <div class="footer-social">
+                    <a href="#" aria-label="LinkedIn">in</a>
+                    <a href="#" aria-label="Instagram">ig</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript for News Ticker -->
-    <script>
-        // Load updates from content.json and populate ticker
-        async function loadTicker() {
-            const tickerTrack = document.getElementById('tickerTrack');
-            
-            try {
-                const response = await fetch('content.json');
-                const data = await response.json();
-                
-                if (data.updates && data.updates.length > 0) {
-                    // Build ticker items
-                    let tickerHTML = '';
-                    
-                    data.updates.forEach(update => {
-                        const typeClass = update.type === 'urgente' ? 'urgente' : '';
-                        tickerHTML += `
-                            <div class="ticker-item ${typeClass}">
-                                <span class="ticker-item-date">${formatDate(update.date)}</span>
-                                <span class="ticker-item-title">${update.title}</span>
-                                <span class="ticker-item-message">${update.message}</span>
-                                <span class="ticker-item-separator">•</span>
-                            </div>
-                        `;
-                    });
-                    
-                    // Duplicate for seamless scroll
-                    tickerTrack.innerHTML = tickerHTML + tickerHTML;
-                    
-                    // Adjust animation speed based on content length
-                    const itemCount = data.updates.length;
-                    const duration = Math.max(20, itemCount * 8);
-                    tickerTrack.style.animationDuration = `${duration}s`;
-                    
-                } else {
-                    tickerTrack.innerHTML = '<span class="ticker-empty">No hay noticias recientes</span>';
-                }
-                
-            } catch (error) {
-                console.error('Error loading ticker:', error);
-                tickerTrack.innerHTML = '<span class="ticker-empty">Pombo & Horowitz Abogados — Especialistas en Derecho de Extranjería desde 1988</span>';
-            }
-        }
-        
-        function formatDate(dateStr) {
-            const date = new Date(dateStr);
-            const options = { day: 'numeric', month: 'short' };
-            return date.toLocaleDateString('es-ES', options);
-        }
-        
-        // Load on page ready
-        document.addEventListener('DOMContentLoaded', loadTicker);
-    </script>
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/34915550123" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
+        &#128172;
+    </a>
 
+    <script>
+    // Mobile nav toggle
+    function toggleMobileNav() {
+        document.getElementById('mobileNav').classList.toggle('open');
+    }
+
+    // Countdown to June 30, 2026
+    function updateCountdown() {
+        const deadline = new Date('2026-06-30T23:59:59+02:00');
+        const now = new Date();
+        const diff = deadline - now;
+        if (diff <= 0) return;
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+        const el = document.getElementById('homeCountdown');
+        if (el) {
+            el.innerHTML = `
+                <div class="countdown-item">
+                    <div class="countdown-number">${days}</div>
+                    <div class="countdown-label">Días</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number">${hours}</div>
+                    <div class="countdown-label">Horas</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number">${minutes}</div>
+                    <div class="countdown-label">Minutos</div>
+                </div>
+            `;
+        }
+    }
+
+    // Load blog preview (3 latest)
+    async function loadBlogPreview() {
+        try {
+            const res = await fetch('content.json');
+            const data = await res.json();
+            const articles = (data.articles || []).slice(0, 3);
+            const grid = document.getElementById('blogPreviewGrid');
+            if (!grid || !articles.length) return;
+
+            grid.innerHTML = articles.map(a => `
+                <div class="blog-card">
+                    <div class="blog-card-image">
+                        <span class="blog-category-badge">${formatCat(a.category)}</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-meta">
+                            <span>${formatDate(a.date)}</span>
+                            <span>${a.readTime}</span>
+                        </div>
+                        <h3><a href="blog.html">${a.title}</a></h3>
+                        <p class="blog-excerpt">${a.excerpt}</p>
+                        <a href="blog.html" class="read-more">Leer más &rarr;</a>
+                    </div>
+                </div>
+            `).join('');
+        } catch (e) {
+            console.error('Blog preview error:', e);
+        }
+    }
+
+    // Load FAQs
+    async function loadFAQs() {
+        try {
+            const res = await fetch('content.json');
+            const data = await res.json();
+            const faqs = (data.faqs || []).slice(0, 6);
+            const list = document.getElementById('faqList');
+            if (!list || !faqs.length) return;
+
+            list.innerHTML = faqs.map(f => `
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>${f.question}</span>
+                        <span class="faq-arrow">&#9660;</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">${f.answer}</div>
+                    </div>
+                </div>
+            `).join('');
+        } catch (e) {
+            console.error('FAQ error:', e);
+        }
+    }
+
+    function toggleFaq(btn) {
+        const item = btn.closest('.faq-item');
+        const answer = item.querySelector('.faq-answer');
+        const isOpen = item.classList.contains('open');
+
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(i => {
+            i.classList.remove('open');
+            i.querySelector('.faq-answer').style.maxHeight = '0';
+        });
+
+        if (!isOpen) {
+            item.classList.add('open');
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+    }
+
+    function formatDate(d) {
+        return new Date(d).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+    }
+
+    function formatCat(c) {
+        const cats = { regularizacion: 'Regularización', documentacion: 'Documentación', consejos: 'Consejos', noticias: 'Noticias' };
+        return cats[c] || c;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        updateCountdown();
+        setInterval(updateCountdown, 60000);
+        loadBlogPreview();
+        loadFAQs();
+    });
+    </script>
 </body>
 </html>

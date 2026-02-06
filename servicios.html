@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Pombo, Horowitz & Espinosa — Abogados de Inmigración</title>
+    <meta name="description" content="Servicios legales especializados en inmigración y extranjería: regularización 2026, arraigo, nacionalidad, reagrupación familiar, recursos y visados.">
+    <link rel="canonical" href="https://pombohorowitz.com/servicios">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Servicios — Pombo, Horowitz & Espinosa">
+    <meta property="og:description" content="Soluciones legales especializadas en inmigración y extranjería. Regularización 2026, arraigo, nacionalidad y más.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pombohorowitz.com/servicios">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* --- Services page-specific styles --- */
+        .service-card-detail ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin-top: 12px;
+        }
+
+        .service-card-detail ul li {
+            font-size: 0.92rem;
+            color: var(--charcoal);
+            line-height: 1.7;
+            margin-bottom: 6px;
+        }
+
+        .service-card.featured ul li {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .featured-price {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--navy);
+            font-weight: 700;
+            font-size: 0.95rem;
+            padding: 6px 16px;
+            border-radius: 6px;
+            margin-top: 12px;
+        }
+
+        .featured-buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .featured-deadline {
+            font-size: 0.9rem;
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        /* Process steps */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .process-number {
+            width: 56px;
+            height: 56px;
+            background: var(--navy);
+            color: var(--gold);
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .process-step h3 {
+            font-size: 1.1rem;
+            color: var(--navy);
+            margin-bottom: 8px;
+        }
+
+        .process-step p {
+            font-size: 0.92rem;
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+
+        .process-step .process-tag {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--navy);
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 3px 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        /* Connector lines between steps */
+        .process-step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 28px;
+            left: calc(50% + 36px);
+            width: calc(100% - 72px);
+            height: 2px;
+            background: var(--gray-light);
+        }
+
+        @media (max-width: 900px) {
+            .process-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 40px 24px;
+            }
+            .process-step::after {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .process-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-name">Pombo, Horowitz & Espinosa</span>
+                <span class="logo-tagline">Abogados de Inmigración</span>
+            </a>
+            <nav class="main-nav">
+                <a href="servicios.html" class="active">Servicios</a>
+                <a href="regularizacion-2026.html">Regularización 2026</a>
+                <a href="sobre-nosotros.html">Sobre Nosotros</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <div class="header-cta">
+                <span class="header-phone">+34 91 555 0123</span>
+                <a href="contacto.html" class="btn btn-gold btn-sm">Consulta gratuita</a>
+            </div>
+            <button class="mobile-toggle" onclick="toggleMobileNav()" aria-label="Abrir menú">&#9776;</button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="servicios.html">Servicios</a>
+        <a href="regularizacion-2026.html">Regularización 2026</a>
+        <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="contacto.html" class="btn btn-gold">Consulta gratuita</a>
+    </nav>
+
+    <!-- Page Hero Navy -->
+    <section class="page-hero-navy">
+        <div class="container">
+            <div class="page-hero-content">
+                <span class="section-badge">Servicios</span>
+                <h1>Áreas de Práctica</h1>
+                <p>Soluciones legales especializadas en inmigración y extranjería</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="section" id="servicios">
+        <div class="container">
+            <div class="services-grid">
+
+                <!-- FEATURED: Regularización Extraordinaria 2026 -->
+                <div class="service-card featured">
+                    <div class="service-card-detail">
+                        <div class="icon">&#9888;</div>
+                        <h3>Regularización Extraordinaria 2026</h3>
+                        <p>El proceso más importante en 20 años. La Regularización Extraordinaria de 2026 abre una ventana única para que miles de personas sin papeles puedan obtener su autorización de residencia y trabajo en España. Nuestro equipo incluye abogados que participaron activamente en la regularización de 2005.</p>
+                        <ul>
+                            <li>Verificación de requisitos y elegibilidad</li>
+                            <li>Preparación completa del expediente</li>
+                            <li>Presentación telemática y seguimiento</li>
+                            <li>Plazo límite: 30 de junio de 2026</li>
+                        </ul>
+                        <span class="featured-price">Todo por menos de 300 euros</span>
+                    </div>
+                    <div class="featured-buttons">
+                        <p class="featured-deadline">Hemos lanzado tuspapeles2026.es para atender a miles de personas de forma eficiente y asequible.</p>
+                        <a href="https://tuspapeles2026.es" target="_blank" rel="noopener" class="btn btn-gold btn-lg">Ir a tuspapeles2026.es &rarr;</a>
+                        <a href="regularizacion-2026.html" class="btn btn-outline">Más información</a>
+                    </div>
+                </div>
+
+                <!-- Arraigo Social, Laboral y Familiar -->
+                <div class="service-card">
+                    <div class="service-card-detail">
+                        <div class="icon">&#128203;</div>
+                        <h3>Arraigo Social, Laboral y Familiar</h3>
+                        <p>Tramitación completa de autorizaciones de residencia por arraigo. Te acompañamos y preparamos el expediente para maximizar tus posibilidades de éxito.</p>
+                        <ul>
+                            <li><strong>Arraigo social:</strong> 3 años de residencia continuada + contrato de trabajo o informe de integración social</li>
+                            <li><strong>Arraigo laboral:</strong> 2 años de residencia + acreditación de relación laboral</li>
+                            <li><strong>Arraigo familiar:</strong> padre o madre de menor español, o hijo de español de origen</li>
+                        </ul>
+                        <a href="contacto.html" class="card-link">Consultar mi caso &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Nacionalidad y Ciudadanía -->
+                <div class="service-card">
+                    <div class="service-card-detail">
+                        <div class="icon">&#127386;</div>
+                        <h3>Nacionalidad y Ciudadanía</h3>
+                        <p>Solicitud y seguimiento de expedientes de nacionalidad española. Te asesoramos sobre la vía más adecuada a tu situación.</p>
+                        <ul>
+                            <li><strong>Por residencia:</strong> 10 años con carácter general; 5, 2 o 1 año según país de origen</li>
+                            <li><strong>Por origen:</strong> nacidos de padre o madre española</li>
+                            <li><strong>Por carta de naturaleza:</strong> circunstancias excepcionales valoradas por el Consejo de Ministros</li>
+                        </ul>
+                        <a href="contacto.html" class="card-link">Consultar mi caso &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Reagrupación Familiar -->
+                <div class="service-card">
+                    <div class="service-card-detail">
+                        <div class="icon">&#128106;</div>
+                        <h3>Reagrupación Familiar</h3>
+                        <p>Reunificación de tu familia en España. Gestionamos todo el proceso desde la solicitud inicial hasta la obtención de la tarjeta de residencia.</p>
+                        <ul>
+                            <li><strong>Cónyuge e hijos:</strong> reagrupación de pareja y menores dependientes</li>
+                            <li><strong>Ascendientes:</strong> reagrupación de padres mayores de 65 años</li>
+                            <li><strong>Requisitos:</strong> acreditación de medios económicos, vivienda adecuada y seguro médico</li>
+                        </ul>
+                        <a href="contacto.html" class="card-link">Consultar mi caso &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Recursos y Apelaciones -->
+                <div class="service-card">
+                    <div class="service-card-detail">
+                        <div class="icon">&#128188;</div>
+                        <h3>Recursos y Apelaciones</h3>
+                        <p>Defensa legal especializada ante denegaciones y resoluciones desfavorables. No te rindas: muchos casos se ganan en vía de recurso.</p>
+                        <ul>
+                            <li><strong>Recursos administrativos:</strong> alzada y reposición ante la Administración</li>
+                            <li><strong>Contencioso-administrativo:</strong> recurso judicial ante los Tribunales</li>
+                            <li><strong>Defensa ante expulsión:</strong> oposición a órdenes de expulsión y solicitudes de medidas cautelares</li>
+                        </ul>
+                        <a href="contacto.html" class="card-link">Consultar mi caso &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Empresas y Autónomos -->
+                <div class="service-card">
+                    <div class="service-card-detail">
+                        <div class="icon">&#127970;</div>
+                        <h3>Empresas y Autónomos</h3>
+                        <p>Soluciones migratorias para profesionales, emprendedores e inversores que desean desarrollar su actividad en España.</p>
+                        <ul>
+                            <li><strong>Permisos de trabajo:</strong> autorizaciones por cuenta ajena y propia</li>
+                            <li><strong>Visado de emprendedor:</strong> para actividades empresariales de interés económico</li>
+                            <li><strong>Visado de inversor:</strong> residencia mediante inversión significativa de capital</li>
+                        </ul>
+                        <a href="contacto.html" class="card-link">Consultar mi caso &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Visados de Estudiante -->
+                <div class="service-card">
+                    <div class="service-card-detail">
+                        <div class="icon">&#127891;</div>
+                        <h3>Visados de Estudiante</h3>
+                        <p>Asesoramiento y tramitación para quienes desean estudiar en España y, posteriormente, acceder al mercado laboral.</p>
+                        <ul>
+                            <li><strong>Permiso de estudios:</strong> obtención y renovación de autorizaciones de estancia por estudios</li>
+                            <li><strong>Modificación a residencia y trabajo:</strong> cambio de situación de estudiante a permiso de trabajo y residencia</li>
+                        </ul>
+                        <a href="contacto.html" class="card-link">Consultar mi caso &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section: How We Work -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Cómo Trabajamos</span>
+                <h2>Nuestro Proceso</h2>
+                <p>Un enfoque claro y estructurado para cada caso</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <h3>Consulta Inicial</h3>
+                    <p>Evaluamos tu situación personal y migratoria. Te explicamos las opciones disponibles y la estrategia más adecuada para tu caso.</p>
+                    <span class="process-tag">Gratuita</span>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <h3>Análisis del Caso</h3>
+                    <p>Estudiamos en profundidad la documentación, verificamos requisitos legales e identificamos posibles obstáculos antes de iniciar el trámite.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <h3>Preparación y Presentación</h3>
+                    <p>Preparamos el expediente completo, redactamos los escritos necesarios y presentamos la solicitud ante la Administración competente.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">4</div>
+                    <h3>Seguimiento</h3>
+                    <p>Hacemos seguimiento activo del expediente, respondemos a posibles requerimientos y te mantenemos informado en todo momento hasta la resolución.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner (Gold) -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>¿Necesitas asesoramiento?</h2>
+            <p>Primera consulta gratuita y sin compromiso. Evaluamos tu caso y te orientamos sobre los pasos a seguir.</p>
+            <a href="contacto.html" class="btn btn-navy btn-lg">Solicitar consulta gratuita</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-name">Pombo, Horowitz & Espinosa</span>
+                    <p style="margin-top:12px">Abogados de inmigración con 25 años de experiencia. Miembros del Ilustre Colegio de Abogados de Madrid.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="regularizacion-2026.html">Regularización 2026</a></li>
+                        <li><a href="servicios.html">Arraigo</a></li>
+                        <li><a href="servicios.html">Nacionalidad</a></li>
+                        <li><a href="servicios.html">Reagrupación familiar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                        <li><a href="privacidad.html">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Pombo, Horowitz & Espinosa. Todos los derechos reservados.</span>
+                <div class="footer-social">
+                    <a href="#" aria-label="LinkedIn">in</a>
+                    <a href="#" aria-label="Instagram">ig</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/34915550123" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
+        &#128172;
+    </a>
+
+    <script>
+    // Mobile nav toggle
+    function toggleMobileNav() {
+        document.getElementById('mobileNav').classList.toggle('open');
+    }
+    </script>
+</body>
+</html>
