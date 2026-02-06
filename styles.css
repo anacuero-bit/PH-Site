@@ -241,12 +241,12 @@ ul { list-style: none; }
 }
 
 .logo-img {
-  height: 28px;
+  height: 42px;
   width: auto;
   display: block;
 }
 .logo-img-footer {
-  height: 24px;
+  height: 36px;
 }
 .logo-name {
   font-family: var(--font-heading);
@@ -399,6 +399,16 @@ ul { list-style: none; }
   color: var(--white);
 }
 
+.footer-disclaimer {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 24px;
+  margin-bottom: 24px;
+}
+.footer-disclaimer p {
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.35);
+}
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.1);
   padding-top: 24px;
@@ -409,6 +419,17 @@ ul { list-style: none; }
   gap: 16px;
   font-size: 0.85rem;
   color: rgba(255,255,255,0.4);
+}
+.footer-bottom-links {
+  display: flex;
+  gap: 20px;
+}
+.footer-bottom-links a {
+  color: rgba(255,255,255,0.4);
+  font-size: 0.8rem;
+}
+.footer-bottom-links a:hover {
+  color: var(--white);
 }
 
 .footer-social {
