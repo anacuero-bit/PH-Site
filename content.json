@@ -1,7 +1,13 @@
 {
   "meta": {
-    "updated": "2026-02-03T12:00:00Z",
-    "version": "1.0.0"
+    "updated": "2026-02-06T12:00:00Z",
+    "version": "2.0.0",
+    "firm": "Pombo, Horowitz & Espinosa",
+    "abbreviation": "PHE",
+    "domain": "pombohorowitz.com",
+    "productSite": "tuspapeles2026.es",
+    "email": "info@pombohorowitz.com",
+    "phone": "+34 91 555 0123"
   },
   "countdown": {
     "deadline": "2026-06-30T23:59:59+02:00",
@@ -9,10 +15,22 @@
     "description": "Última fecha para presentar solicitudes"
   },
   "stats": {
-    "cases_resolved": 12847,
-    "years_experience": 38,
+    "cases_resolved": 10000,
+    "years_experience": 25,
     "success_rate": 97,
-    "clients_regularization": 312
+    "clients_regularization": 312,
+    "founded": 2001
+  },
+  "pricing": {
+    "phase_1": { "name": "Verificación", "price": 0, "label": "GRATIS" },
+    "phase_2": { "name": "Preparación", "price": 39 },
+    "phase_3": { "name": "Revisión Legal", "price": 150 },
+    "phase_4": { "name": "Presentación", "price": 110 },
+    "total": 299,
+    "anchor_copy": "Todo por menos de 300 euros",
+    "addons": {
+      "antecedentes_penales": { "name": "Antecedentes penales (gestión + apostilla)", "price": 75 }
+    }
   },
   "articles": [
     {
@@ -103,7 +121,7 @@
     {
       "id": "faq-4",
       "question": "¿Cuánto cuesta el proceso de regularización?",
-      "answer": "Las tasas oficiales del gobierno aún no se han publicado definitivamente. Nuestro servicio de asesoramiento comienza desde 99€ para la evaluación inicial de tu caso.",
+      "answer": "Las tasas oficiales del gobierno aún no se han publicado definitivamente. Nuestro servicio completo cuesta €299 en total: verificación gratuita, preparación (€39), revisión legal (€150) y presentación (€110). Todo por menos de 300 euros.",
       "category": "costes"
     },
     {
