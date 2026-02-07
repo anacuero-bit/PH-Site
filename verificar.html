@@ -3,23 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Pombo, Horowitz & Espinosa — Abogados de Inmigración</title>
-    <meta name="description" content="Contacte con Pombo, Horowitz & Espinosa, abogados de inmigración. Escríbanos por email o contáctenos por Telegram.">
-    <meta name="keywords" content="contacto abogados inmigración Madrid, abogados extranjería Madrid, PHE abogados contacto">
-    <link rel="canonical" href="https://pombohorowitz.com/contacto">
+    <title>Verifica si Calificas | Regularización 2026 — Pombo, Horowitz & Espinosa</title>
+    <meta name="description" content="Comprueba gratis en 2 minutos si puedes acogerte a la regularización extraordinaria 2026. Sin compromiso.">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Contacto — Pombo, Horowitz & Espinosa">
-    <meta property="og:description" content="Contacte con nuestro equipo de abogados de inmigración. Email y Telegram.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pombohorowitz.com/contacto">
-    <meta property="og:locale" content="es_ES">
-
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -40,7 +29,7 @@
                 <a href="servicios.html">Servicios</a>
                 <a href="sobre-nosotros.html">Sobre Nosotros</a>
                 <a href="blog.html">Blog</a>
-                <a href="contacto.html" class="active">Contacto</a>
+                <a href="contacto.html">Contacto</a>
             </nav>
             <div class="header-cta">
                 <a href="contacto.html" class="btn btn-navy btn-sm">Contactar</a>
@@ -49,7 +38,6 @@
         </div>
     </header>
 
-    <!-- Mobile Nav -->
     <nav class="mobile-nav" id="mobileNav">
         <a href="servicios.html">Servicios</a>
         <a href="sobre-nosotros.html">Sobre Nosotros</a>
@@ -61,53 +49,88 @@
     <!-- Page Hero -->
     <section class="page-hero">
         <div class="container">
-            <span class="section-badge">Contacto</span>
-            <h1>Contacte con Nosotros</h1>
+            <span class="section-badge">Verificación Gratuita</span>
+            <h1>¿Puedes acogerte a la regularización?</h1>
+            <p>Responde 3 preguntas y te diremos si calificas. Sin compromiso, sin datos personales.</p>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="section section-navy">
+    <!-- Verification Form -->
+    <section class="section">
         <div class="container">
-            <div style="max-width:640px;margin:0 auto;text-align:center">
-                <h2 style="font-size:1.6rem;margin-bottom:8px;color:var(--white)">Información de Contacto</h2>
-                <p style="opacity:0.7;margin-bottom:48px;font-size:0.95rem">Estamos aquí para ayudarle. Contáctenos por el medio que prefiera.</p>
+            <div style="max-width:640px;margin:0 auto">
 
-                <div style="text-align:left;max-width:440px;margin:0 auto">
-                    <div class="contact-info-item">
-                        <div class="contact-icon">&#9993;</div>
-                        <div>
-                            <h4>Email</h4>
-                            <p><a href="mailto:info@pombohorowitz.com" style="color:var(--white)">info@pombohorowitz.com</a></p>
-                        </div>
-                    </div>
-
-                    <div class="contact-info-item">
-                        <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="var(--gold)"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></div>
-                        <div>
-                            <h4>Telegram</h4>
-                            <p><a href="https://t.me/TusPapeles2026Bot" target="_blank" rel="noopener" style="color:var(--gold)">@TusPapeles2026Bot</a></p>
-                        </div>
-                    </div>
-
-                    <div class="contact-info-item">
-                        <div class="contact-icon">&#128336;</div>
-                        <div>
-                            <h4>Horario</h4>
-                            <p>Lun - Vie: 9:00 - 19:00</p>
+                <!-- Step 1 -->
+                <div class="verificar-step" id="step1">
+                    <div class="verificar-card">
+                        <span style="font-size:0.85rem;color:var(--charcoal);opacity:0.6">Pregunta 1 de 3</span>
+                        <h3 style="margin-top:8px">¿Entraste en España antes del 31 de diciembre de 2025?</h3>
+                        <p style="font-size:0.95rem;opacity:0.7">Este es el requisito principal del Real Decreto.</p>
+                        <div style="display:flex;gap:16px;margin-top:24px">
+                            <button class="btn btn-navy btn-lg" style="flex:1" onclick="answer(1, true)">Sí</button>
+                            <button class="btn btn-outline-navy btn-lg" style="flex:1" onclick="answer(1, false)">No</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Prominent Telegram Button -->
-                <div style="margin-top:48px">
-                    <a href="https://t.me/TusPapeles2026Bot" target="_blank" rel="noopener" class="btn btn-telegram btn-lg" style="width:100%;max-width:440px"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:6px"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg> Escríbenos por Telegram</a>
+                <!-- Step 2 -->
+                <div class="verificar-step" id="step2" style="display:none">
+                    <div class="verificar-card">
+                        <span style="font-size:0.85rem;color:var(--charcoal);opacity:0.6">Pregunta 2 de 3</span>
+                        <h3 style="margin-top:8px">¿Llevas al menos 5 meses viviendo en España de forma continuada?</h3>
+                        <p style="font-size:0.95rem;opacity:0.7">Se requiere acreditar estancia continuada en territorio español.</p>
+                        <div style="display:flex;gap:16px;margin-top:24px">
+                            <button class="btn btn-navy btn-lg" style="flex:1" onclick="answer(2, true)">Sí</button>
+                            <button class="btn btn-outline-navy btn-lg" style="flex:1" onclick="answer(2, false)">No</button>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Secondary Buttons -->
-                <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:16px">
-                    <a href="mailto:info@pombohorowitz.com" class="btn btn-outline" style="flex:1;max-width:440px">&#9993; Enviar Email</a>
+                <!-- Step 3 -->
+                <div class="verificar-step" id="step3" style="display:none">
+                    <div class="verificar-card">
+                        <span style="font-size:0.85rem;color:var(--charcoal);opacity:0.6">Pregunta 3 de 3</span>
+                        <h3 style="margin-top:8px">¿Careces de antecedentes penales graves en España y en tu país de origen?</h3>
+                        <p style="font-size:0.95rem;opacity:0.7">Delitos menores o faltas leves generalmente no impiden la regularización.</p>
+                        <div style="display:flex;gap:16px;margin-top:24px">
+                            <button class="btn btn-navy btn-lg" style="flex:1" onclick="answer(3, true)">Sí</button>
+                            <button class="btn btn-outline-navy btn-lg" style="flex:1" onclick="answer(3, false)">No</button>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Result: Success -->
+                <div class="verificar-step" id="resultSuccess" style="display:none">
+                    <div class="verificar-card verificar-success">
+                        <div style="font-size:3rem;margin-bottom:16px">&#9989;</div>
+                        <h2 style="color:var(--navy);margin-bottom:12px">Es muy probable que califiques</h2>
+                        <p>Según tus respuestas, cumples los requisitos básicos de la regularización extraordinaria 2026. El siguiente paso es preparar tu documentación.</p>
+
+                        <div style="margin-top:32px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+                            <a href="https://tuspapeles2026.es" target="_blank" rel="noopener" class="btn btn-gold btn-lg">Empezar en tuspapeles2026.es &rarr;</a>
+                            <a href="https://t.me/TusPapeles2026Bot" target="_blank" rel="noopener" class="btn btn-telegram btn-lg"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:4px"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg> Iniciar en Telegram</a>
+                        </div>
+
+                        <!-- Referral code message -->
+                        <div class="referral-notice" style="margin-top:32px;padding:20px 24px;background:linear-gradient(135deg,#fdf8ef,#fef5e3);border:1px solid var(--gold);border-radius:12px;text-align:center">
+                            <p style="margin:0;font-size:0.95rem;color:var(--navy)"><strong>&#127873; Programa de referidos:</strong> Recibirás tu código personal de referido cuando inicies en Telegram. Compártelo con amigos y gana &euro;25 de crédito por cada uno.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Result: Fail -->
+                <div class="verificar-step" id="resultFail" style="display:none">
+                    <div class="verificar-card verificar-fail">
+                        <div style="font-size:3rem;margin-bottom:16px">&#9888;</div>
+                        <h2 style="color:var(--navy);margin-bottom:12px">Puede que no califiques para esta vía</h2>
+                        <p>Según tus respuestas, es posible que no cumplas todos los requisitos de la regularización extraordinaria. Sin embargo, pueden existir otras vías de regularización disponibles para tu caso.</p>
+                        <div style="margin-top:32px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+                            <a href="servicios.html" class="btn btn-navy btn-lg">Ver otros servicios</a>
+                            <a href="https://t.me/TusPapeles2026Bot" target="_blank" rel="noopener" class="btn btn-telegram btn-lg"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:4px"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg> Consultar por Telegram</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -166,22 +189,17 @@
         </div>
     </footer>
 
-    <!-- Telegram Float -->
     <a href="https://t.me/TusPapeles2026Bot" target="_blank" rel="noopener" class="telegram-float" aria-label="Telegram"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></a>
 
     <script>
-    // Mobile nav toggle
     function toggleMobileNav() {
         document.getElementById('mobileNav').classList.toggle('open');
     }
 
-    // Banner dismiss
     function dismissBanner() {
         document.getElementById('alertBanner').classList.add('hidden');
         try { localStorage.setItem('phe_banner_dismissed', Date.now()); } catch(e) {}
     }
-
-    // Auto-hide banner if dismissed within 24h
     (function() {
         try {
             var dismissed = localStorage.getItem('phe_banner_dismissed');
@@ -190,6 +208,24 @@
             }
         } catch(e) {}
     })();
+
+    var answers = {};
+    function answer(step, value) {
+        answers[step] = value;
+        document.getElementById('step' + step).style.display = 'none';
+
+        if (step < 3) {
+            document.getElementById('step' + (step + 1)).style.display = 'block';
+        } else {
+            // All answered — show result
+            var passed = answers[1] && answers[2] && answers[3];
+            if (passed) {
+                document.getElementById('resultSuccess').style.display = 'block';
+            } else {
+                document.getElementById('resultFail').style.display = 'block';
+            }
+        }
+    }
     </script>
 </body>
 </html>
