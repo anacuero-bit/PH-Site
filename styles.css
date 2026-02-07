@@ -1901,56 +1901,6 @@ ul { list-style: none; }
   }
 }
 
-/* Referral banner */
-.referral-banner {
-  background: linear-gradient(135deg, #E8D4A8, #f0e0bc);
-  color: var(--navy);
-  text-align: center;
-  padding: 14px 20px;
-  font-size: 1rem;
-  font-weight: 500;
-  position: relative;
-  z-index: 100;
-}
-
-/* Referral code display */
-.referral-code-display {
-  display: inline-block;
-  padding: 20px 40px;
-  background: #f8f6f1;
-  border: 2px dashed var(--gold);
-  border-radius: 12px;
-}
-
-/* Verificar cards */
-.verificar-card {
-  background: var(--white);
-  border: 1px solid #e8e8e8;
-  border-radius: 16px;
-  padding: 40px 32px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-}
-
-.verificar-success {
-  border-color: #4CAF50;
-  border-width: 2px;
-}
-
-.verificar-fail {
-  border-color: #FF9800;
-  border-width: 2px;
-}
-
-/* Referral notice box */
-.referral-notice {
-  animation: fadeInUp 0.5s ease-out 0.3s both;
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
 /* Tablet adjustments */
 @media (max-width: 768px) {
   .logo-img {
