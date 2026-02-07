@@ -187,18 +187,6 @@
                 <div class="mt-24">
                     <a href="https://tuspapeles2026.es" target="_blank" rel="noopener" class="btn btn-navy btn-lg">Ir a tuspapeles2026.es &rarr;</a>
                 </div>
-                <!-- Referral code input -->
-                <div class="referral-input-box" style="margin-top:32px;padding:24px;background:rgba(30,58,95,0.06);border-radius:12px;max-width:420px">
-                    <p style="margin:0 0 12px;font-weight:600;color:var(--navy);font-size:0.95rem">¿Tienes código de amigo?</p>
-                    <div style="display:flex;gap:8px">
-                        <input type="text" id="referralCodeInput" placeholder="Ej: MARIA25" style="flex:1;padding:10px 14px;border:1px solid #d0d0d0;border-radius:8px;font-size:0.95rem;font-family:inherit">
-                        <button onclick="applyReferralCode()" class="btn btn-gold" style="white-space:nowrap">Aplicar</button>
-                    </div>
-                    <p style="margin:8px 0 0;font-size:0.8rem;opacity:0.6;color:var(--charcoal)">Se aplicará en Telegram al iniciar tu proceso</p>
-                    <div id="referralConfirm" style="display:none;margin-top:12px;padding:10px 14px;background:linear-gradient(135deg,#fdf8ef,#fef5e3);border:1px solid var(--gold);border-radius:8px">
-                        <p style="margin:0;font-size:0.9rem;color:var(--navy)">&#10003; Código <strong id="referralCodeConfirm"></strong> guardado. Menciónalo al iniciar en <a href="https://t.me/TusPapeles2026Bot" target="_blank" rel="noopener" style="color:var(--navy);font-weight:600">Telegram</a>.</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -270,16 +258,6 @@
                 <h2>Resolvemos tus Dudas</h2>
             </div>
             <div class="faq-list" id="faqList"></div>
-            <!-- Static referral FAQ -->
-            <div class="faq-item" style="margin-top:8px">
-                <button class="faq-question" onclick="toggleFaq(this)">
-                    <span>¿Cómo funciona el programa de referidos?</span>
-                    <span class="faq-arrow">&#9660;</span>
-                </button>
-                <div class="faq-answer">
-                    <div class="faq-answer-inner">Tus amigos pueden usar tu código para &euro;25 de descuento. Cuando pagas tu primera fase (&euro;39), tu código se activa y ganas &euro;25 de crédito por cada amigo que pague. Máximo &euro;299 (servicio completo gratis). <a href="referidos-terminos.html">Ver términos completos</a>.</div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -319,7 +297,6 @@
                         <li><a href="aviso-legal.html">Aviso Legal</a></li>
                         <li><a href="privacidad.html">Política de Privacidad</a></li>
                         <li><a href="privacidad.html#cookies">Política de Cookies</a></li>
-                        <li><a href="referidos-terminos.html">Términos de Referidos</a></li>
                     </ul>
                 </div>
             </div>
@@ -426,16 +403,6 @@
     }
     function formatCat(c) {
         return { regularizacion:'Regularización', documentacion:'Documentación', consejos:'Consejos', noticias:'Noticias' }[c] || c;
-    }
-
-    function applyReferralCode() {
-        var input = document.getElementById('referralCodeInput');
-        var code = (input.value || '').trim().toUpperCase();
-        if (!code) return;
-        try { localStorage.setItem('phe_referral_code', code); } catch(e) {}
-        document.getElementById('referralCodeConfirm').textContent = code;
-        document.getElementById('referralConfirm').style.display = 'block';
-        input.value = code;
     }
 
     document.addEventListener('DOMContentLoaded', () => { loadBlogPreview(); loadFAQs(); });
