@@ -1586,6 +1586,303 @@ ul { list-style: none; }
   font-size: 0.9rem;
 }
 
+/* === MOBILE RESPONSIVE (Android ~400px) === */
+@media (max-width: 480px) {
+  /* Prevent horizontal overflow */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  /* Header: smaller logo, compact layout */
+  :root {
+    --header-height: 70px;
+  }
+
+  .logo-img {
+    height: 50px;
+  }
+
+  .header-inner {
+    padding: 0 12px;
+  }
+
+  /* Hero: readable text, stacked layout */
+  .hero {
+    padding: 60px 0 50px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-services {
+    gap: 6px;
+    margin-bottom: 24px;
+  }
+
+  .hero-services span {
+    font-size: 0.8rem;
+    padding: 3px 10px;
+  }
+
+  /* Full-width buttons on mobile */
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-stats {
+    gap: 24px;
+    margin-top: 40px;
+  }
+
+  .hero-stat-number {
+    font-size: 2rem;
+  }
+
+  /* Sections: tighter padding */
+  .section {
+    padding: 50px 0;
+  }
+
+  .section-header {
+    margin-bottom: 32px;
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .section-header p {
+    font-size: 0.95rem;
+  }
+
+  /* Trust bar: stack vertically */
+  .trust-items {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  /* Service cards: single column */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 24px;
+  }
+
+  .service-card.featured {
+    grid-template-columns: 1fr;
+    padding: 24px;
+    gap: 20px;
+  }
+
+  /* Team cards: single column */
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Blog cards: single column */
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Values grid: single column */
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .value-card {
+    padding: 24px 16px;
+  }
+
+  /* CTA banner: full-width buttons */
+  .cta-banner {
+    padding: 40px 0;
+  }
+
+  .cta-banner h2 {
+    font-size: 1.4rem;
+  }
+
+  .cta-banner .btn {
+    width: 100%;
+  }
+
+  /* Buttons: stack and full-width in flex containers */
+  .cta-banner div[style*="display:flex"] {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .btn-lg {
+    padding: 16px 32px;
+    font-size: 1rem;
+  }
+
+  /* Footer: single column, full width */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .logo-img-footer {
+    height: 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .footer-bottom-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .footer-disclaimer p {
+    font-size: 0.72rem;
+  }
+
+  /* Contact page */
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info-item {
+    gap: 12px;
+  }
+
+  /* Timeline on mobile */
+  .timeline {
+    padding-left: 24px;
+  }
+
+  /* tp2026 section */
+  .tp2026-content {
+    text-align: left;
+  }
+
+  .tp2026-content .btn {
+    width: 100%;
+  }
+
+  /* Page hero */
+  .page-hero {
+    padding: 32px 0;
+  }
+
+  .page-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .page-hero-navy {
+    padding: 50px 0;
+  }
+
+  /* Legal pages */
+  .legal-content {
+    padding: 40px 16px;
+  }
+
+  .legal-content h2 {
+    font-size: 1.2rem;
+  }
+
+  /* Alert banner */
+  .alert-banner {
+    font-size: 0.8rem;
+    padding: 8px 40px 8px 12px;
+    text-align: left;
+  }
+
+  /* Countdown */
+  .countdown {
+    gap: 16px;
+  }
+
+  .countdown-number {
+    font-size: 2rem;
+  }
+
+  /* Regularización CTA pricing pills */
+  .cta-banner div[style*="display:flex"][style*="font-size:0.9rem"] {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  /* Mobile nav: full-width button */
+  .mobile-nav .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Telegram float: slightly smaller on mobile */
+  .telegram-float {
+    width: 48px;
+    height: 48px;
+    bottom: 16px;
+    right: 16px;
+  }
+
+  /* Sobre nosotros: stack story + timeline */
+  div[style*="grid-template-columns:1fr 1fr"][style*="gap:60px"] {
+    display: block !important;
+  }
+
+  div[style*="grid-template-columns:1fr 1fr"][style*="gap:60px"] > div:last-child {
+    margin-top: 32px;
+  }
+
+  /* Regularizacion hero stats */
+  div[style*="display:flex"][style*="gap:48px"][style*="justify-content:center"] {
+    flex-direction: column !important;
+    gap: 16px !important;
+    align-items: center !important;
+  }
+}
+
+/* Tablet adjustments */
+@media (max-width: 768px) {
+  .logo-img {
+    height: 60px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-stats {
+    gap: 32px;
+  }
+
+  div[style*="grid-template-columns:1fr 1fr"][style*="gap:60px"] {
+    display: block !important;
+  }
+
+  div[style*="grid-template-columns:1fr 1fr"][style*="gap:60px"] > div:last-child {
+    margin-top: 40px;
+  }
+}
+
 /* Print */
 @media print {
   .site-header, .site-footer, .telegram-float, .cta-banner, .alert-banner { display: none; }
